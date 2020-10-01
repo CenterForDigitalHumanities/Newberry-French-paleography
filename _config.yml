@@ -1,5 +1,6 @@
 ---
 baseurl: "/Newberry-French-paleography"
+
 includes: ["page/*.md", "prime/*.md", "transcriptions/*.md", "background-essay/*.md"]
 
 theme: jekyll-theme-tactile
