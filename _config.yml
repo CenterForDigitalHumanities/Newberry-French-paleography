@@ -1,10 +1,3 @@
 ---
 baseurl: "/Newberry-French-paleography"
-includes: 
-  - page/
-  - prime/
-  - transcriptions/
-  - background-essay/
-  - background-essay/a.md
-  - "background-essay/b.md"
-  - "/background-essay/"
+include: ["page/*.md", "prime/*.md", "transcriptions/*.md", "background-essay/*.md"]
