@@ -1,5 +1,5 @@
 ---
-baseurl: "https://centerfordigitalhumanities.github.io/Newberry-French-paleography/"
+baseurl: "/Newberry-French-paleography"
 include: 
   - page/
   - prime/
