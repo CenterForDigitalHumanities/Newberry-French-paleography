@@ -1,6 +1,6 @@
 ---
 baseurl: "/Newberry-French-paleography"
-include: 
+includes: 
   - page/
   - prime/
   - transcriptions/
