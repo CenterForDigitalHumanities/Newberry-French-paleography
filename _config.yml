@@ -1,4 +1,5 @@
 ---
+baseurl: https://centerfordigitalhumanities.github.io/Newberry-French-paleography/
 include: 
   - page/
   - prime/
