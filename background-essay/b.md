@@ -1,6 +1,7 @@
 ---
-layout: post
-title: Blogging Like a Hacker
+layout: default
+title: "B"
+permalink: "b"
 ---
 
 # heading
