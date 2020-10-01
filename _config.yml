@@ -5,3 +5,6 @@ includes:
   - prime/
   - transcriptions/
   - background-essay/
+  - background-essay/a.md
+  - "background-essay/b.md"
+  - "/background-essay/"
