@@ -1,7 +1,13 @@
 ---
 baseurl: "/Newberry-French-paleography"
 
-include: ["page/*.md", "prime/*.md", "transcriptions/*.md", "background-essay/*.md", "background-essay/c.md"]
+include: 
+#  -"page/*.md"
+#  -"prime/*.md"
+#  -"transcriptions/*.md"
+#  -"background-essay/*.md"
+  -"background-essay/c.md"
+  -"background-essay/31.md"
 
 theme: jekyll-theme-tactile
 
