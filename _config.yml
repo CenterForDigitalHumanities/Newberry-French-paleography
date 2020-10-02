@@ -4,3 +4,5 @@
 include: ["page/*.md", "prime/*.md", "transcriptions/*.md", "background-essay/*.md", "background-essay/c.md"]
 
 theme: jekyll-theme-tactile
+
+layout: default
