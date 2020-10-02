@@ -1,5 +1,5 @@
 ---
-# baseurl: "/Newberry-French-paleography"
+baseurl: "/Newberry-French-paleography"
 
 include: ["page/*.md", "prime/*.md", "transcriptions/*.md", "background-essay/*.md", "background-essay/c.md"]
 
