@@ -1,0 +1,90 @@
+{
+    "accessed": 1606770600000,
+    "@context": "http://iiif.io/api/presentation/2/context.json",
+    "@id": "https://iiif.library.utoronto.ca/presentation/v2/collections/paleography:calligraphybooks",
+    "@type": "sc:Collection",
+    "label": "Calligraphy Books",
+    "metadata": [
+        {
+            "label": "title",
+            "value": [
+                "Calligraphy Books",
+                "",
+                ""
+            ]
+        },
+        {
+            "label": "dateIssued",
+            "value": [
+                "",
+                "",
+                "",
+                ""
+            ]
+        }
+    ],
+    "attribution": "For rights and reproduction information please contact collections@library.utoronto.ca",
+    "manifests": [
+        {
+            "@id": "https://iiif.library.utoronto.ca/presentation/v2/paleography:513/manifest",
+            "@type": "sc:Manifest",
+            "label": "Exemplaires de plusieurs sortes de lettres, de la main de Jacques de La Rue, escrivain et arithmeticien"
+        },
+        {
+            "@id": "https://iiif.library.utoronto.ca/presentation/v2/paleography:514/manifest",
+            "@type": "sc:Manifest",
+            "label": "Exemplaires du Sieur Beaulieu: où sont monstrées fidellement toutes sortes de lettres et caracteres de finance, chancelleries, et autres de service : avec une methodique instruction d’icelles : livre premier / taillé par Mathieu Greuter Alleman"
+        },
+        {
+            "@id": "https://iiif.library.utoronto.ca/presentation/v2/paleography:515/manifest",
+            "@type": "sc:Manifest",
+            "label": "Alphabet de plusieurs sortes de lettres"
+        },
+        {
+            "@id": "https://iiif.library.utoronto.ca/presentation/v2/paleography:516/manifest",
+            "@type": "sc:Manifest",
+            "label": "Le premier essay de la plume de Marie Pavie"
+        },
+        {
+            "@id": "https://iiif.library.utoronto.ca/presentation/v2/paleography:517/manifest",
+            "@type": "sc:Manifest",
+            "label": "Alphabet of Roman capitals in gold with colored ornament used as initial letters in specimen pages of calligraphy"
+        },
+        {
+            "@id": "https://iiif.library.utoronto.ca/presentation/v2/paleography:518/manifest",
+            "@type": "sc:Manifest",
+            "label": "ABC, ou Exemples propres pour apprendre les enfans à escrire, contenants plusieurs sentences morales pour l'instruction de la jeunesse"
+        },
+        {
+            "@id": "https://iiif.library.utoronto.ca/presentation/v2/paleography:519/manifest",
+            "@type": "sc:Manifest",
+            "label": "Le tresor d'escriture : auquel est contenu tout ce qui est requis et necessaire à tous amateurs dudict art"
+        },
+        {
+            "@id": "https://iiif.library.utoronto.ca/presentation/v2/paleography:520/manifest",
+            "@type": "sc:Manifest",
+            "label": "Copy-book"
+        },
+        {
+            "@id": "https://iiif.library.utoronto.ca/presentation/v2/paleography:521/manifest",
+            "@type": "sc:Manifest",
+            "label": "Thresor litteraire, contenant plusieurs diverses escritures, les plus usitees es escoles francoises des Provinces unies du Pays-Bas. Escrit et mis en lumiere par Jan Van den Velde, maistre d'escole francois en la populeuse et tres antique ville marchande "
+        },
+        {
+            "@id": "https://iiif.library.utoronto.ca/presentation/v2/paleography:522/manifest",
+            "@type": "sc:Manifest",
+            "label": "Livre contenant plusieurs sortes d'escritures avecq divers traicts, faict inventé et mis en lumiere par Baldri van Horicke, maistre à escrire des pages de leurs Altesses serenissimes de glorieuse mémoire en Bruxelles"
+        },
+        {
+            "@id": "https://iiif.library.utoronto.ca/presentation/v2/paleography:523/manifest",
+            "@type": "sc:Manifest",
+            "label": "Le paranimphe de l'escriture ronde, financiere et italienne de nouvelle forme promte et de tres bons  services enrichies de divers traictz des inventions de François Desmoulins, escrivain, le tout faict et gravé par lui mesme"
+        },
+        {
+            "@id": "https://iiif.library.utoronto.ca/presentation/v2/paleography:527/manifest",
+            "@type": "sc:Manifest",
+            "label": "Les ecritures financiere et italienne bastarde dans leur naiveté. Ouvrage composé de quantité d'exemplaires qui sont d'expeditions que l'on escrit journellement en toutes sortes d'affaires, chascune escrite du caractere convenable à son sujet. Tres-utile "
+        }
+    ],
+    "total": 12
+}

@@ -1,0 +1,60 @@
+{
+    "accessed": 1606770600000,
+    "@context": "http://iiif.io/api/presentation/2/context.json",
+    "@id": "https://iiif.library.utoronto.ca/presentation/v2/collections/paleography:historicalmaps",
+    "@type": "sc:Collection",
+    "label": "Historical Maps",
+    "metadata": [
+        {
+            "label": "title",
+            "value": [
+                "Historical Maps",
+                "",
+                ""
+            ]
+        },
+        {
+            "label": "dateIssued",
+            "value": [
+                "",
+                "",
+                "",
+                ""
+            ]
+        }
+    ],
+    "attribution": "For rights and reproduction information please contact collections@library.utoronto.ca",
+    "manifests": [
+        {
+            "@id": "https://iiif.library.utoronto.ca/presentation/v2/paleography:384/manifest",
+            "@type": "sc:Manifest",
+            "label": "Carte geographique de la Nouvelle  Franse [sic], faictte par le sieur de Champlain, Saint Tongois, cappitaine ordinaire pour le roy en la marine, faict l'en 1612"
+        },
+        {
+            "@id": "https://iiif.library.utoronto.ca/presentation/v2/paleography:385/manifest",
+            "@type": "sc:Manifest",
+            "label": "Description du pais blaisois"
+        },
+        {
+            "@id": "https://iiif.library.utoronto.ca/presentation/v2/paleography:386/manifest",
+            "@type": "sc:Manifest",
+            "label": "Le vif pourtrait de la Cité de Bourdeaux"
+        },
+        {
+            "@id": "https://iiif.library.utoronto.ca/presentation/v2/paleography:387/manifest",
+            "@type": "sc:Manifest",
+            "label": "La France et les environs, jusques à l'Estendue de l'Ancienne Gaule, divisée en ses primatiats, provinces ecclésiastiques, et dioeceses des archeveschés et eveschés"
+        },
+        {
+            "@id": "https://iiif.library.utoronto.ca/presentation/v2/paleography:388/manifest",
+            "@type": "sc:Manifest",
+            "label": "Géographie ancienne et moderne de la France"
+        },
+        {
+            "@id": "https://iiif.library.utoronto.ca/presentation/v2/paleography:423/manifest",
+            "@type": "sc:Manifest",
+            "label": "Tabula moderna Francie"
+        }
+    ],
+    "total": 6
+}
