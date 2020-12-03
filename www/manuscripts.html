@@ -16,7 +16,7 @@
     <div class="container reverse">
         <div id="Manuscripts" class="grow wrap">list loading</div>
         <div class="sidebar">
-            <h3>Refine Results</h3>
+            <h3>Refine Results <button role="button" id="queryReset">clear all</button></h3>
             <progress value="107" max="107">107 of 107</progress>
             <input id="query" type="text" placeholder="type to filter">
             <section id="facetFilter"></section>
@@ -24,8 +24,8 @@
     </div>
 
     <script src="./script/utils.js"></script>
-    <script >
-        loadManuscripts("../iiif-cache/manuscripts.json",Manuscripts)
+    <script>
+        loadManuscripts("../iiif-cache/manuscripts.json", Manuscripts)
     </script>
 
     <footer>footer</footer>

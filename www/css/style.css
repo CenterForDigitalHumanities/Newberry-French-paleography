@@ -42,31 +42,33 @@ html {
     max-width : 30em;
     min-width : 200px;
     flex-basis: 200px;
-    position: relative;
+    position  : relative;
 }
 
 .sidebar ul {
-    margin: 0;
+    margin : 0;
     padding: 0;
 }
 
 .sidebar li {
-    padding: calc(var(--grid-gutter) / 4) 0;
-    margin: 0;
-    display: block;
-    overflow: hidden;
-    text-transform: capitalize ;
-    text-overflow: ellipsis;
+    padding       : calc(var(--grid-gutter) / 4) 0;
+    margin        : 0;
+    display       : block;
+    overflow      : hidden;
+    text-transform: capitalize;
+    text-overflow : ellipsis;
+    background    : var(--color-primary);
+    color         : var(--color-lightGrey);
 }
 
 facet {
-    display:block;
-    position: relative;
-    cursor: pointer;
-    transition: background-color .2s;
-    border-left: var(--color-primary) solid thin;
+    display     : block;
+    position    : relative;
+    cursor      : pointer;
+    transition  : background-color .2s;
+    border-left : var(--color-primary) solid thin;
     padding-left: calc(var(--grid-gutter)/4);
-    font-size: smaller;
+    font-size   : smaller;
 }
 
 facet:hover {
@@ -78,27 +80,28 @@ facet.clicked {
 }
 
 facet::after {
-    content: "("attr(data-count)")";
-    position: absolute;
-    right:0;
-    border-radius: 15%;
-    background-color: rgba(255,255,255,.5);
+    content         : "("attr(data-count)")";
+    position        : absolute;
+    right           : 0;
+    border-radius   : 15%;
+    background-color: rgba(255, 255, 255, .5);
 }
 
-.sidebar progress, .sidebar input {
+.sidebar progress,
+.sidebar input {
     box-sizing: border-box;
-    width: 100%;
-    transition: width,progress-value .5s ease-out;
+    width     : 100%;
+    transition: width, progress-value .5s ease-out;
 }
 
 progress::after {
-    content: attr(value)" of "attr(max);
-    font-size: .6em;
-    color: #666666;
-    position: relative;
+    content   : attr(value)" of "attr(max);
+    font-size : .6em;
+    color     : #666666;
+    position  : relative;
     text-align: right;
-    display: block;
-    bottom: 1em;
+    display   : block;
+    bottom    : 1em;
 }
 
 .reverse {
@@ -130,7 +133,8 @@ progress::after {
     margin        : calc(var(--grid-gutter) / 4);
 }
 
-.record[class*='hide-'],facet[class*='hide-']{
+.record[class*='hide-'],
+facet[class*='hide-'] {
     display: none !important;
 }
 

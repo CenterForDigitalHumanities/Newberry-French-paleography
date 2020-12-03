@@ -98,6 +98,12 @@ async function loadManuscripts(url, elem, pagination = [0,]) {
     renderManuscripts(elem, manuscripts)
 }
 
+queryReset.addEventListener("click", ev => {
+    Array.from(document.querySelectorAll(".clicked")).forEach(el => el.dispatchEvent(new Event("click")))
+    query.value = ""
+    query.dispatchEvent(new Event("input"))
+})
+
 function filterQuery(event) {
     const queryString = event.target.value
     Array.from(records).forEach(r => new RegExp(queryString, "i").test(r.getAttribute("data-query")) ? r.classList.remove("hide-query") : r.classList.add("hide-query"))
@@ -107,7 +113,7 @@ function filterQuery(event) {
 function filterFacets(event) {
     const clicked = event.target
     clicked.classList.toggle("clicked")
-    const action = clicked.classList.contains("clicked") ? "add" : "remove" 
+    const action = clicked.classList.contains("clicked") ? "add" : "remove"
     const k = clicked.getAttribute("data-facet")
     const v = clicked.textContent
     Array.from(records).forEach(r => { if (!new RegExp(v, "i").test(r.getAttribute("data-" + k))) r.classList[action]("hide-facet") })
@@ -131,17 +137,17 @@ function updateCount() {
         }
     }, 10)
     let facetsElements = document.querySelectorAll("facet")
-    Array.from(facetsElements).forEach(f=>{
+    Array.from(facetsElements).forEach(f => {
         const k = f.getAttribute("data-facet")
         const v = f.textContent
-        let count = document.querySelectorAll(".record:not([class*='hide-'])[data-" + k+"*='"+v+"']").length
-        f.setAttribute("data-count",count)
-        if(count===0){
+        let count = document.querySelectorAll(".record:not([class*='hide-'])[data-" + k + "*='" + v + "']").length
+        f.setAttribute("data-count", count)
+        if (count === 0) {
             f.classList.add("hide-sidebar")
         } else {
             f.classList.remove("hide-sidebar")
         }
-    })    
+    })
 }
 
 function populateSidebar(facets, FILTERS) {
