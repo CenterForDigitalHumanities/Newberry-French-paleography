@@ -59,6 +59,7 @@ html {
     text-overflow : ellipsis;
     background    : var(--color-primary);
     color         : var(--color-lightGrey);
+    border-left: var(--color-primary) solid thick;
 }
 
 facet {
@@ -92,6 +93,11 @@ facet::after {
     box-sizing: border-box;
     width     : 100%;
     transition: width, progress-value .5s ease-out;
+}
+
+.sidebar input {
+    line-height: 1.6;
+    margin-bottom: var(--grid-gutter);
 }
 
 progress::after {
