@@ -1,5 +1,5 @@
 var records = document.querySelectorAll(".record")
-function renderManuscripts(elem, manuscripts,noTranscribe) {
+function renderManuscripts(elem, manuscripts, noTranscribe) {
 
     const TPEN_BASE = "http://paleo.rerum.io/TPEN-NL/"
     const FIELDS = page_FIELDS || [
@@ -26,7 +26,7 @@ function renderManuscripts(elem, manuscripts,noTranscribe) {
             </dl>
         </div>
         <div class="btn-group">
-            <a href="./record.html?id=${b['@id']}">View</a> ${(!noTranscribe)?``:`<a href="${TPEN_BASE}?projectID=${b.tpenProject}">Transcribe</a>`}
+            <a href="./record.html?id=${b['@id']}">View</a> ${(!noTranscribe) ? `` : `<a href="${TPEN_BASE}?projectID=${b.tpenProject}">Transcribe</a>`}
         </div>
     </div>`, ``)
 
@@ -61,7 +61,8 @@ function renderManuscripts(elem, manuscripts,noTranscribe) {
                 })
                 r.setAttribute("data-query", SEARCH.reduce((a, b) => a += (metadataMap.has(b) ? metadataMap.get(b) : "*") + " ", ""))
                 r.querySelector("dl").innerHTML = dl
-                r.querySelector("img").src = manifest.sequences[0].canvases[0].thumbnail['@id']
+                let middleOfTheBook = Math.floor(manifest.sequences[0].canvases.length / 2)
+                r.querySelector("img").src = manifest.sequences[0].canvases[middleOfTheBook].thumbnail['@id']
             })
             .catch(err => { throw Error(err) })
         )
