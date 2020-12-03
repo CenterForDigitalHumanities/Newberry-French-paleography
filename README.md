@@ -13,3 +13,9 @@ Static pages for the Newberry French Renaissance Paleography project
 {% for p in site.page %}
 - [{{ p.title }}]({{ site.baseurl }}{{ p.url }})
 {% endfor %}
+
+## Indexes
+
+* [Manuscripts](/www/manuscripts.html)
+* [Maps](/www/maps.html)
+* [Calligraphy Books](/www/calligraphy.html)

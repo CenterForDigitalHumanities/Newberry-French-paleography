@@ -166,3 +166,8 @@ function populateSidebar(facets, FILTERS) {
     Array.from(facetsElements).forEach(el => el.addEventListener("click", filterFacets))
     updateCount()
 }
+
+
+let templates = document.createElement("script")
+templates.src = "script/templates.js"
+document.body.append(templates)
