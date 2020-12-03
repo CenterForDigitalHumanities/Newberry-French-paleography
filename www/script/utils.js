@@ -106,11 +106,11 @@ function filterQuery(event) {
 }
 function filterFacets(event) {
     const clicked = event.target
-    const action = clicked.classList.contains("clicked") ? "remove" : "add"
     clicked.classList.toggle("clicked")
+    const action = clicked.classList.contains("clicked") ? "add" : "remove" 
     const k = clicked.getAttribute("data-facet")
     const v = clicked.textContent
-    Array.from(records).forEach(r => { if (new RegExp(v, "i").test(r.getAttribute("data-" + k))) r.classList[action]("hide-facet") })
+    Array.from(records).forEach(r => { if (!new RegExp(v, "i").test(r.getAttribute("data-" + k))) r.classList[action]("hide-facet") })
     updateCount()
 }
 let progress;
@@ -130,7 +130,20 @@ function updateCount() {
             clearInterval(progress)
         }
     }, 10)
+    let facetsElements = document.querySelectorAll("facet")
+    Array.from(facetsElements).forEach(f=>{
+        const k = f.getAttribute("data-facet")
+        const v = f.textContent
+        let count = document.querySelectorAll(".record:not([class*='hide-'])[data-" + k+"*='"+v+"']").length
+        f.setAttribute("data-count",count)
+        if(count===0){
+            f.classList.add("hide-sidebar")
+        } else {
+            f.classList.remove("hide-sidebar")
+        }
+    })    
 }
+
 function populateSidebar(facets, FILTERS) {
     let side = `<ul>`
     for (const f in FILTERS) {
@@ -141,4 +154,5 @@ function populateSidebar(facets, FILTERS) {
     facetFilter.innerHTML = side
     let facetsElements = document.querySelectorAll("[data-facet]")
     Array.from(facetsElements).forEach(el => el.addEventListener("click", filterFacets))
+    updateCount()
 }

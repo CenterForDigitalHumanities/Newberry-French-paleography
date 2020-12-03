@@ -61,10 +61,28 @@ html {
 
 facet {
     display:block;
+    position: relative;
+    cursor: pointer;
+    transition: background-color .2s;
+    border-left: var(--color-primary) solid thin;
+    padding-left: calc(var(--grid-gutter)/4);
+    font-size: smaller;
+}
+
+facet:hover {
+    background-color: var(--color-lightGrey);
 }
 
 facet.clicked {
     background-color: var(--color-grey);
+}
+
+facet::after {
+    content: "("attr(data-count)")";
+    position: absolute;
+    right:0;
+    border-radius: 15%;
+    background-color: rgba(255,255,255,.5);
 }
 
 .sidebar progress, .sidebar input {
@@ -112,7 +130,7 @@ progress::after {
     margin        : calc(var(--grid-gutter) / 4);
 }
 
-.record[class*='hide-']{
+.record[class*='hide-'],facet[class*='hide-']{
     display: none !important;
 }
 
