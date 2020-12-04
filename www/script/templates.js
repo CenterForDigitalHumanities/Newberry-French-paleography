@@ -46,6 +46,10 @@ class NlHeader extends HTMLElement {
         this.attachShadow({ mode: 'open' })
         this.shadowRoot.appendChild(NL.get("HEADER_TEMPLATE").content.cloneNode(true))
     }
+    connectedCallback() {
+        super.connectedCallback && super.connectedCallback()
+        fetch(NL.get("LOGIN")).then(response=>alert(response.ok))
+    }
 }
 customElements.get('nl-header') || customElements.define('nl-header', NlHeader)
 
