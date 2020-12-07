@@ -59,7 +59,7 @@ class NlHeader extends HTMLElement {
                     method:"POST",
                     mode: 'cors',
                     referrerPolicy: 'no-referrer',
-                    body: JSON.stringify({uname:"bhaberbe@slu.edu",password:3})
+                    body: JSON.stringify({mail:"bhaberbe@slu.edu",password:3})
                 })
             }
         })
