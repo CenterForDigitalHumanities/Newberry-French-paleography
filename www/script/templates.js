@@ -1,6 +1,7 @@
 var NL = new Map()
 
-NL.set("LOGIN", "http://paleo.rerum.io/TPEN-NL/geti")
+NL.set("USER", "http://paleo.rerum.io/TPEN-NL/geti")
+NL.set("AUTH", "http://paleo.rerum.io/TPEN-NL/login")
 
 let header = document.createElement('template')
 let footer = document.createElement('template')
@@ -48,7 +49,20 @@ class NlHeader extends HTMLElement {
     }
     connectedCallback() {
         super.connectedCallback && super.connectedCallback()
-        fetch(NL.get("LOGIN")).then(response=>alert(response.ok))
+        fetch(NL.get("USER"))
+        .then(response => { if (!response.ok) { throw new Error(response.status) } return response })
+        .then( response=>response.json())
+        .then( user => alert(JSON.stringify(user)))
+        .catch(err=>{
+            if (err.message > 400) {
+                fetch(NL.get("AUTH"),{
+                    method:"POST",
+                    mode: 'cors',
+                    referrerPolicy: 'no-referrer',
+                    body: JSON.stringify({uname:"bhaberbe@slu.edu",password:3})
+                })
+            }
+        })
     }
 }
 customElements.get('nl-header') || customElements.define('nl-header', NlHeader)
