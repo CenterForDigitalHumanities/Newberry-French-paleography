@@ -58,6 +58,7 @@ class NlHeader extends HTMLElement {
                 fetch(NL.get("AUTH"),{
                     method:"POST",
                     mode: 'cors',
+                    headers:{'Content-Type': 'application/json;charset=utf-8'},
                     referrerPolicy: 'no-referrer',
                     body: JSON.stringify({mail:"bhaberbe@slu.edu",password:3})
                 })
