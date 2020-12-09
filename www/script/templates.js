@@ -47,24 +47,24 @@ class NlHeader extends HTMLElement {
         this.attachShadow({ mode: 'open' })
         this.shadowRoot.appendChild(NL.get("HEADER_TEMPLATE").content.cloneNode(true))
     }
-    connectedCallback() {
-        super.connectedCallback && super.connectedCallback()
-        fetch(NL.get("USER"))
-        .then(response => { if (!response.ok) { throw new Error(response.status) } return response })
-        .then( response=>response.json())
-        .then( user => alert(JSON.stringify(user)))
-        .catch(err=>{
-            if (err.message > 400) {
-                fetch(NL.get("AUTH"),{
-                    method:"POST",
-                    mode: 'cors',
-                    headers:{'Content-Type': 'application/json;charset=utf-8'},
-                    referrerPolicy: 'no-referrer',
-                    body: JSON.stringify({mail:"bhaberbe@slu.edu",password:3})
-                })
-            }
-        })
-    }
+    // connectedCallback() {
+    //     super.connectedCallback && super.connectedCallback()
+    //     fetch(NL.get("USER"))
+    //     .then(response => { if (!response.ok) { throw new Error(response.status) } return response })
+    //     .then( response=>response.json())
+    //     .then( user => alert(JSON.stringify(user)))
+    //     .catch(err=>{
+    //         if (err.message > 400) {
+    //             fetch(NL.get("AUTH"),{
+    //                 method:"POST",
+    //                 mode: 'cors',
+    //                 headers:{'Content-Type': 'application/json;charset=utf-8'},
+    //                 referrerPolicy: 'no-referrer',
+    //                 body: JSON.stringify({mail:"bhaberbe@slu.edu",password:3})
+    //             })
+    //         }
+    //     })
+    // }
 }
 customElements.get('nl-header') || customElements.define('nl-header', NlHeader)
 
