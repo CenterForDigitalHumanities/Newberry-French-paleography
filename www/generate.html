@@ -38,11 +38,10 @@
             let f = new File(["partial-transcriptions"], "./csv-parser/csv/background-essay.csv", {
                 type: "text/csv"
             })
-            await getBackgroundEssaysFromCSVInfo(f)
-            .then(parsedCSV => {
-                alterFileStructure(parsedCSV)
-                return parsedCSV
-            })
+            let parsedCSV = await getBackgroundEssaysFromCSVInfo(f)
+            alterFileStructure(parsedCSV)
+            return parsedCSV
+            
         }
     }
 
@@ -52,11 +51,9 @@
             let f = new File(["partial-transcriptions"], "./csv-parser/csv/partial-transcriptions.csv", {
                 type: "text/csv"
             })
-            await getPartialTranscriptionsFromCSVInfo(f)
-            .then(parsedCSV => {
-                alterFileStructure(parsedCSV)
-                return parsedCSV
-            })
+            let parsedCSV = await getPartialTranscriptionsFromCSVInfo(f)
+            alterFileStructure(parsedCSV)
+            return parsedCSV
         }
     }
 
