@@ -54,18 +54,30 @@
     async function newPartialTranscriptions(event){
         var r = confirm("Are you sure you want to make new files?  The old files will be backed up but will no longer be used.");
         if (r == true) {
-            let f = new File([],"./csv-parser/csv/background-essay.csv", {
-                type: "text/plain"
+            let txt = await fetch("./csv-parser/csv/partial-transcriptions.csv", {
+                method: "GET",
+                mode: "cors",
+                headers: {
+                    'Content-Type': 'text/csv;charset=utf-8'
+                }
             })
-            let txt = f.text()
+            .then(response => response.text())
+            .catch(err => {return new Error("Could not get CSV file")})
             let parsedCSV = await getFromCSVInfo(txt)
             alterFileStructure(parsedCSV)
             return parsedCSV
         }
     }
 
-
     async function getFromCSVInfo(fileText){
+        return Papa.parse(fileText, {
+            header: true,
+            dynamicTyping: true,
+            complete: function(results) {
+                return results
+            }
+        })
+        /*
         return new Promise(resolve => {
             Papa.parse(fileText, {
                 header: true,
@@ -75,6 +87,7 @@
                 }
             })
         })
+        */
     }
     
 </script>
