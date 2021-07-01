@@ -27,6 +27,11 @@
 
 <script type="text/javascript">
 
+    async function alterFileStructure(parsedCSV){
+        console.warn("No altering/generating files yet.  Nothing happened.  Below is your parsed CSV data.")
+        console.log(parsedCSV)
+    }
+
     async function newBackgroundEssays(event){
         var r = confirm("Are you sure you want to make new files?  The old files will be backed up but will no longer be used.");
         if (r == true) {
@@ -49,7 +54,7 @@
             })
             await getPartialTranscriptionsFromCSVInfo(f)
             .then(parsedCSV => {
-                console.log(parsedCSV)
+                alterFileStructure(parsedCSV)
                 return parsedCSV
             })
         }
@@ -61,9 +66,14 @@
             let f = new File(["background-essay"], "./csv-parser/csv/background-essay.csv", {
                 type: "text/csv"
             })
-            generateBackgroundEssaysFolder(f)
+            await Papa.parse(f, {
+                complete: function(results) {
+                    return results
+                }
+            })
             .then(parsedCSV => {
-                console.log(parsedCSV)
+                alterFileStructure(parsedCSV)
+                return parsedCSV
             })
         }
     }
@@ -74,9 +84,14 @@
             let f = new File(["transcriptions"], "./csv-parser/csv/transcriptions.csv", {
                 type: "text/csv"
             })
-            generateBackgroundEssaysFolder(f)
+            await Papa.parse(f, {
+                complete: function(results) {
+                    return results
+                }
+            })
             .then(parsedCSV => {
-                console.log(parsedCSV)
+                alterFileStructure(parsedCSV)
+                return parsedCSV
             })
         }
     }
