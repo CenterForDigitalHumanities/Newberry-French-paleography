@@ -60,7 +60,7 @@
 
     async function getFromCSVInfo(file){
         return new Promise(resolve => {
-            Papa.parse(file.name, {
+            Papa.parse(file, {
                 header: true,
                 dynamicTyping: true,
                 complete: function(results) {
