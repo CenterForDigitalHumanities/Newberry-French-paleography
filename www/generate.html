@@ -11,6 +11,7 @@
 </head>
 
 <body>
+    <header></header>
     <div> 
         <p>Click below to generate a new "Background Essays" markdown folder.  The current folder will be backed up.</p>
         <input type="button" value="Generate New Background Essays Markdown from the CSV" onclick="newBackgroundEssays(event)"/>
@@ -19,7 +20,8 @@
         <p>Click below to generate a new "Partial Transcriptions" markdown folder.  The current folder will be backed up.</p>
         <input type="button" value="Generate New Partial Transcription Markdown from the CSV" onclick="newTranscriptions(event)"/>
     </div>
-<script src="./script/utils.js"></script>
+    <footer></footer>
+    <script src="./script/utils.js"></script>
 
 </body>
 
@@ -31,7 +33,7 @@
             let f = new File(["partial-transcriptions"], "./csv-parser/csv/partial-transcriptions.csv", {
                 type: "text/csv"
             })
-            await generateBackgroundEssaysFromCSVInfo(f)
+            await getBackgroundEssaysFromCSVInfo(f)
             .then(parsedCSV => {
                 console.log(parsedCSV)
                 return parsedCSV
@@ -45,7 +47,7 @@
             let f = new File(["partial-transcriptions"], "./csv-parser/csv/partial-transcriptions.csv", {
                 type: "text/csv"
             })
-            await generatePartialTranscriptionsFromCSVInfo(f)
+            await getPartialTranscriptionsFromCSVInfo(f)
             .then(parsedCSV => {
                 console.log(parsedCSV)
                 return parsedCSV
