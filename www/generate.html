@@ -38,7 +38,7 @@
             let f = new File(["partial-transcriptions"], "./csv-parser/csv/background-essay.csv", {
                 type: "text/csv"
             })
-            let parsedCSV = await getBackgroundEssaysFromCSVInfo(f)
+            let parsedCSV = await getFromCSVInfo(f)
             alterFileStructure(parsedCSV)
             return parsedCSV
             
@@ -51,39 +51,21 @@
             let f = new File(["partial-transcriptions"], "./csv-parser/csv/partial-transcriptions.csv", {
                 type: "text/csv"
             })
-            let parsedCSV = await getPartialTranscriptionsFromCSVInfo(f)
+            let parsedCSV = await getFromCSVInfo(f)
             alterFileStructure(parsedCSV)
             return parsedCSV
         }
     }
 
-    async function getBackgroundEssaysFromCSVInfo(file){
-        return Papa.parse(f, {
-            header: true,
-            dynamicTyping: true,
-            complete: function(results) {
-                return results
-            }
-        })
-    }
 
-    async function getPartialTranscriptionsFromCSVInfo(file){
-        return Papa.parse(f.name, {
-            header: true,
-            dynamicTyping: true,
-            complete: function(results) {
-                return results
-            }
-        })
-
-        const csvData = csvFile.toString()  
+    async function getFromCSVInfo(file){
         return new Promise(resolve => {
-            Papa.parse(f.name, {
-              header: true,
-              complete: results => {
-                console.log('Complete', results.data.length, 'records.'); 
-                resolve(results.data);
-              }
+            Papa.parse(file, {
+                header: true,
+                dynamicTyping: true,
+                complete: function(results) {
+                    resolve(results.data)
+                }
             })
         })
     }
