@@ -67,6 +67,8 @@
                 type: "text/csv"
             })
             await Papa.parse(f, {
+                header: true,
+                dynamicTyping: true,
                 complete: function(results) {
                     return results
                 }
@@ -85,6 +87,8 @@
                 type: "text/csv"
             })
             await Papa.parse(f, {
+                header: true,
+                dynamicTyping: true,
                 complete: function(results) {
                     return results
                 }
