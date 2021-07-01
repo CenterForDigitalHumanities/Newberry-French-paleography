@@ -58,9 +58,6 @@
     }
 
     async function getBackgroundEssaysFromCSVInfo(file){
-        let f = new File(["background-essay"], "./csv-parser/csv/background-essay.csv", {
-            type: "text/csv"
-        })
         return Papa.parse(f, {
             header: true,
             dynamicTyping: true,
@@ -71,15 +68,23 @@
     }
 
     async function getPartialTranscriptionsFromCSVInfo(file){
-        let f = new File(["transcriptions"], "./csv-parser/csv/transcriptions.csv", {
-            type: "text/csv"
-        })
-        return Papa.parse(f, {
+        return Papa.parse(f.name, {
             header: true,
             dynamicTyping: true,
             complete: function(results) {
                 return results
             }
+        })
+
+        const csvData = csvFile.toString()  
+        return new Promise(resolve => {
+            Papa.parse(f.name, {
+              header: true,
+              complete: results => {
+                console.log('Complete', results.data.length, 'records.'); 
+                resolve(results.data);
+              }
+            })
         })
     }
     
