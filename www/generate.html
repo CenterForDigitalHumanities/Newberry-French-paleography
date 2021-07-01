@@ -38,10 +38,18 @@
             let f = new File([],"./csv-parser/csv/background-essay.csv", {
                 type: "text/csv"
             })
-            let txt = await f.text().then(t => {return t})
-            let parsedCSV = await getFromCSVInfo(txt)
-            alterFileStructure(parsedCSV)
-            return parsedCSV
+            var reader = new FileReader();
+
+            // Read file into memory as UTF-16
+            reader.readAsText(f, "UTF-8");
+
+            // Handle progress, success, and errors
+            reader.onload = await getFromCSVInfo();
+
+            // let txt = await f.text().then(t => {return t})
+            // let parsedCSV = await getFromCSVInfo(txt)
+            // alterFileStructure(parsedCSV)
+            // return parsedCSV
             
         }
     }
@@ -60,7 +68,9 @@
     }
 
 
-    async function getFromCSVInfo(file){
+    async function getFromCSVInfo(evt){
+        console.log(evt.target.result)
+        /*
         return new Promise(resolve => {
             Papa.parse(file, {
                 header: true,
@@ -70,6 +80,7 @@
                 }
             })
         })
+        */
     }
     
 </script>
