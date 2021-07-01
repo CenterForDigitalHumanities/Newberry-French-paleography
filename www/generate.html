@@ -38,7 +38,7 @@
             let f = new File([],"./csv-parser/csv/background-essay.csv", {
                 type: "text/csv"
             })
-            let txt = f.text()
+            let txt = await f.text().then(t => {return t})
             let parsedCSV = await getFromCSVInfo(txt)
             alterFileStructure(parsedCSV)
             return parsedCSV
@@ -52,7 +52,7 @@
             let f = new File([],"./csv-parser/csv/background-essay.csv", {
                 type: "text/plain"
             })
-            let txt = f.text()
+            let txt = await f.text().then(t => {return t})
             let parsedCSV = await getFromCSVInfo(txt)
             alterFileStructure(parsedCSV)
             return parsedCSV
