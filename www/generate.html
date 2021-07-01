@@ -61,44 +61,39 @@
     }
 
     async function getBackgroundEssaysFromCSVInfo(file){
-        var r = confirm("Are you sure you want to make new files?  The old files will be backed up but will no longer be used.");
-        if (r == true) {
-            let f = new File(["background-essay"], "./csv-parser/csv/background-essay.csv", {
-                type: "text/csv"
-            })
-            await Papa.parse(f, {
-                header: true,
-                dynamicTyping: true,
-                complete: function(results) {
-                    return results
-                }
-            })
-            .then(parsedCSV => {
-                alterFileStructure(parsedCSV)
-                return parsedCSV
-            })
-        }
+        let f = new File(["background-essay"], "./csv-parser/csv/background-essay.csv", {
+            type: "text/csv"
+        })
+        await Papa.parse(f, {
+            header: true,
+            dynamicTyping: true,
+            complete: function(results) {
+                return results
+            }
+        })
+        .then(parsedCSV => {
+            alterFileStructure(parsedCSV)
+            return parsedCSV
+        })
     }
 
     async function getPartialTranscriptionsFromCSVInfo(file){
-        var r = confirm("Are you sure you want to make new files?  The old files will be backed up but will no longer be used.");
-        if (r == true) {
-            let f = new File(["transcriptions"], "./csv-parser/csv/transcriptions.csv", {
-                type: "text/csv"
-            })
-            await Papa.parse(f, {
-                header: true,
-                dynamicTyping: true,
-                complete: function(results) {
-                    return results
-                }
-            })
-            .then(parsedCSV => {
-                alterFileStructure(parsedCSV)
-                return parsedCSV
-            })
-        }
+        let f = new File(["transcriptions"], "./csv-parser/csv/transcriptions.csv", {
+            type: "text/csv"
+        })
+        await Papa.parse(f, {
+            header: true,
+            dynamicTyping: true,
+            complete: function(results) {
+                return results
+            }
+        })
+        .then(parsedCSV => {
+            alterFileStructure(parsedCSV)
+            return parsedCSV
+        })
     }
+    
 </script>
 
 </html>
