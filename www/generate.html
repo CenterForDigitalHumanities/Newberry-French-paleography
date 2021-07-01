@@ -35,12 +35,12 @@
     async function newBackgroundEssays(event){
         var r = confirm("Are you sure you want to make new files?  The old files will be backed up but will no longer be used.");
         if (r == true) {
-            let f = new File(["partial-transcriptions"], "./csv-parser/csv/partial-transcriptions.csv", {
+            let f = new File(["partial-transcriptions"], "./csv-parser/csv/background-essay.csv", {
                 type: "text/csv"
             })
             await getBackgroundEssaysFromCSVInfo(f)
             .then(parsedCSV => {
-                console.log(parsedCSV)
+                alterFileStructure(parsedCSV)
                 return parsedCSV
             })
         }
@@ -64,31 +64,26 @@
         let f = new File(["background-essay"], "./csv-parser/csv/background-essay.csv", {
             type: "text/csv"
         })
-        let parsedCSV = await Papa.parse(f, {
+        return await Papa.parse(f, {
             header: true,
             dynamicTyping: true,
             complete: function(results) {
                 return results
             }
         })
-        alterFileStructure(parsedCSV)
-        return parsedCSV
-
     }
 
     async function getPartialTranscriptionsFromCSVInfo(file){
         let f = new File(["transcriptions"], "./csv-parser/csv/transcriptions.csv", {
             type: "text/csv"
         })
-        let parsedCSV = await Papa.parse(f, {
+        return await Papa.parse(f, {
             header: true,
             dynamicTyping: true,
             complete: function(results) {
                 return results
             }
         })
-        alterFileStructure(parsedCSV)
-        return parsedCSV
     }
     
 </script>
