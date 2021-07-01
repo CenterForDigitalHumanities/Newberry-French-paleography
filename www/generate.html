@@ -44,7 +44,8 @@
             reader.readAsText(f, "UTF-8");
 
             // Handle progress, success, and errors
-            reader.onload = await getFromCSVInfo();
+            reader.onload = getFromCSVInfo
+            reader.onerror = new Error("Could not read file")
 
             // let txt = await f.text().then(t => {return t})
             // let parsedCSV = await getFromCSVInfo(txt)
