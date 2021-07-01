@@ -64,7 +64,7 @@
         let f = new File(["background-essay"], "./csv-parser/csv/background-essay.csv", {
             type: "text/csv"
         })
-        return await Papa.parse(f, {
+        return Papa.parse(f, {
             header: true,
             dynamicTyping: true,
             complete: function(results) {
@@ -77,7 +77,7 @@
         let f = new File(["transcriptions"], "./csv-parser/csv/transcriptions.csv", {
             type: "text/csv"
         })
-        return await Papa.parse(f, {
+        return Papa.parse(f, {
             header: true,
             dynamicTyping: true,
             complete: function(results) {
