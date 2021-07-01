@@ -35,22 +35,18 @@
     async function newBackgroundEssays(event){
         var r = confirm("Are you sure you want to make new files?  The old files will be backed up but will no longer be used.");
         if (r == true) {
-            let f = new File([],"./csv-parser/csv/background-essay.csv", {
-                type: "text/csv"
+            let txt = await fetch("./csv-parser/csv/background-essay.csv", {
+                method: "GET",
+                mode: "cors",
+                headers: {
+                    'Content-Type': 'text/csv;charset=utf-8'
+                }
             })
-            var reader = new FileReader();
-
-            // Read file into memory as UTF-16
-            reader.readAsText(f, "UTF-8");
-
-            // Handle progress, success, and errors
-            reader.onload = getFromCSVInfo
-            reader.onerror = new Error("Could not read file")
-
-            // let txt = await f.text().then(t => {return t})
-            // let parsedCSV = await getFromCSVInfo(txt)
-            // alterFileStructure(parsedCSV)
-            // return parsedCSV
+            .then(response => response.text())
+            .catch(err => {return new Error("Could not get CSV file")})
+            let parsedCSV = await getFromCSVInfo(txt)
+            alterFileStructure(parsedCSV)
+            return parsedCSV
             
         }
     }
@@ -61,7 +57,7 @@
             let f = new File([],"./csv-parser/csv/background-essay.csv", {
                 type: "text/plain"
             })
-            let txt = await f.text().then(t => {return t})
+            let txt = f.text()
             let parsedCSV = await getFromCSVInfo(txt)
             alterFileStructure(parsedCSV)
             return parsedCSV
@@ -69,11 +65,9 @@
     }
 
 
-    async function getFromCSVInfo(evt){
-        console.log(evt.target.result)
-        /*
+    async function getFromCSVInfo(fileText){
         return new Promise(resolve => {
-            Papa.parse(file, {
+            Papa.parse(fileText, {
                 header: true,
                 dynamicTyping: true,
                 complete: function(results) {
@@ -81,7 +75,6 @@
                 }
             })
         })
-        */
     }
     
 </script>
