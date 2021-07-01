@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Generate Markdown From CSV | French Paleography</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <div> 
+        <p>Click below to generate a new "Background Essays" markdown folder.  The current folder will be backed up.</p>
+        <input type="button" value="Generate New Background Essays Markdown from the CSV" onclick="newBackgroundEssays(event)"/>
+    </div>
+    <div> 
+        <p>Click below to generate a new "Partial Transcriptions" markdown folder.  The current folder will be backed up.</p>
+        <input type="button" value="Generate New Partial Transcription Markdown from the CSV" onclick="newTranscriptions(event)"/>
+    </div>
+<script src="./script/utils.js"></script>
+
+</body>
+
+<script type="text/javascript">
+
+    async function newBackgroundEssays(event){
+        var r = confirm("Are you sure you want to make new files?  The old files will be backed up but will no longer be used.");
+        if (r == true) {
+            let f = new File(["partial-transcriptions"], "./csv-parser/csv/partial-transcriptions.csv", {
+                type: "text/csv"
+            })
+            await generateBackgroundEssaysFromCSVInfo(f)
+            .then(parsedCSV => {
+                console.log(parsedCSV)
+                return parsedCSV
+            })
+        }
+    }
+
+    async function newPartialTranscriptions(event){
+        var r = confirm("Are you sure you want to make new files?  The old files will be backed up but will no longer be used.");
+        if (r == true) {
+            let f = new File(["partial-transcriptions"], "./csv-parser/csv/partial-transcriptions.csv", {
+                type: "text/csv"
+            })
+            await generatePartialTranscriptionsFromCSVInfo(f)
+            .then(parsedCSV => {
+                console.log(parsedCSV)
+                return parsedCSV
+            })
+        }
+    }
+
+    async function getBackgroundEssaysFromCSVInfo(file){
+        var r = confirm("Are you sure you want to make new files?  The old files will be backed up but will no longer be used.");
+        if (r == true) {
+            let f = new File(["background-essay"], "./csv-parser/csv/background-essay.csv", {
+                type: "text/csv"
+            })
+            generateBackgroundEssaysFolder(f)
+            .then(parsedCSV => {
+                console.log(parsedCSV)
+            })
+        }
+    }
+
+    async function getPartialTranscriptionsFromCSVInfo(file){
+        var r = confirm("Are you sure you want to make new files?  The old files will be backed up but will no longer be used.");
+        if (r == true) {
+            let f = new File(["transcriptions"], "./csv-parser/csv/transcriptions.csv", {
+                type: "text/csv"
+            })
+            generateBackgroundEssaysFolder(f)
+            .then(parsedCSV => {
+                console.log(parsedCSV)
+            })
+        }
+    }
+</script>
+
+</html>
