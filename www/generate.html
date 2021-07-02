@@ -35,7 +35,7 @@
         /*Remove current folder*/
         /*Generate new folder to save into*/
         window.requestFileSystem(window.TEMPORARY, 1024*1024, function(fs) {
-            renameDir(fs.root, "_transcriptions", "_transcriptions_"+new Date().getTime())
+            await renameDir(fs.root, "_transcriptions", "_transcriptions_"+new Date().getTime())
             .then(removeDir(fs.root, "_transcriptions"))
             .then(createDir(fs.root, ["_transcriptions"]))
             .then(() => {console.log("Filesystem work completed")})
@@ -191,8 +191,10 @@
 
     async function removeDir(rootDirEntry, folder){
         return new Promise(resolve => {
-            rootDirEntry.removeRecursively(function() {
-              console.log("Removing "+folder+"...")
+            rootDirEntry.getDirectory(folder, {}, function(dirEntry) {
+                dirEntry.removeRecursively(function() {
+                    console.log('Directory removed.');
+                }, errorHandler)
             }, errorHandler)
         })
     }
