@@ -33,13 +33,13 @@
 
         /*Backup Current Folder Using Timestamp*/
         window.requestFileSystem(window.TEMPORARY, 1024*1024, function(fs) {
-          renameDir(fs.root, '/_transcriptions', '/_transcriptions_'+new Date().now())
+          renameDir(fs.root, "/_transcriptions", "/_transcriptions_"+new Date().getTime())
           console.log("directory renamed for backup")
         }, errorHandler);
 
         /*Generate new folder to save into*/
         window.requestFileSystem(window.TEMPORARY, 1024*1024, function(fs) {
-        fs.root.getDirectory('_transcriptions', {create: true}, function(dirEntry) {
+        fs.root.getDirectory("_transcriptions", {create: true}, function(dirEntry) {
                 console.log("Directory Created")
             }, errorHandler)
         }, errorHandler)
