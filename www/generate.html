@@ -33,7 +33,7 @@
 
         /*Backup Current Folder Using Timestamp*/
         window.requestFileSystem(window.TEMPORARY, 1024*1024, function(fs) {
-          renameDir(fs.root, '/_transcriptions', '/_transcriptions_'+timestamp)
+          renameDir(fs.root, '/_transcriptions', '/_transcriptions_'+new Date().now())
           console.log("directory renamed for backup")
         }, errorHandler);
 
