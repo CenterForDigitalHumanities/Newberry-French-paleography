@@ -166,7 +166,7 @@
         return new Promise(resolve => {
             rootDirEntry.getDirectory(src, {}, function(dirEntry) {
                 console.log("Renaming "+src+" to "+newName+"...")
-                dirEntry.moveTo(cwd, newName)
+                dirEntry.moveTo(rootDirEntry, newName)
             }, errorHandler)
         })
     }
