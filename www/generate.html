@@ -78,7 +78,8 @@
                 /*Save file as ${regex(row["Manuscript Link"]}.md into new _transcriptions or _background_essay folder*/
                 createFile(fs.root, transcriptions_now, utl_id+".md", fileText)
 
-        }, errorHandler)
+            }, errorHandler)
+        })
     }
 
     async function newBackgroundEssays(event){
