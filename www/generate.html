@@ -247,7 +247,7 @@
                 console.log(entries.sort())
               } 
               else {
-                entries = entries.concat(toArray(results));
+                entries = entries.concat(Array.toArray(results));
                 readEntries();
               }
             }, errorHandler);
