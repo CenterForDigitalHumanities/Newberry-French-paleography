@@ -91,7 +91,7 @@
         }, errorHandler)
     }
 
-    async function createFile(rootDirEntry, filename, filecontent){
+    async function createFile(rootDirEntry, transcriptions_now, filename, filecontent){
         return new Promise(resolve => {
             rootDirEntry.getFile("/"+transcriptions_now+"/"+filename, {create: true, exclusive: true}, function(fileEntry) {
                 fileEntry.createWriter(function(fileWriter) {
