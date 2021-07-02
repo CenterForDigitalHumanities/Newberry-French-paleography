@@ -35,10 +35,10 @@
         /*Remove current folder*/
         /*Generate new folder to save into*/
         window.requestFileSystem(window.TEMPORARY, 1024*1024, function(fs) {
-          renameDir(fs.root, "_transcriptions", "_transcriptions_"+new Date().getTime())
-          removeDir(fs.root, "_transcriptions")
-          createDir(fs.root, ["_transcriptions"])
-          console.log("Filesystem work completed")
+            renameDir(fs.root, "_transcriptions", "_transcriptions_"+new Date().getTime())
+            .then(removeDir(fs.root, "_transcriptions"), errorHandler)
+            .then(createDir(fs.root, ["_transcriptions"]), errorHandler)
+            .then(console.log("Filesystem work completed"), errorHandler)
         }, errorHandler)
 
         
@@ -170,37 +170,44 @@
         */
     }
 
-    function renameDir(cwd, src, newName) {
-        cwd.getFile(src, {}, function(fileEntry) {
-            console.log("Rename "+src+" to "+newName)
-            fileEntry.moveTo(cwd, newName)
-        }, errorHandler);
+    async function renameDir(cwd, src, newName) {
+        return new Promise(resolve => {
+            cwd.getFile(src, {}, function(fileEntry) {
+                console.log("Renaming "+src+" to "+newName+"...")
+                fileEntry.moveTo(cwd, newName)
+            }, errorHandler)
+        })
+        
     }
 
     
-    function createDir(rootDirEntry, folders) {
-        // Throw out './' or '/' and move on to prevent something like '/foo/.//bar'.
-        if (folders[0] == '.' || folders[0] == '') {
-            folders = folders.slice(1)
-        }
-        console.log("Create folders "+folders)
-        rootDirEntry.getDirectory(folders[0], {create: true}, function(dirEntry) 
-        {
-            // Recursively add the new subfolder (if we still have another to create).
-            if (folders.length) {
-              createDir(dirEntry, folders.slice(1))
+    async function createDir(rootDirEntry, folders) {
+        return new Promise(resolve => {
+            // Throw out './' or '/' and move on to prevent something like '/foo/.//bar'.
+            if (folders[0] == '.' || folders[0] == '') {
+                folders = folders.slice(1)
             }
-        }, errorHandler);
+            console.log("Creating folders "+folders+"...")
+            rootDirEntry.getDirectory(folders[0], {create: true}, function(dirEntry) 
+            {
+                // Recursively add the new subfolder (if we still have another to create).
+                if (folders.length) {
+                  createDir(dirEntry, folders.slice(1))
+                }
+            }, errorHandler)
+        })
     }
 
-    function removeDir(rootDirEntry, folder){
-        window.requestFileSystem(window.TEMPORARY, 1024*1024, function(fs) {
-            fs.root.getDirectory(folder, {}, function(dirEntry) {
-                dirEntry.removeRecursively(function() {
-                  console.log("Directory "+folder+" removed.")
+    async function removeDir(rootDirEntry, folder){
+        return new Promise(resolve => {
+            window.requestFileSystem(window.TEMPORARY, 1024*1024, function(fs) {
+                fs.root.getDirectory(folder, {}, function(dirEntry) {
+                    dirEntry.removeRecursively(function() {
+                      console.log("Removing "+folder+"...")
+                    }, errorHandler)
                 }, errorHandler)
             }, errorHandler)
-        }, errorHandler)
+        })
     }
 
     function errorHandler(e) {
