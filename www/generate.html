@@ -26,7 +26,7 @@
 </body>
 
 <script type="text/javascript">
-
+    window.requestFileSystem  = window.requestFileSystem ? window.requestFileSystem  || window.webkitRequestFileSystem
     async function alterFileStructure(parsedCSV){
         console.warn("Attempting file structure magic. Below is your parsed CSV data.")
         console.log(parsedCSV)
@@ -156,17 +156,6 @@
         */
     }
 
-    
-    function createBackupAndEmpty() { 
-        window.requestFileSystem  = window.requestFileSystem || window.webkitRequestFileSystem
-        const timestamp = new Date()
-        const newDirName = "_transcriptions"
-        const backupDirName="_transcriptions_"+timestamp.now()
-
-
-        createDir(newDirName)
-    }
-
     function renameDir(cwd, src, newName) {
         cwd.getFile(src, {}, function(fileEntry) {
             fileEntry.moveTo(cwd, newName);
@@ -193,8 +182,6 @@
         createDir(fs.root, path.split('/')); // fs.root is a DirectoryEntry.
     }
 
-window.requestFileSystem(window.TEMPORARY, 1024*1024, onInitFs, errorHandler);
-
     function errorHandler(e) {
         var msg = '';
         switch (e.code) {
@@ -219,8 +206,6 @@ window.requestFileSystem(window.TEMPORARY, 1024*1024, onInitFs, errorHandler);
         }
         console.error('Error 1: ' + msg);
     }
-
-    window.requestFileSystem(window.TEMPORARY, 2*1024*1024 /*5MB*/, onInitFs, errorHandler);
 
     /*
     * For persistent storage
