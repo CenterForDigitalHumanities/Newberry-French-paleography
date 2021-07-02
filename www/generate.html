@@ -36,50 +36,79 @@
         /*Generate new folder to save into*/
         window.requestFileSystem(window.TEMPORARY, 1024*1024, async function(fs) {
             await createDir(fs.root, [transcriptions_now])
-            .then((info) => {
-                /*Go over each "row" and generate the appropriate .md file for it.  Save that md file with strategic name.*/
-                console.log("Generate a file for each row")
-                parsedCSV.data.forEach(row => {
-                    let l = row["Manuscript Link"].trim()
-                    const utl_id = l.substr(l.lastIndexOf("paleography:"), l.length-1).replace("paleography:", "")
-                    //const utl_id = l.substr(0, l.lastIndexOf("_")).replace("ip_","").replace("fp_","");
-                    let links = `
-                         
-                        <table border="0.5" cellpadding="1" cellspacing="1" style="width: 200px; background-color:#F8F8F8;">
-                            <tbody style="border-color:#ccc">
-                                <tr style="border-color:#ccc">
-                                    <td>Go to <a href="https://centerfordigitalhumanities.github.io/Newberry-French-paleography/essay/${utl_id}" target="_blank">Background Essay</a></td>
-                                    <td>Go to <a href="https://centerfordigitalhumanities.github.io/Newberry-French-paleography/www/record.html?id=${utl_id}" target="_blank">Manuscript</a> page</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                         
-                    `
-                    let mdHeader = `
-                        ---
-                        layout: default
-                        title: ${row["Title"]}
-                        utl_id: utl_id
-                        ---
-                    `
-                    let mdBody = `
-                        ${row["Title"]}  
-                        ${row["Manuscript Title"]}  
-                        ${row["Description"]}  
-                        ${links}
-                        ${row["Partial Transcription"]}
-                    `
-                    let fileText = mdHeader + mdBody
-                    console.log("Here is the file text")
-                    console.log(fileText)
-                    /*Save file as ${regex(row["Manuscript Link"]}.md into new _transcriptions or _background_essay folder*/
-                    return createFile(fs.root, transcriptions_now, utl_id+".md", fileText)
-                }, errorHandler)
-            })
+            .then(createFiles(fs.root, transcriptions_now, parsedCSV))
             .catch(err => {
                 console.log("Error 2")
                 errorHandler(err)
             })
+        })
+    }
+
+    async function createDir(rootDirEntry, folder) {
+        return new Promise(resolve => {
+            rootDirEntry.getDirectory(folder, {create: true}, function(dirEntry){
+                console.log("Creating folder "+folder+"...")
+            }, errorHandler)
+        })
+    }
+
+    async function createFiles(rootDirEntry, folder, parsedCSV){
+        /*Go over each "row" and generate the appropriate .md file for it.  Save that md file with strategic name.*/
+        console.log("Generate a file for each row")
+        parsedCSV.data.forEach(row => {
+            let l = row["Manuscript Link"].trim()
+            const utl_id = l.substr(l.lastIndexOf("paleography:"), l.length-1).replace("paleography:", "")
+            //const utl_id = l.substr(0, l.lastIndexOf("_")).replace("ip_","").replace("fp_","");
+            let links = `
+                 
+                <table border="0.5" cellpadding="1" cellspacing="1" style="width: 200px; background-color:#F8F8F8;">
+                    <tbody style="border-color:#ccc">
+                        <tr style="border-color:#ccc">
+                            <td>Go to <a href="https://centerfordigitalhumanities.github.io/Newberry-French-paleography/essay/${utl_id}" target="_blank">Background Essay</a></td>
+                            <td>Go to <a href="https://centerfordigitalhumanities.github.io/Newberry-French-paleography/www/record.html?id=${utl_id}" target="_blank">Manuscript</a> page</td>
+                        </tr>
+                    </tbody>
+                </table>
+                 
+            `
+            let mdHeader = `
+                ---
+                layout: default
+                title: ${row["Title"]}
+                utl_id: utl_id
+                ---
+            `
+            let mdBody = `
+                ${row["Title"]}  
+                ${row["Manuscript Title"]}  
+                ${row["Description"]}  
+                ${links}
+                ${row["Partial Transcription"]}
+            `
+            let fileText = mdHeader + mdBody
+            console.log("Here is the file text")
+            console.log(fileText)
+            /*Save file as ${regex(row["Manuscript Link"]}.md into new _transcriptions or _background_essay folder*/
+            createFile(rootDirEntry, folder, utl_id+".md", fileText)
+        }, errorHandler)
+    }
+
+    async function createFile(rootDirEntry, filename, filecontent){
+        return new Promise(resolve => {
+            rootDirEntry.getFile("_transcriptions/"+filename, {create: true, exclusive: true}, function(fileEntry) {
+                fileEntry.createWriter(function(fileWriter) {
+                    fileWriter.onwriteend = function(e) {
+                        console.log('Write completed.')
+                    }
+                    fileWriter.onerror = function(e) {
+                        console.warn('Write failed')
+                        console.error(e)
+                    }
+                    // Create a new Blob and write it to md file
+                    var blob = new Blob([filecontent], {type: 'text/markdown'})
+                    fileWriter.write(blob)
+                }, errorHandler)
+            }, errorHandler)
         })
     }
 
@@ -151,13 +180,7 @@
         })
     }
 
-    async function createDir(rootDirEntry, folder) {
-        return new Promise(resolve => {
-            rootDirEntry.getDirectory(folder, {create: true}, function(dirEntry){
-                console.log("Creating folder "+folder+"...")
-            }, errorHandler)
-        })
-    }
+    
 
     async function removeDir(rootDirEntry, folder){
         return new Promise(resolve => {
@@ -169,24 +192,6 @@
         })
     }
 
-    async function createFile(rootDirEntry, filename, filecontent){
-        return new Promise(resolve => {
-            rootDirEntry.getFile("_transcriptions/"+filename, {create: true, exclusive: true}, function(fileEntry) {
-                fileEntry.createWriter(function(fileWriter) {
-                    fileWriter.onwriteend = function(e) {
-                        console.log('Write completed.')
-                    }
-                    fileWriter.onerror = function(e) {
-                        console.warn('Write failed')
-                        console.error(e)
-                    }
-                    // Create a new Blob and write it to md file
-                    var blob = new Blob([filecontent], {type: 'text/markdown'})
-                    fileWriter.write(blob)
-                }, errorHandler)
-            }, errorHandler)
-        })
-    }
 
     function errorHandler(e) {
         var msg = e
