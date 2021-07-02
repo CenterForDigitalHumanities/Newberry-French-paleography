@@ -38,7 +38,7 @@
           renameDir(fs.root, "_transcriptions", "_transcriptions_"+new Date().getTime())
           removeDir(fs.root, "_transcriptions")
           createDir(fs.root, "_transcriptions")
-          console.log("directory renamed for backup")
+          console.log("Filesystem work completed")
         }, errorHandler)
 
         
@@ -172,7 +172,8 @@
 
     function renameDir(cwd, src, newName) {
         cwd.getFile(src, {}, function(fileEntry) {
-            fileEntry.moveTo(cwd, newName);
+            console.log("Rename "+src+" to "+newName)
+            fileEntry.moveTo(cwd, newName)
         }, errorHandler);
     }
 
@@ -182,6 +183,7 @@
         if (folders[0] == '.' || folders[0] == '') {
             folders = folders.slice(1)
         }
+        console.log("Create folders "+folders)
         rootDirEntry.getDirectory(folders[0], {create: true}, function(dirEntry) 
         {
             // Recursively add the new subfolder (if we still have another to create).
@@ -195,7 +197,7 @@
         window.requestFileSystem(window.TEMPORARY, 1024*1024, function(fs) {
             fs.root.getDirectory(folder, {}, function(dirEntry) {
                 dirEntry.remove(function() {
-                  console.log('Directory removed.')
+                  console.log("Directory "+folder+" removed.")
                 }, errorHandler)
             }, errorHandler)
         }, errorHandler)
