@@ -34,7 +34,7 @@
         /*Backup Current Folder Using Timestamp*/
         /*Remove current folder*/
         /*Generate new folder to save into*/
-        window.requestFileSystem(window.TEMPORARY, 1024*1024, function(fs) {
+        window.requestFileSystem(window.TEMPORARY, 1024*1024, async function(fs) {
             await renameDir(fs.root, "_transcriptions", "_transcriptions_"+new Date().getTime())
             .then(removeDir(fs.root, "_transcriptions"))
             .then(createDir(fs.root, ["_transcriptions"]))
