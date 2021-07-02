@@ -86,8 +86,6 @@
                 ${row["Partial Transcription"]}
             `
             let fileText = mdHeader + mdBody
-            console.log("Here is the file text")
-            console.log(fileText)
             /*Save file as ${regex(row["Manuscript Link"]}.md into new _transcriptions or _background_essay folder*/
             createFile(rootDirEntry, transcriptions_now, utl_id+".md", fileText)
         }, errorHandler)
