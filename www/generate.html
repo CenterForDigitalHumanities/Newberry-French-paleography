@@ -14,7 +14,7 @@
     <header></header>
     <div> 
         <p>Click below to generate a new "Background Essays" markdown folder.  The current folder will be backed up.</p>
-        <input type="button" value="Generate New Background Essays Markdown from the CSV" onclick="newBackgroundEssays(event)"/>
+        <input type="button" value="Generate New Background Essays Markdown from the CSV" onclick=""/>
     </div>
     <div> 
         <p>Click below to generate a new "Partial Transcriptions" markdown folder.  The current folder will be backed up.</p>
@@ -28,8 +28,73 @@
 <script type="text/javascript">
 
     async function alterFileStructure(parsedCSV){
-        console.warn("No altering/generating files yet.  Nothing happened.  Below is your parsed CSV data.")
+        console.warn("Attempting file structure magic. Below is your parsed CSV data.")
         console.log(parsedCSV)
+
+        /*Backup Current Folder Using Timestamp*/
+        window.requestFileSystem(window.TEMPORARY, 1024*1024, function(fs) {
+          renameDir(fs.root, '/_transcriptions', '/_transcriptions_'+timestamp)
+          console.log("directory renamed for backup")
+        }, errorHandler);
+
+        /*Generate new folder to save into*/
+        window.requestFileSystem(window.TEMPORARY, 1024*1024, function(fs) {
+        fs.root.getDirectory('_transcriptions', {create: true}, function(dirEntry) {
+                console.log("Directory Created")
+            }, errorHandler)
+        }, errorHandler)
+
+        return true
+
+        /*Go over each "row" and generate the appropriate .md file for it.  Save that md file with strategic name.*/
+        parsedCSV.data.forEach(row => {
+            let l = row["Manuscript Link"].trim()
+            const utl_id = l.substr(l.lastIndexOf("paleography:"), l.length-1).replace("paleography:", "")
+            //const utl_id = l.substr(0, l.lastIndexOf("_")).replace("ip_","").replace("fp_","");
+            let links = `
+                 
+                <table border="0.5" cellpadding="1" cellspacing="1" style="width: 200px; background-color:#F8F8F8;">
+                    <tbody style="border-color:#ccc">
+                        <tr style="border-color:#ccc">
+                            <td>Go to <a href="https://centerfordigitalhumanities.github.io/Newberry-French-paleography/essay/${utl_id}" target="_blank">Background Essay</a></td>
+                            <td>Go to <a href="https://centerfordigitalhumanities.github.io/Newberry-French-paleography/www/record.html?id=${utl_id}" target="_blank">Manuscript</a> page</td>
+                        </tr>
+                    </tbody>
+                </table>
+                 
+            `
+            let mdHeader = `
+                ---
+                layout: default
+                title: ${row["Title"]}
+                utl_id: utl_id
+                ---
+            `
+            let mdBody = `
+                ${row["Title"]}  
+                ${row["Manuscript Title"]}  
+                ${row["Description"]}  
+                ${links}
+                ${row["Partial Transcription"]}
+            `
+            let fileText = mdHeader + mdBody
+            console.log("Here is the file text")
+            console.log(fileText)
+            /*Save file as ${regex(row["Manuscript Link"]}.md into new _transcriptions or _background_essay folder*/
+            fs.root.getFile(utl_id+'.md', {create: true, exclusive: true}, function(fileEntry) {
+                fileEntry.createWriter(function(fileWriter) {
+                    fileWriter.onwriteend = function(e) {
+                        console.log('Write completed.')
+                    }
+                    fileWriter.onerror = function(e) {
+                        console.log('Write failed: ' + e.toString())
+                    }
+                    // Create a new Blob and write it to log.txt.
+                    var blob = new Blob([fileText], {type: 'text/markdown'})
+                    fileWriter.write(blob)
+                }, errorHandler)
+            }, errorHandler)
+        })
     }
 
     async function newBackgroundEssays(event){
@@ -65,11 +130,11 @@
             .catch(err => {return new Error("Could not get CSV file")})
             let parsedCSV = await getFromCSVInfo(txt)
             alterFileStructure(parsedCSV)
-            return parsedCSV
         }
     }
 
     async function getFromCSVInfo(fileText){
+
         return Papa.parse(fileText, {
             header: true,
             dynamicTyping: true,
@@ -77,6 +142,7 @@
                 return results
             }
         })
+
         /*
         return new Promise(resolve => {
             Papa.parse(fileText, {
@@ -89,7 +155,84 @@
         })
         */
     }
+
     
+    function createBackupAndEmpty() { 
+        window.requestFileSystem  = window.requestFileSystem || window.webkitRequestFileSystem
+        const timestamp = new Date()
+        const newDirName = "_transcriptions"
+        const backupDirName="_transcriptions_"+timestamp.now()
+
+
+        createDir(newDirName)
+    }
+
+    function renameDir(cwd, src, newName) {
+        cwd.getFile(src, {}, function(fileEntry) {
+            fileEntry.moveTo(cwd, newName);
+        }, errorHandler);
+    }
+
+    
+    function createDir(rootDirEntry, folders) {
+        // Throw out './' or '/' and move on to prevent something like '/foo/.//bar'.
+        if (folders[0] == '.' || folders[0] == '') {
+            folders = folders.slice(1)
+        }
+        rootDirEntry.getDirectory(folders[0], {create: true}, function(dirEntry) 
+        {
+            // Recursively add the new subfolder (if we still have another to create).
+            if (folders.length) {
+              createDir(dirEntry, folders.slice(1))
+            }
+        }, errorHandler);
+    };
+
+    function onInitFs(fs) {
+        var path = 'music/genres/jazz/';
+        createDir(fs.root, path.split('/')); // fs.root is a DirectoryEntry.
+    }
+
+window.requestFileSystem(window.TEMPORARY, 1024*1024, onInitFs, errorHandler);
+
+    function errorHandler(e) {
+        var msg = '';
+        switch (e.code) {
+            case FileError.QUOTA_EXCEEDED_ERR:
+              msg = 'QUOTA_EXCEEDED_ERR';
+              break;
+            case FileError.NOT_FOUND_ERR:
+              msg = 'NOT_FOUND_ERR';
+              break;
+            case FileError.SECURITY_ERR:
+              msg = 'SECURITY_ERR';
+              break;
+            case FileError.INVALID_MODIFICATION_ERR:
+              msg = 'INVALID_MODIFICATION_ERR';
+              break;
+            case FileError.INVALID_STATE_ERR:
+              msg = 'INVALID_STATE_ERR';
+              break;
+            default:
+              msg = 'Unknown Error';
+              break;
+        }
+        console.error('Error 1: ' + msg);
+    }
+
+    window.requestFileSystem(window.TEMPORARY, 2*1024*1024 /*5MB*/, onInitFs, errorHandler);
+
+    /*
+    * For persistent storage
+    window.webkitStorageInfo.requestQuota(PERSISTENT, 2*1024*1024, function(grantedBytes) 
+        {
+            window.requestFileSystem(PERSISTENT, grantedBytes, onInitFs, errorHandler);
+        }, 
+        function(e) {
+          console.log('Error 2', e);
+        }
+    )
+    */
 </script>
 
 </html>
