@@ -40,7 +40,6 @@
                 console.log("Error 2")
                 errorHandler(err)
             })
-            .finally(info => {console.log("Finished with file structure work")})
             /*Go over each "row" and generate the appropriate .md file for it.  Save that md file with strategic name.*/
             console.log("Generate a file for each row")
             parsedCSV.data.forEach(row => {
