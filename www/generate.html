@@ -36,7 +36,7 @@
         /*Generate new folder to save into*/
         window.requestFileSystem(window.TEMPORARY, 1024*1024, async function(fs) {
             await createDir(fs.root, ["_transcriptions"])
-            .then(renameDir(fs.root, "_transcriptions", "_transcriptions_"+new Date().getTime()))
+            //.then(renameDir(fs.root, "_transcriptions", "_transcriptions_"+new Date().getTime()))
             .catch(err => {
                 console.log("Error 2")
                 errorHandler(err)
