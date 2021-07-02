@@ -247,10 +247,10 @@
                 console.log(entries.sort())
               } 
               else {
-                entries = entries.concat(Array.toArray(results));
-                readEntries();
+                entries = entries.concat(Array.from(results))
+                readEntries()
               }
-            }, errorHandler);
+            }, errorHandler)
         }
         readEntries(); // Start reading dirs.
     }
