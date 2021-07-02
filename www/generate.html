@@ -35,8 +35,8 @@
         /*Remove current folder*/
         /*Generate new folder to save into*/
         window.requestFileSystem(window.TEMPORARY, 1024*1024, async function(fs) {
-            createDir(fs.root, [transcriptions_now])
-            .then(() => {
+            await createDir(fs.root, [transcriptions_now])
+            .then(info => {
                 /*Go over each "row" and generate the appropriate .md file for it.  Save that md file with strategic name.*/
                 console.log("Generate a file for each row")
                 parsedCSV.data.forEach(row => {
