@@ -27,6 +27,13 @@
 
 <script type="text/javascript">
     window.requestFileSystem  = window.requestFileSystem ? window.requestFileSystem : window.webkitRequestFileSystem
+
+    /**
+     * Add a new folder marked by a timestamp to make the directory unique.
+     * Fill that folder with markdown versions of the CSV rows
+     * It is available through your local data like filesystem:https://centerfordigitalhumanities.github.io/temporary/
+     * You can download it or find it in C:\Users\You\AppData\Local\Google\Chrome\User Data\Default\File System
+     * */
     async function alterFileStructure(parsedCSV){
         console.warn("Attempting file structure magic. Below is your parsed CSV data.")
         console.log(parsedCSV)
@@ -44,6 +51,9 @@
         })
     }
 
+    /*
+    * Create a new folder at the filesystem root.
+    */
     async function createDir(rootDirEntry, folder) {
         return new Promise(resolve => {
             rootDirEntry.getDirectory(folder, {create: true}, function(dirEntry){
@@ -52,6 +62,10 @@
         })
     }
 
+    /**
+     * A helper to go over every row from the CSV and serialize it into the markdown file we want.
+     * It will save the file to the browser filesystem
+     */
     async function createFiles(rootDirEntry, transcriptions_now, parsedCSV){
         /*Go over each "row" and generate the appropriate .md file for it.  Save that md file with strategic name.*/
         console.log("Generate a file for each row")
@@ -91,9 +105,12 @@
         }, errorHandler)
     }
 
-    async function createFile(rootDirEntry, transcriptions_now, filename, filecontent){
+    /**
+     *  Create a file in the browser filesystem at the provided directory 
+     */
+    async function createFile(rootDirEntry, directory, filename, filecontent){
         return new Promise(resolve => {
-            rootDirEntry.getFile("/"+transcriptions_now+"/"+filename, {create: true, exclusive: true}, function(fileEntry) {
+            rootDirEntry.getFile("/"+directory+"/"+filename, {create: true, exclusive: true}, function(fileEntry) {
                 fileEntry.createWriter(function(fileWriter) {
                     fileWriter.onwriteend = function(e) {
                         console.log('Write completed.')
@@ -178,8 +195,6 @@
         })
     }
 
-    
-
     async function removeDir(rootDirEntry, folder){
         return new Promise(resolve => {
             rootDirEntry.getDirectory(folder, {}, function(dirEntry) {
@@ -189,7 +204,6 @@
             }, errorHandler)
         })
     }
-
 
     function errorHandler(e) {
         var msg = e
