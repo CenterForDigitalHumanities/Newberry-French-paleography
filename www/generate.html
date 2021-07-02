@@ -52,7 +52,7 @@
         })
     }
 
-    async function createFiles(rootDirEntry, folder, parsedCSV){
+    async function createFiles(rootDirEntry, transcriptions_now, parsedCSV){
         /*Go over each "row" and generate the appropriate .md file for it.  Save that md file with strategic name.*/
         console.log("Generate a file for each row")
         parsedCSV.data.forEach(row => {
@@ -89,13 +89,13 @@
             console.log("Here is the file text")
             console.log(fileText)
             /*Save file as ${regex(row["Manuscript Link"]}.md into new _transcriptions or _background_essay folder*/
-            createFile(rootDirEntry, folder, utl_id+".md", fileText)
+            createFile(rootDirEntry, transcriptions_now, utl_id+".md", fileText)
         }, errorHandler)
     }
 
     async function createFile(rootDirEntry, filename, filecontent){
         return new Promise(resolve => {
-            rootDirEntry.getFile("_transcriptions/"+filename, {create: true, exclusive: true}, function(fileEntry) {
+            rootDirEntry.getFile("/"+transcriptions_now+"/"+filename, {create: true, exclusive: true}, function(fileEntry) {
                 fileEntry.createWriter(function(fileWriter) {
                     fileWriter.onwriteend = function(e) {
                         console.log('Write completed.')
