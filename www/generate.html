@@ -38,8 +38,11 @@
             await renameDir(fs.root, "_transcriptions", "_transcriptions_"+new Date().getTime())
             .then(removeDir(fs.root, "_transcriptions"))
             .then(createDir(fs.root, ["_transcriptions"]))
-            .then(() => {console.log("Filesystem work completed")})
-            .catch(err => {errorHandler(err)})
+            .catch(err => {
+                console.log("Error 2")
+                errorHandler(err)
+            })
+            .finally(info => {console.log("Finished with file structure work")})
         }, errorHandler)
 
         
@@ -95,20 +98,8 @@
             console.log("Here is the file text")
             console.log(fileText)
             /*Save file as ${regex(row["Manuscript Link"]}.md into new _transcriptions or _background_essay folder*/
-            fs.root.getFile("_transcriptions/"+utl_id+".md", {create: true, exclusive: true}, function(fileEntry) {
-                fileEntry.createWriter(function(fileWriter) {
-                    fileWriter.onwriteend = function(e) {
-                        console.log('Write completed.')
-                    }
-                    fileWriter.onerror = function(e) {
-                        console.warn('Write failed')
-                        console.error(e)
-                    }
-                    // Create a new Blob and write it to log.txt.
-                    var blob = new Blob([fileText], {type: 'text/markdown'})
-                    fileWriter.write(blob)
-                }, errorHandler)
-            }, errorHandler)
+            createFile(fs.root, utl_id+".md", fileText)
+
         })
     }
 
@@ -171,14 +162,13 @@
         */
     }
 
-    async function renameDir(cwd, src, newName) {
+    async function renameDir(rootDirEntry, src, newName) {
         return new Promise(resolve => {
-            cwd.getFile(src, {}, function(fileEntry) {
+            rootDirEntry.getDirectory(src, {}, function(dirEntry) {
                 console.log("Renaming "+src+" to "+newName+"...")
-                fileEntry.moveTo(cwd, newName)
+                dirEntry.moveTo(cwd, newName)
             }, errorHandler)
         })
-        
     }
 
     async function createDir(rootDirEntry, folder) {
@@ -193,7 +183,26 @@
         return new Promise(resolve => {
             rootDirEntry.getDirectory(folder, {}, function(dirEntry) {
                 dirEntry.removeRecursively(function() {
-                    console.log('Directory removed.');
+                    console.log("Directory "+folder+" removed.")
+                }, errorHandler)
+            }, errorHandler)
+        })
+    }
+
+    async function createFile(rootDirEntry, filename, filecontent){
+        return new Promise(resolve => {
+            rootDirEntry.getFile("_transcriptions/"+filename, {create: true, exclusive: true}, function(fileEntry) {
+                fileEntry.createWriter(function(fileWriter) {
+                    fileWriter.onwriteend = function(e) {
+                        console.log('Write completed.')
+                    }
+                    fileWriter.onerror = function(e) {
+                        console.warn('Write failed')
+                        console.error(e)
+                    }
+                    // Create a new Blob and write it to md file
+                    var blob = new Blob([filecontent], {type: 'text/markdown'})
+                    fileWriter.write(blob)
                 }, errorHandler)
             }, errorHandler)
         })
