@@ -26,7 +26,7 @@
 </body>
 
 <script type="text/javascript">
-    window.requestFileSystem  = window.requestFileSystem ? window.requestFileSystem  || window.webkitRequestFileSystem
+    window.requestFileSystem  = window.requestFileSystem ? window.requestFileSystem : window.webkitRequestFileSystem
     async function alterFileStructure(parsedCSV){
         console.warn("Attempting file structure magic. Below is your parsed CSV data.")
         console.log(parsedCSV)
@@ -81,7 +81,7 @@
             console.log("Here is the file text")
             console.log(fileText)
             /*Save file as ${regex(row["Manuscript Link"]}.md into new _transcriptions or _background_essay folder*/
-            fs.root.getFile(utl_id+'.md', {create: true, exclusive: true}, function(fileEntry) {
+            fs.root.getFile("_transcriptions/"+utl_id+".md", {create: true, exclusive: true}, function(fileEntry) {
                 fileEntry.createWriter(function(fileWriter) {
                     fileWriter.onwriteend = function(e) {
                         console.log('Write completed.')
