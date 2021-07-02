@@ -36,9 +36,10 @@
         /*Generate new folder to save into*/
         window.requestFileSystem(window.TEMPORARY, 1024*1024, function(fs) {
             renameDir(fs.root, "_transcriptions", "_transcriptions_"+new Date().getTime())
-            .then(removeDir(fs.root, "_transcriptions"), errorHandler)
-            .then(createDir(fs.root, ["_transcriptions"]), errorHandler)
-            .then(console.log("Filesystem work completed"), errorHandler)
+            .then(removeDir(fs.root, "_transcriptions"))
+            .then(createDir(fs.root, ["_transcriptions"]))
+            .then(() => {console.log("Filesystem work completed")})
+            .catch(err => {errorHandler(err)})
         }, errorHandler)
 
         
