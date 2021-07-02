@@ -56,7 +56,7 @@
         /*Go over each "row" and generate the appropriate .md file for it.  Save that md file with strategic name.*/
         console.log("Generate a file for each row")
         parsedCSV.data.forEach(row => {
-            let l = row["Manuscript Link"].trim()
+            let l = row["Manuscript Link"] ? row["Manuscript Link"].trim() : "No Link Provided"
             const utl_id = l.substr(l.lastIndexOf("paleography:"), l.length-1).replace("paleography:", "")
             //const utl_id = l.substr(0, l.lastIndexOf("_")).replace("ip_","").replace("fp_","");
             let links = `
