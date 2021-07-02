@@ -36,51 +36,49 @@
         /*Generate new folder to save into*/
         window.requestFileSystem(window.TEMPORARY, 1024*1024, async function(fs) {
             await createDir(fs.root, [transcriptions_now])
-            .then(info => {
-                /*Go over each "row" and generate the appropriate .md file for it.  Save that md file with strategic name.*/
-                console.log("Generate a file for each row")
-                parsedCSV.data.forEach(row => {
-                    let l = row["Manuscript Link"].trim()
-                    const utl_id = l.substr(l.lastIndexOf("paleography:"), l.length-1).replace("paleography:", "")
-                    //const utl_id = l.substr(0, l.lastIndexOf("_")).replace("ip_","").replace("fp_","");
-                    let links = `
-                         
-                        <table border="0.5" cellpadding="1" cellspacing="1" style="width: 200px; background-color:#F8F8F8;">
-                            <tbody style="border-color:#ccc">
-                                <tr style="border-color:#ccc">
-                                    <td>Go to <a href="https://centerfordigitalhumanities.github.io/Newberry-French-paleography/essay/${utl_id}" target="_blank">Background Essay</a></td>
-                                    <td>Go to <a href="https://centerfordigitalhumanities.github.io/Newberry-French-paleography/www/record.html?id=${utl_id}" target="_blank">Manuscript</a> page</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                         
-                    `
-                    let mdHeader = `
-                        ---
-                        layout: default
-                        title: ${row["Title"]}
-                        utl_id: utl_id
-                        ---
-                    `
-                    let mdBody = `
-                        ${row["Title"]}  
-                        ${row["Manuscript Title"]}  
-                        ${row["Description"]}  
-                        ${links}
-                        ${row["Partial Transcription"]}
-                    `
-                    let fileText = mdHeader + mdBody
-                    console.log("Here is the file text")
-                    console.log(fileText)
-                    /*Save file as ${regex(row["Manuscript Link"]}.md into new _transcriptions or _background_essay folder*/
-                    createFile(fs.root, transcriptions_now, utl_id+".md", fileText)
-                })    
-            })
             .catch(err => {
                 console.log("Error 2")
                 errorHandler(err)
             })
-            .finally(info => {console.log("Finished with file structure work and creating the files")})
+            .finally(info => {console.log("Finished with file structure work")})
+            /*Go over each "row" and generate the appropriate .md file for it.  Save that md file with strategic name.*/
+            console.log("Generate a file for each row")
+            parsedCSV.data.forEach(row => {
+                let l = row["Manuscript Link"].trim()
+                const utl_id = l.substr(l.lastIndexOf("paleography:"), l.length-1).replace("paleography:", "")
+                //const utl_id = l.substr(0, l.lastIndexOf("_")).replace("ip_","").replace("fp_","");
+                let links = `
+                     
+                    <table border="0.5" cellpadding="1" cellspacing="1" style="width: 200px; background-color:#F8F8F8;">
+                        <tbody style="border-color:#ccc">
+                            <tr style="border-color:#ccc">
+                                <td>Go to <a href="https://centerfordigitalhumanities.github.io/Newberry-French-paleography/essay/${utl_id}" target="_blank">Background Essay</a></td>
+                                <td>Go to <a href="https://centerfordigitalhumanities.github.io/Newberry-French-paleography/www/record.html?id=${utl_id}" target="_blank">Manuscript</a> page</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                     
+                `
+                let mdHeader = `
+                    ---
+                    layout: default
+                    title: ${row["Title"]}
+                    utl_id: utl_id
+                    ---
+                `
+                let mdBody = `
+                    ${row["Title"]}  
+                    ${row["Manuscript Title"]}  
+                    ${row["Description"]}  
+                    ${links}
+                    ${row["Partial Transcription"]}
+                `
+                let fileText = mdHeader + mdBody
+                console.log("Here is the file text")
+                console.log(fileText)
+                /*Save file as ${regex(row["Manuscript Link"]}.md into new _transcriptions or _background_essay folder*/
+                createFile(fs.root, transcriptions_now, utl_id+".md", fileText)
+
         }, errorHandler)
     }
 
