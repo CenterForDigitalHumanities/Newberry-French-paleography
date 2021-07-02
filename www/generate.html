@@ -127,6 +127,9 @@
         })
     }
 
+    /**
+     * Click event function to create new set of background essays  
+     */
     async function newBackgroundEssays(event){
         var r = confirm("Are you sure you want to make new files?  The old files will be backed up but will no longer be used.");
         if (r == true) {
@@ -146,6 +149,9 @@
         }
     }
 
+    /**
+     * Click event function to create new set of partial transcriptions
+     */
     async function newPartialTranscriptions(event){
         var r = confirm("Are you sure you want to make new files?  The old files will be backed up but will no longer be used.");
         if (r == true) {
@@ -163,8 +169,10 @@
         }
     }
 
+    /**
+     * Use PapaParse to convert CSV file into a more serialisable format (JSON) 
+     */
     async function getFromCSVInfo(fileText){
-
         return Papa.parse(fileText, {
             header: true,
             dynamicTyping: true,
@@ -186,6 +194,9 @@
         */
     }
 
+    /**
+     * Use File API to rename a directory
+     */
     async function renameDir(rootDirEntry, src, newName) {
         return new Promise(resolve => {
             rootDirEntry.getDirectory(src, {}, function(dirEntry) {
@@ -195,6 +206,9 @@
         })
     }
 
+    /**
+     * Use File API to recusrively remove a directory and its children
+     */
     async function removeDir(rootDirEntry, folder){
         return new Promise(resolve => {
             rootDirEntry.getDirectory(folder, {}, function(dirEntry) {
@@ -223,6 +237,9 @@
     )
     */
 
+    /**
+     * Here is how to read from the browser filestytem programmatically if you need to. 
+     */
     function readOutFileSystem(rootDirEntry){
         var dirReader = rootDirEntry.createReader();
         var entries = [];
