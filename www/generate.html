@@ -146,7 +146,7 @@
         console.log("Generate a file for each row")        
         let l, links, mdHeader, mdBody, utl_id
         document.getElementById("available"+which).innerHTML = ""
-        parsedCSV.data.forEach(row => {
+        parsedCSV.data.forEach(async function(row){
             if(which === "transcriptions"){
                 l = row["Manuscript Link"] ? row["Manuscript Link"].trim() : "No Link Provided"
                 utl_id = l.substr(l.lastIndexOf("paleography:"), l.length-1).replace("paleography:", "")
@@ -210,7 +210,7 @@
             }
             let fileText = mdHeader + mdBody
             /* Create markdown file*/
-            createFile(rootDirEntry, which_now, utl_id+".md", fileText).then(res => {
+            await createFile(rootDirEntry, which_now, utl_id+".md", fileText).then(res => {
                 console.log(utl_id+".md Created")
                 let downloadLink = "filesystem:https://centerfordigitalhumanities.github.io/temporary/"+which_now+"/"+utl_id+".md"
                 let downloadMe = `<li><a href="${downloadLink}">Download ${utl_id+".md"}</li></a>`
