@@ -213,8 +213,8 @@
             /* Create markdown file*/
             createFile(rootDirEntry, which_now, utl_id+".md", fileText).then(res => {
                 console.log(utl_id+".md Created")
-                let downloadLink = "filesystem:https://centerfordigitalhumanities.github.io/temporary/"+which_now+"/"utl_id+".md"
-                let downloadMe = `<li><a href="${downloadLink}"">Download ${utl_id+".md"}</li></a>`
+                let downloadLink = "filesystem:https://centerfordigitalhumanities.github.io/temporary/"+which_now+"/"+utl_id+".md"
+                let downloadMe = `<li><a href="${downloadLink}">Download ${utl_id+".md"}</li></a>`
                 document.getElementById("available"+which).innerHTML += downloadMe
             })
         }, errorHandler)
