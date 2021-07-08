@@ -58,13 +58,13 @@
         console.warn("Attempting file structure magic. Below is your parsed CSV data.")
         console.log(parsedCSV)
         let which_now = "_"+which+"_"+new Date().getTime()
-        /*Backup Current Folder Using Timestamp*/
-        /*Remove current folder*/
-        /*Generate new folder to save into*/
+
+        
         //For temporary storage
         window.requestFileSystem(window.TEMPORARY, 1024*1024, async function(fs) {
+            /* Create directory with timestamp.  This will be where you save the markdown files.  You will want to download this. */
             await createDir(fs.root, [which_now])
-            .then(createFiles(fs.root, which, parsedCSV))
+            .then(createFiles(fs.root, which, which_now, parsedCSV))
             .catch(err => {
                 console.log("Error 2")
                 errorHandler(err)
@@ -99,11 +99,10 @@
      * A helper to go over every row from the CSV and serialize it into the markdown file we want.
      * It will save the file to the browser filesystem
      */
-    async function createFiles(rootDirEntry, which, parsedCSV){
+    async function createFiles(rootDirEntry, which, which_now, parsedCSV){
         /*Go over each "row" and generate the appropriate .md file for it.  Save that md file with strategic name.*/
         console.log("Generate a file for each row")        
         let l, links, mdHeader, mdBody, utl_id
-        let which_now = "_"+which+"_"+new Date().getTime()
         parsedCSV.data.forEach(row => {
             if(which === "transcriptions"){
                 l = row["Manuscript Link"] ? row["Manuscript Link"].trim() : "No Link Provided"
@@ -169,10 +168,13 @@
             }
 
             let fileText = mdHeader + mdBody
-            /* Create file with timestamp */
-            await createFile(rootDirEntry, which_now, utl_id+".md", fileText).then(res => {console.log(utl_id+".md Created")})
+            /* Create markdown file*/
+            createFile(rootDirEntry, which_now, utl_id+".md", fileText).then(res => {console.log(utl_id+".md Created")})
         }, errorHandler)
+        
         console.log(which_now + " folder created, download button available")
+        document.getElementById("download"+which).style.display = "block"
+        document.getElementById("download"+which).setAttribute("src", "filesystem:https://centerfordigitalhumanities.github.io/temporary/"+which_now)
 
     }
 
