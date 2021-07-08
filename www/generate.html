@@ -224,7 +224,7 @@
                     fileWriter.onwriteend = function(e) {
                         console.log('File Write completed: '+filename)
                         let downloadLink = "filesystem:https://centerfordigitalhumanities.github.io/temporary/"+directory+"/"+filename
-                        let downloadMe = `<li><a href="${downloadLink}">Download ${filename}</li></a>`
+                        let downloadMe = `<li><a href="${downloadLink}" download>Download ${filename}</li></a>`
                         document.getElementById("available"+which).innerHTML += downloadMe
                     }
                     fileWriter.onerror = function(e) {
