@@ -20,12 +20,14 @@
     <div> 
         <p>Click below to generate a new "Background Essays" markdown folder for download</p>
         <input type="button" value="Generate New Background Essays Markdown from the CSV" onclick="newBackgroundEssays(event)"/>
-        <a id="downloadessays" download src="filesystem:https://centerfordigitalhumanities.github.io/temporary/">Download Folder</a>
+        <h4> Background Essays Available for Download </h4>
+        <ul id="availableessays"></ul>
     </div>
     <div> 
         <p>Click below to generate a new "Partial Transcriptions" markdown folder for download.</p>
         <input type="button" value="Generate New Partial Transcription Markdown from the CSV" onclick="newPartialTranscriptions(event)"/>
-        <a id="downloadtranscriptions" download src="filesystem:https://centerfordigitalhumanities.github.io/temporary/">Download Folder</a>
+        <h4> Partial Transcriptions Available for Download </h4>
+        <ul id="availabletranscriptions"></ul>
     </div>
     <footer></footer>
     <script src="./script/utils.js"></script>
@@ -47,6 +49,47 @@
     
     window.requestFileSystem  = window.requestFileSystem ? window.requestFileSystem : window.webkitRequestFileSystem
 
+    /**
+     * Click event function to create new set of background essays  
+     */
+    async function newBackgroundEssays(event){
+        var r = confirm("Are you sure you want to make new background essay files?");
+        if (r == true) {
+            let txt = await fetch("./csv-parser/csv/background-essay.csv", {
+                method: "GET",
+                mode: "cors",
+                headers: {
+                    'Content-Type': 'text/csv;charset=utf-8'
+                }
+            })
+            .then(response => response.text())
+            .catch(err => {return new Error("Could not get CSV file")})
+            let parsedCSV = await getFromCSVInfo(txt)
+            alterFileStructure(parsedCSV, "essays")
+            return parsedCSV
+            
+        }
+    }
+
+    /**
+     * Click event function to create new set of partial transcriptions
+     */
+    async function newPartialTranscriptions(event){
+        var r = confirm("Are you sure you want to make new partial transcription files?");
+        if (r == true) {
+            let txt = await fetch("./csv-parser/csv/partial-transcriptions.csv", {
+                method: "GET",
+                mode: "cors",
+                headers: {
+                    'Content-Type': 'text/csv;charset=utf-8'
+                }
+            })
+            .then(response => response.text())
+            .catch(err => {return new Error("Could not get CSV file")})
+            let parsedCSV = await getFromCSVInfo(txt)
+            alterFileStructure(parsedCSV, "transcriptions")
+        }
+    }
 
     /**
      * Add a new folder marked by a timestamp to make the directory unique.
@@ -59,7 +102,6 @@
         console.log(parsedCSV)
         let which_now = "_"+which+"_"+new Date().getTime()
 
-        
         //For temporary storage
         window.requestFileSystem(window.TEMPORARY, 1024*1024, async function(fs) {
             /* Create directory with timestamp.  This will be where you save the markdown files.  You will want to download this. */
@@ -103,6 +145,7 @@
         /*Go over each "row" and generate the appropriate .md file for it.  Save that md file with strategic name.*/
         console.log("Generate a file for each row")        
         let l, links, mdHeader, mdBody, utl_id
+        document.getElementById("available"+which).innerHTML = ""
         parsedCSV.data.forEach(row => {
             if(which === "transcriptions"){
                 l = row["Manuscript Link"] ? row["Manuscript Link"].trim() : "No Link Provided"
@@ -166,16 +209,15 @@
                     ${row["Partial Transcription"]}
                 `
             }
-
             let fileText = mdHeader + mdBody
             /* Create markdown file*/
-            createFile(rootDirEntry, which_now, utl_id+".md", fileText).then(res => {console.log(utl_id+".md Created")})
+            createFile(rootDirEntry, which_now, utl_id+".md", fileText).then(res => {
+                console.log(utl_id+".md Created")
+                let downloadLink = "filesystem:https://centerfordigitalhumanities.github.io/temporary/"+which_now+"/"utl_id+".md"
+                let downloadMe = `<li><a href="${downloadLink}"">Download ${utl_id+".md"}</li></a>`
+                document.getElementById("available"+which).innerHTML += downloadMe
+            })
         }, errorHandler)
-        
-        console.log(which_now + " folder created, download button available")
-        document.getElementById("download"+which).style.display = "block"
-        document.getElementById("download"+which).setAttribute("src", "filesystem:https://centerfordigitalhumanities.github.io/temporary/"+which_now)
-
     }
 
     /**
@@ -198,48 +240,6 @@
                 }, errorHandler)
             }, errorHandler)
         })
-    }
-
-    /**
-     * Click event function to create new set of background essays  
-     */
-    async function newBackgroundEssays(event){
-        var r = confirm("Are you sure you want to make new background essay files?");
-        if (r == true) {
-            let txt = await fetch("./csv-parser/csv/background-essay.csv", {
-                method: "GET",
-                mode: "cors",
-                headers: {
-                    'Content-Type': 'text/csv;charset=utf-8'
-                }
-            })
-            .then(response => response.text())
-            .catch(err => {return new Error("Could not get CSV file")})
-            let parsedCSV = await getFromCSVInfo(txt)
-            alterFileStructure(parsedCSV, "essays")
-            return parsedCSV
-            
-        }
-    }
-
-    /**
-     * Click event function to create new set of partial transcriptions
-     */
-    async function newPartialTranscriptions(event){
-        var r = confirm("Are you sure you want to make new partial transcription files?");
-        if (r == true) {
-            let txt = await fetch("./csv-parser/csv/partial-transcriptions.csv", {
-                method: "GET",
-                mode: "cors",
-                headers: {
-                    'Content-Type': 'text/csv;charset=utf-8'
-                }
-            })
-            .then(response => response.text())
-            .catch(err => {return new Error("Could not get CSV file")})
-            let parsedCSV = await getFromCSVInfo(txt)
-            alterFileStructure(parsedCSV, "transcriptions")
-        }
     }
 
     /**
