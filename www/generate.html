@@ -210,12 +210,7 @@
             }
             let fileText = mdHeader + mdBody
             /* Create markdown file*/
-            await createFile(rootDirEntry, which_now, utl_id+".md", fileText).then(res => {
-                console.log(utl_id+".md Created")
-                let downloadLink = "filesystem:https://centerfordigitalhumanities.github.io/temporary/"+which_now+"/"+utl_id+".md"
-                let downloadMe = `<li><a href="${downloadLink}">Download ${utl_id+".md"}</li></a>`
-                document.getElementById("available"+which).innerHTML += downloadMe
-            })
+            await createFile(rootDirEntry, which_now, utl_id+".md", fileText)
         }, errorHandler)
     }
 
@@ -228,6 +223,9 @@
                 fileEntry.createWriter(function(fileWriter) {
                     fileWriter.onwriteend = function(e) {
                         console.log('File Write completed: '+filename)
+                        let downloadLink = "filesystem:https://centerfordigitalhumanities.github.io/temporary/"+directory+"/"+filename
+                        let downloadMe = `<li><a href="${downloadLink}">Download ${filename}</li></a>`
+                        document.getElementById("available"+which).innerHTML += downloadMe
                     }
                     fileWriter.onerror = function(e) {
                         console.warn('File Write failed: '+filename)
