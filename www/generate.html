@@ -13,11 +13,12 @@
 <body>
     <header></header>
     <div> 
-        <p>Click below to generate a new "Background Essays" markdown folder.  The current folder will be backed up.</p>
+        <p>Click below to generate a new "Background Essays" markdown folder for download</p>
         <input type="button" value="Generate New Background Essays Markdown from the CSV" onclick=""/>
+
     </div>
     <div> 
-        <p>Click below to generate a new "Partial Transcriptions" markdown folder.  The current folder will be backed up.</p>
+        <p>Click below to generate a new "Partial Transcriptions" markdown folder for download.</p>
         <input type="button" value="Generate New Partial Transcription Markdown from the CSV" onclick="newPartialTranscriptions(event)"/>
     </div>
     <footer></footer>
@@ -26,14 +27,27 @@
 </body>
 
 <script type="text/javascript">
+
+    /**
+     * File API
+     * @see https://www.w3.org/TR/FileAPI/
+     * Important Note: While this specification doesn’t provide an explicit API call to trigger downloads, the HTML5 specification has addressed this. 
+     * The download attribute of the <a> element initiates a download, saving a File with the name specified. 
+     * The combination of this API and the download attribute on <a> elements allows for the creation of files within web applications, and the ability to save them locally.
+     * 
+     * How To
+     * @see https://www.html5rocks.com/en/tutorials/file/filesystem//#toc-fileentry
+     */
+    
     window.requestFileSystem  = window.requestFileSystem ? window.requestFileSystem : window.webkitRequestFileSystem
+
 
     /**
      * Add a new folder marked by a timestamp to make the directory unique.
      * Fill that folder with markdown versions of the CSV rows
      * It is available through your local data like filesystem:https://centerfordigitalhumanities.github.io/temporary/
      * You can download it or find it in C:\Users\You\AppData\Local\Google\Chrome\User Data\Default\File System
-     * */
+     */
     async function alterFileStructure(parsedCSV){
         console.warn("Attempting file structure magic. Below is your parsed CSV data.")
         console.log(parsedCSV)
@@ -41,6 +55,7 @@
         /*Backup Current Folder Using Timestamp*/
         /*Remove current folder*/
         /*Generate new folder to save into*/
+        //For temporary storage
         window.requestFileSystem(window.TEMPORARY, 1024*1024, async function(fs) {
             await createDir(fs.root, [transcriptions_now])
             .then(createFiles(fs.root, transcriptions_now, parsedCSV))
@@ -49,6 +64,18 @@
                 errorHandler(err)
             })
         })
+
+        /**
+            //For persistent storage
+            window.webkitStorageInfo.requestQuota(PERSISTENT, 2*1024*1024, function(grantedBytes) 
+                {
+                    window.requestFileSystem(PERSISTENT, grantedBytes, onInitFs, errorHandler);
+                }, 
+                function(e) {
+                  console.log('Error 2', e);
+                }
+            )
+        */
     }
 
     /*
