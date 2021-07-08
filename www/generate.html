@@ -210,14 +210,14 @@
             }
             let fileText = mdHeader + mdBody
             /* Create markdown file*/
-            await createFile(rootDirEntry, which_now, utl_id+".md", fileText)
+            await createFile(rootDirEntry, which_now, utl_id+".md", fileText, which)
         }, errorHandler)
     }
 
     /**
      *  Create a file in the browser filesystem at the provided directory 
      */
-    async function createFile(rootDirEntry, directory, filename, filecontent){
+    async function createFile(rootDirEntry, directory, filename, filecontent, which){
         return new Promise(resolve => {
             rootDirEntry.getFile("/"+directory+"/"+filename, {create: true, exclusive: true}, function(fileEntry) {
                 fileEntry.createWriter(function(fileWriter) {
