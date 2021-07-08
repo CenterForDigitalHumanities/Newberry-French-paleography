@@ -167,15 +167,14 @@
                     ---
                     layout: default
                     title: ${row["Title"]}
-                    utl_id: utl_id
+                    utl_id: ${utl_id}
                     ---
                 `
                 mdBody = `
-                    ${row["Title"]}  
                     ${row["Manuscript Title"]}  
                     ${row["Description"]}  
-                    ${links}
                     ${row["Partial Transcription"]}
+                    ${links}
                 `
             }
             else if(which === "essays"){
@@ -198,15 +197,15 @@
                     ---
                     layout: default
                     title: ${row["Title"]}
-                    utl_id: utl_id
+                    utl_id: ${utl_id}
                     ---
                 `
                 mdBody = `
-                    ${row["Title"]}  
-                    ${row["Manuscript Title"]}  
-                    ${row["Description"]}  
-                    ${links}
-                    ${row["Partial Transcription"]}
+                    ${row["Manuscript Title"]}
+                    ${row["Description"]}
+                    ${row["Background"]}
+                    ${row["Bibliography"]}
+                    ${links}  
                 `
             }
             let fileText = mdHeader + mdBody
