@@ -8,18 +8,24 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title>Generate Markdown From CSV | French Paleography</title>
     <link rel="stylesheet" href="./css/style.css">
+    <style>
+        #downloadessays, #downloadtranscriptions{
+            display: none;
+        }
+    </style>
 </head>
 
 <body>
     <header></header>
     <div> 
         <p>Click below to generate a new "Background Essays" markdown folder for download</p>
-        <input type="button" value="Generate New Background Essays Markdown from the CSV" onclick=""/>
-
+        <input type="button" value="Generate New Background Essays Markdown from the CSV" onclick="newBackgroundEssays(event)"/>
+        <a id="downloadessays" download src="filesystem:https://centerfordigitalhumanities.github.io/temporary/">Download Folder</a>
     </div>
     <div> 
         <p>Click below to generate a new "Partial Transcriptions" markdown folder for download.</p>
         <input type="button" value="Generate New Partial Transcription Markdown from the CSV" onclick="newPartialTranscriptions(event)"/>
+        <a id="downloadtranscriptions" download src="filesystem:https://centerfordigitalhumanities.github.io/temporary/">Download Folder</a>
     </div>
     <footer></footer>
     <script src="./script/utils.js"></script>
@@ -48,17 +54,17 @@
      * It is available through your local data like filesystem:https://centerfordigitalhumanities.github.io/temporary/
      * You can download it or find it in C:\Users\You\AppData\Local\Google\Chrome\User Data\Default\File System
      */
-    async function alterFileStructure(parsedCSV){
+    async function alterFileStructure(parsedCSV, which){
         console.warn("Attempting file structure magic. Below is your parsed CSV data.")
         console.log(parsedCSV)
-        let transcriptions_now = "_transcriptions_"+new Date().getTime()
+        let which_now = "_"+which+"_"+new Date().getTime()
         /*Backup Current Folder Using Timestamp*/
         /*Remove current folder*/
         /*Generate new folder to save into*/
         //For temporary storage
         window.requestFileSystem(window.TEMPORARY, 1024*1024, async function(fs) {
-            await createDir(fs.root, [transcriptions_now])
-            .then(createFiles(fs.root, transcriptions_now, parsedCSV))
+            await createDir(fs.root, [which_now])
+            .then(createFiles(fs.root, which, parsedCSV))
             .catch(err => {
                 console.log("Error 2")
                 errorHandler(err)
@@ -93,43 +99,81 @@
      * A helper to go over every row from the CSV and serialize it into the markdown file we want.
      * It will save the file to the browser filesystem
      */
-    async function createFiles(rootDirEntry, transcriptions_now, parsedCSV){
+    async function createFiles(rootDirEntry, which, parsedCSV){
         /*Go over each "row" and generate the appropriate .md file for it.  Save that md file with strategic name.*/
-        console.log("Generate a file for each row")
+        console.log("Generate a file for each row")        
+        let l, links, mdHeader, mdBody, utl_id
+        let which_now = "_"+which+"_"+new Date().getTime()
         parsedCSV.data.forEach(row => {
-            let l = row["Manuscript Link"] ? row["Manuscript Link"].trim() : "No Link Provided"
-            const utl_id = l.substr(l.lastIndexOf("paleography:"), l.length-1).replace("paleography:", "")
-            //const utl_id = l.substr(0, l.lastIndexOf("_")).replace("ip_","").replace("fp_","");
-            let links = `
-                 
-                <table border="0.5" cellpadding="1" cellspacing="1" style="width: 200px; background-color:#F8F8F8;">
-                    <tbody style="border-color:#ccc">
-                        <tr style="border-color:#ccc">
-                            <td>Go to <a href="https://centerfordigitalhumanities.github.io/Newberry-French-paleography/essay/${utl_id}" target="_blank">Background Essay</a></td>
-                            <td>Go to <a href="https://centerfordigitalhumanities.github.io/Newberry-French-paleography/www/record.html?id=${utl_id}" target="_blank">Manuscript</a> page</td>
-                        </tr>
-                    </tbody>
-                </table>
-                 
-            `
-            let mdHeader = `
-                ---
-                layout: default
-                title: ${row["Title"]}
-                utl_id: utl_id
-                ---
-            `
-            let mdBody = `
-                ${row["Title"]}  
-                ${row["Manuscript Title"]}  
-                ${row["Description"]}  
-                ${links}
-                ${row["Partial Transcription"]}
-            `
+            if(which === "transcriptions"){
+                l = row["Manuscript Link"] ? row["Manuscript Link"].trim() : "No Link Provided"
+                utl_id = l.substr(l.lastIndexOf("paleography:"), l.length-1).replace("paleography:", "")
+                //utl_id = l.substr(0, l.lastIndexOf("_")).replace("ip_","").replace("fp_","");
+                links = `
+                     
+                    <table border="0.5" cellpadding="1" cellspacing="1" style="width: 200px; background-color:#F8F8F8;">
+                        <tbody style="border-color:#ccc">
+                            <tr style="border-color:#ccc">
+                                <td>Go to <a href="https://centerfordigitalhumanities.github.io/Newberry-French-paleography/_background_essay/${utl_id}" target="_blank">Background Essay</a></td>
+                                <td>Go to <a href="https://centerfordigitalhumanities.github.io/Newberry-French-paleography/www/record.html?id=${utl_id}" target="_blank">Manuscript</a> page</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                     
+                `
+                mdHeader = `
+                    ---
+                    layout: default
+                    title: ${row["Title"]}
+                    utl_id: utl_id
+                    ---
+                `
+                mdBody = `
+                    ${row["Title"]}  
+                    ${row["Manuscript Title"]}  
+                    ${row["Description"]}  
+                    ${links}
+                    ${row["Partial Transcription"]}
+                `
+            }
+            else if(which === "essays"){
+                l = row["Manuscript Link"] ? row["Manuscript Link"].trim() : "No Link Provided"
+                utl_id = l.substr(l.lastIndexOf("paleography:"), l.length-1).replace("paleography:", "")
+                //utl_id = l.substr(0, l.lastIndexOf("_")).replace("ip_","").replace("fp_","");
+                links = `
+                     
+                    <table border="0.5" cellpadding="1" cellspacing="1" style="width: 200px; background-color:#F8F8F8;">
+                        <tbody style="border-color:#ccc">
+                            <tr style="border-color:#ccc">
+                                <td>Go to <a href="https://centerfordigitalhumanities.github.io/Newberry-French-paleography/_transcriptions/${utl_id}" target="_blank">Partial Transcription</a></td>
+                                <td>Go to <a href="https://centerfordigitalhumanities.github.io/Newberry-French-paleography/www/record.html?id=${utl_id}" target="_blank">Manuscript</a> page</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                     
+                `
+                mdHeader = `
+                    ---
+                    layout: default
+                    title: ${row["Title"]}
+                    utl_id: utl_id
+                    ---
+                `
+                mdBody = `
+                    ${row["Title"]}  
+                    ${row["Manuscript Title"]}  
+                    ${row["Description"]}  
+                    ${links}
+                    ${row["Partial Transcription"]}
+                `
+            }
+
             let fileText = mdHeader + mdBody
-            /*Save file as ${regex(row["Manuscript Link"]}.md into new _transcriptions or _background_essay folder*/
-            createFile(rootDirEntry, transcriptions_now, utl_id+".md", fileText)
+            /* Create file with timestamp */
+            await createFile(rootDirEntry, which_now, utl_id+".md", fileText).then(res => {console.log(utl_id+".md Created")})
         }, errorHandler)
+        console.log(which_now + " folder created, download button available")
+
     }
 
     /**
@@ -140,10 +184,10 @@
             rootDirEntry.getFile("/"+directory+"/"+filename, {create: true, exclusive: true}, function(fileEntry) {
                 fileEntry.createWriter(function(fileWriter) {
                     fileWriter.onwriteend = function(e) {
-                        console.log('Write completed.')
+                        console.log('File Write completed: '+filename)
                     }
                     fileWriter.onerror = function(e) {
-                        console.warn('Write failed')
+                        console.warn('File Write failed: '+filename)
                         console.error(e)
                     }
                     // Create a new Blob and write it to md file
@@ -158,7 +202,7 @@
      * Click event function to create new set of background essays  
      */
     async function newBackgroundEssays(event){
-        var r = confirm("Are you sure you want to make new files?  The old files will be backed up but will no longer be used.");
+        var r = confirm("Are you sure you want to make new background essay files?");
         if (r == true) {
             let txt = await fetch("./csv-parser/csv/background-essay.csv", {
                 method: "GET",
@@ -170,7 +214,7 @@
             .then(response => response.text())
             .catch(err => {return new Error("Could not get CSV file")})
             let parsedCSV = await getFromCSVInfo(txt)
-            alterFileStructure(parsedCSV)
+            alterFileStructure(parsedCSV, "essays")
             return parsedCSV
             
         }
@@ -180,7 +224,7 @@
      * Click event function to create new set of partial transcriptions
      */
     async function newPartialTranscriptions(event){
-        var r = confirm("Are you sure you want to make new files?  The old files will be backed up but will no longer be used.");
+        var r = confirm("Are you sure you want to make new partial transcription files?");
         if (r == true) {
             let txt = await fetch("./csv-parser/csv/partial-transcriptions.csv", {
                 method: "GET",
@@ -192,12 +236,12 @@
             .then(response => response.text())
             .catch(err => {return new Error("Could not get CSV file")})
             let parsedCSV = await getFromCSVInfo(txt)
-            alterFileStructure(parsedCSV)
+            alterFileStructure(parsedCSV, "transcriptions")
         }
     }
 
     /**
-     * Use PapaParse to convert CSV file into a more serialisable format (JSON) 
+     * Use PapaParse to convert CSV file into a more serializable format (JSON) 
      */
     async function getFromCSVInfo(fileText){
         return Papa.parse(fileText, {
@@ -252,18 +296,6 @@
         console.error(msg)
     }
 
-    /*
-    * For persistent storage
-    window.webkitStorageInfo.requestQuota(PERSISTENT, 2*1024*1024, function(grantedBytes) 
-        {
-            window.requestFileSystem(PERSISTENT, grantedBytes, onInitFs, errorHandler);
-        }, 
-        function(e) {
-          console.log('Error 2', e);
-        }
-    )
-    */
-
     /**
      * Here is how to read from the browser filestytem programmatically if you need to. 
      */
@@ -282,7 +314,7 @@
               }
             }, errorHandler)
         }
-        readEntries(); // Start reading dirs.
+        readEntries() // Start reading dirs.
     }
 </script>
 
