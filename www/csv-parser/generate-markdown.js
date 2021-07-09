@@ -194,7 +194,7 @@ ${row["Bibliography"]}
 ${links}  
 `
         }
-        let fileText = mdHeader.trim() + mdBody.trim()
+        let fileText = mdHeader + mdBody
         /* Create markdown file*/
         createFile(rootDirEntry, which_now, utl_id + ".md", fileText, which)
     }, errorHandler)
