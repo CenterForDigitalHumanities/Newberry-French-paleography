@@ -115,8 +115,7 @@ function createFiles(rootDirEntry, which, which_now, parsedCSV) {
             l = row["Manuscript Link"] ? row["Manuscript Link"].trim() : "No Link Provided"
             utl_id = l.substr(l.lastIndexOf("paleography:"), l.length - 1).replace("paleography:", "")
             //utl_id = l.substr(0, l.lastIndexOf("_")).replace("ip_","").replace("fp_","");
-            links = `
- 
+            links = ` 
 <table border="0.5" cellpadding="1" cellspacing="1" style="width: 200px; background-color:#F8F8F8;">
     <tbody style="border-color:#ccc">
         <tr style="border-color:#ccc">
@@ -126,15 +125,16 @@ function createFiles(rootDirEntry, which, which_now, parsedCSV) {
     </tbody>
 </table>
  
-                `
+`
+
             mdHeader = `---  
 layout: default  
 title: ${row["Title"]}  
 utl_id: ${utl_id}  
 ---
-                `
+`
             mdBody = `
-            
+
 ### Title
 
 ${row["Manuscript Title"]}  
@@ -150,14 +150,13 @@ ${row["Partial Transcription"]}
 ### Related Links
 
 ${links}
-                `
+`
         } 
         else if (which === "essays") {
             l = row["Manuscript Link"] ? row["Manuscript Link"].trim() : "No Link Provided"
             utl_id = l.substr(l.lastIndexOf("paleography:"), l.length - 1).replace("paleography:", "")
             //utl_id = l.substr(0, l.lastIndexOf("_")).replace("ip_","").replace("fp_","");
-            links = `
- 
+            links = ` 
 <table border="0.5" cellpadding="1" cellspacing="1" style="width: 200px; background-color:#F8F8F8;">
     <tbody style="border-color:#ccc">
         <tr style="border-color:#ccc">
@@ -195,7 +194,7 @@ ${row["Bibliography"]}
 ### Related Links
 
 ${links}  
-                `
+`
         }
         let fileText = mdHeader.trim() + mdBody.trim()
         /* Create markdown file*/
