@@ -122,21 +122,21 @@ function createFiles(rootDirEntry, which, which_now, parsedCSV) {
             <td>Go to <a href="https://centerfordigitalhumanities.github.io/Newberry-French-paleography/www/record.html?id=${utl_id}" target="_blank">Manuscript</a> page</td>
         </tr>
     </tbody>
-</table>
-`
+</table>`
 
             mdHeader = `---  
 layout: default  
 title: ${row["Title"]}  
 utl_id: ${utl_id}  
----
-`
+---`
+
             mdBody = `
+
 ### Title
 
 ${row["Manuscript Title"]}  
 
-### Desciption
+### Description
 
 ${row["Description"]}  
 
@@ -146,8 +146,8 @@ ${row["Partial Transcription"]}
 
 ### Related Links
 
-${links}
-`
+${links}`
+
         } 
         else if (which === "essays") {
             l = row["Manuscript Link"] ? row["Manuscript Link"].trim() : "No Link Provided"
@@ -160,35 +160,34 @@ ${links}
             <td>Go to <a href="https://centerfordigitalhumanities.github.io/Newberry-French-paleography/www/record.html?id=${utl_id}" target="_blank">Manuscript</a> page</td>
         </tr>
     </tbody>
-</table>
-`
+</table>`
+
             mdHeader = `---  
 layout: default  
 title: ${row["Title"]}  
 utl_id: ${utl_id}  
----  
-`
+---`
             mdBody = `
+
 ### Title
 
-${row["Manuscript Title"]}  
+${row["Manuscript Title"]}
 
 ### Description
 
-${row["Description"]}  
+${row["Description"]}
 
 ### Background Essays
 
-${row["Background"]}  
+${row["Background"]}
 
 ### Bibliography
 
-${row["Bibliography"]}  
+${row["Bibliography"]}
 
 ### Related Links
 
-${links}  
-`
+${links}`
         }
         let fileText = mdHeader + mdBody
         /* Create markdown file*/
