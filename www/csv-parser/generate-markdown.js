@@ -130,7 +130,6 @@ layout: default
 title: ${row["Title"]}  
 utl_id: ${utl_id}  
 ---
-
 `
             mdBody = `
 ### Title
