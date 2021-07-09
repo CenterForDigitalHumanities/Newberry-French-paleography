@@ -195,12 +195,12 @@ function createFiles(rootDirEntry, which, which_now, parsedCSV) {
                     ${links}  
                 `
         }
-        let fileText = mdHeader + mdBody
+        let fileText = mdHeader.trim() + mdBody.trim()
         /* Create markdown file*/
         createFile(rootDirEntry, which_now, utl_id + ".md", fileText, which)
     }, errorHandler)
     //Show the Download All button
-    document.getElementById("downloadall"+which).style.display = "block"
+    //document.getElementById("downloadall"+which).style.display = "block"
 }
 
 /**
@@ -308,12 +308,16 @@ function readOutFileSystem(rootDirEntry) {
 
 /**
  * Loop download buttons and download all.
+ * 
+ * This does not work.  The Browser does not let this happen.
  */ 
 function downloadAll(event, which) {
     let r = confirm("This will download all the "+which+" to your Downloads folder")
-    document.getElementById("available" + which).querySelectorAll("a").forEach(downloadLink => {
-        setTimeout(function(){ 
-            downloadLink.click() 
-        }, 250)
-    })
+    if(r){
+        document.getElementById("available" + which).querySelectorAll("a").forEach(downloadLink => {
+            setTimeout(function(){ 
+                downloadLink.click() 
+            }, 250)
+        })
+    }
 }
