@@ -163,17 +163,27 @@
                     </table>
                      
                 `
-                mdHeader = `
-                    ---
-                    layout: default
-                    title: ${row["Title"]}
-                    utl_id: ${utl_id}
+                mdHeader = `---  
+                    layout: default  
+                    title: ${row["Title"]}  
+                    utl_id: ${utl_id}  
                     ---
                 `
                 mdBody = `
+                    ### Title
+
                     ${row["Manuscript Title"]}  
+
+                    ### Desciption
+
                     ${row["Description"]}  
+
+                    ### Partial Transcription
+
                     ${row["Partial Transcription"]}
+
+                    ### Related Links
+
                     ${links}
                 `
             }
@@ -193,18 +203,31 @@
                     </table>
                      
                 `
-                mdHeader = `
-                    ---
-                    layout: default
-                    title: ${row["Title"]}
-                    utl_id: ${utl_id}
+                mdHeader = `---  
+                    layout: default  
+                    title: ${row["Title"]}  
+                    utl_id: ${utl_id}  
                     ---
                 `
                 mdBody = `
+                    ### Title
+
                     ${row["Manuscript Title"]}
+
+                    ### Description
+                    
                     ${row["Description"]}
+
+                    ### Background Essays
+
                     ${row["Background"]}
+
+                    ### Bibliography
+
                     ${row["Bibliography"]}
+
+                    ### Related Links
+
                     ${links}  
                 `
             }
