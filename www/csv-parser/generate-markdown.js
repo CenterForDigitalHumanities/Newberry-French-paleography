@@ -142,7 +142,7 @@ ${row["Description"]}
 
 ### Partial Transcription
 
-${row["Partial Transcription"]}
+${row["Partial Transcription"]}  
 
 ### Related Links
 
@@ -171,19 +171,19 @@ utl_id: ${utl_id}
             mdBody = `
 ### Title
 
-${row["Manuscript Title"]}
+${row["Manuscript Title"]}  
 
 ### Description
 
-${row["Description"]}
+${row["Description"]}  
 
 ### Background Essays
 
-${row["Background"]}
+${row["Background"]}  
 
 ### Bibliography
 
-${row["Bibliography"]}
+${row["Bibliography"]}  
 
 ### Related Links
 
