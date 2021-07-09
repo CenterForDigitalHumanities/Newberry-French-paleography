@@ -116,39 +116,40 @@ function createFiles(rootDirEntry, which, which_now, parsedCSV) {
             utl_id = l.substr(l.lastIndexOf("paleography:"), l.length - 1).replace("paleography:", "")
             //utl_id = l.substr(0, l.lastIndexOf("_")).replace("ip_","").replace("fp_","");
             links = `
-                     
-                    <table border="0.5" cellpadding="1" cellspacing="1" style="width: 200px; background-color:#F8F8F8;">
-                        <tbody style="border-color:#ccc">
-                            <tr style="border-color:#ccc">
-                                <td>Go to <a href="https://centerfordigitalhumanities.github.io/Newberry-French-paleography/_background_essay/${utl_id}" target="_blank">Background Essay</a></td>
-                                <td>Go to <a href="https://centerfordigitalhumanities.github.io/Newberry-French-paleography/www/record.html?id=${utl_id}" target="_blank">Manuscript</a> page</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                     
+ 
+<table border="0.5" cellpadding="1" cellspacing="1" style="width: 200px; background-color:#F8F8F8;">
+    <tbody style="border-color:#ccc">
+        <tr style="border-color:#ccc">
+            <td>Go to <a href="https://centerfordigitalhumanities.github.io/Newberry-French-paleography/_background_essay/${utl_id}" target="_blank">Background Essay</a></td>
+            <td>Go to <a href="https://centerfordigitalhumanities.github.io/Newberry-French-paleography/www/record.html?id=${utl_id}" target="_blank">Manuscript</a> page</td>
+        </tr>
+    </tbody>
+</table>
+ 
                 `
             mdHeader = `---  
-                    layout: default  
-                    title: ${row["Title"]}  
-                    utl_id: ${utl_id}  
-                    ---
+layout: default  
+title: ${row["Title"]}  
+utl_id: ${utl_id}  
+---
                 `
             mdBody = `
-                    ### Title
+            
+### Title
 
-                    ${row["Manuscript Title"]}  
+${row["Manuscript Title"]}  
 
-                    ### Desciption
+### Desciption
 
-                    ${row["Description"]}  
+${row["Description"]}  
 
-                    ### Partial Transcription
+### Partial Transcription
 
-                    ${row["Partial Transcription"]}
+${row["Partial Transcription"]}
 
-                    ### Related Links
+### Related Links
 
-                    ${links}
+${links}
                 `
         } 
         else if (which === "essays") {
@@ -156,43 +157,44 @@ function createFiles(rootDirEntry, which, which_now, parsedCSV) {
             utl_id = l.substr(l.lastIndexOf("paleography:"), l.length - 1).replace("paleography:", "")
             //utl_id = l.substr(0, l.lastIndexOf("_")).replace("ip_","").replace("fp_","");
             links = `
-                     
-                    <table border="0.5" cellpadding="1" cellspacing="1" style="width: 200px; background-color:#F8F8F8;">
-                        <tbody style="border-color:#ccc">
-                            <tr style="border-color:#ccc">
-                                <td>Go to <a href="https://centerfordigitalhumanities.github.io/Newberry-French-paleography/_transcriptions/${utl_id}" target="_blank">Partial Transcription</a></td>
-                                <td>Go to <a href="https://centerfordigitalhumanities.github.io/Newberry-French-paleography/www/record.html?id=${utl_id}" target="_blank">Manuscript</a> page</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                     
+ 
+<table border="0.5" cellpadding="1" cellspacing="1" style="width: 200px; background-color:#F8F8F8;">
+    <tbody style="border-color:#ccc">
+        <tr style="border-color:#ccc">
+            <td>Go to <a href="https://centerfordigitalhumanities.github.io/Newberry-French-paleography/_transcriptions/${utl_id}" target="_blank">Partial Transcription</a></td>
+            <td>Go to <a href="https://centerfordigitalhumanities.github.io/Newberry-French-paleography/www/record.html?id=${utl_id}" target="_blank">Manuscript</a> page</td>
+        </tr>
+    </tbody>
+</table>
+ 
                 `
             mdHeader = `---  
-                    layout: default  
-                    title: ${row["Title"]}  
-                    utl_id: ${utl_id}  
-                    ---
+layout: default  
+title: ${row["Title"]}  
+utl_id: ${utl_id}  
+---
                 `
             mdBody = `
-                    ### Title
 
-                    ${row["Manuscript Title"]}
+### Title
 
-                    ### Description
-                    
-                    ${row["Description"]}
+${row["Manuscript Title"]}
 
-                    ### Background Essays
+### Description
 
-                    ${row["Background"]}
+${row["Description"]}
 
-                    ### Bibliography
+### Background Essays
 
-                    ${row["Bibliography"]}
+${row["Background"]}
 
-                    ### Related Links
+### Bibliography
 
-                    ${links}  
+${row["Bibliography"]}
+
+### Related Links
+
+${links}  
                 `
         }
         let fileText = mdHeader.trim() + mdBody.trim()
