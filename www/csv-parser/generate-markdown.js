@@ -17,7 +17,7 @@ window.requestFileSystem = window.requestFileSystem ? window.requestFileSystem :
  * Click event function to create new set of background essays  
  */
 async function newBackgroundEssays(event) {
-    var r = confirm("Are you sure you want to make new background essay files?");
+    let r = confirm("This will generate new background essay markdown files.  Any links on the screen will be replaced.")
     if (r == true) {
         let txt = await fetch("./csv-parser/csv/background-essay.csv", {
                 method: "GET",
@@ -38,7 +38,7 @@ async function newBackgroundEssays(event) {
  * Click event function to create new set of partial transcriptions
  */
 async function newPartialTranscriptions(event) {
-    var r = confirm("Are you sure you want to make new partial transcription files?");
+    let r = confirm("This will generate new partial transcription markdown files.  Any links on the screen will be replaced.")
     if (r == true) {
         let txt = await fetch("./csv-parser/csv/partial-transcriptions.csv", {
                 method: "GET",
@@ -198,6 +198,7 @@ async function createFiles(rootDirEntry, which, which_now, parsedCSV) {
         let fileText = mdHeader + mdBody
         /* Create markdown file*/
         await createFile(rootDirEntry, which_now, utl_id + ".md", fileText, which)
+        document.getElementById("downloadall"+which).style.display = "block"
     }, errorHandler)
 }
 
@@ -219,7 +220,7 @@ async function createFile(rootDirEntry, directory, filename, filecontent, which)
                     console.error(e)
                 }
                 // Create a new Blob and write it to md file
-                var blob = new Blob([filecontent], { type: 'text/markdown' })
+                let blob = new Blob([filecontent], { type: 'text/markdown' })
                 fileWriter.write(blob)
             }, errorHandler)
         }, errorHandler)
@@ -279,7 +280,7 @@ async function removeDir(rootDirEntry, folder) {
 }
 
 function errorHandler(e) {
-    var msg = e
+    let msg = e
     console.warn('Error 1: ')
     console.error(msg)
 }
@@ -288,10 +289,10 @@ function errorHandler(e) {
  * Here is how to read from the browser filestytem programmatically if you need to. 
  */
 function readOutFileSystem(rootDirEntry) {
-    var dirReader = rootDirEntry.createReader();
-    var entries = [];
+    let dirReader = rootDirEntry.createReader();
+    let entries = [];
     console.log("Reading out file system")
-    var readEntries = function() {
+    let readEntries = function() {
         dirReader.readEntries(function(results) {
             if (!results.length) {
                 console.log(entries.sort())
@@ -302,4 +303,16 @@ function readOutFileSystem(rootDirEntry) {
         }, errorHandler)
     }
     readEntries() // Start reading dirs.
+}
+
+/**
+ * Loop download buttons and download all.
+ */ 
+function downloadAll(event, which) {
+    let r = confirm("This will download all the "+which+" to your Downloads folder")
+    document.getElementById("available" + which).querySelectorAll("a").forEach(downloadLink => {
+        setTimeout(function(){ 
+            downloadLink.click() 
+        }, 250)
+    })
 }
