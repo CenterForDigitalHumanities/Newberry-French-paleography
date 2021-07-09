@@ -127,22 +127,22 @@ function createFiles(rootDirEntry, which, which_now, parsedCSV) {
             mdHeader = `---  
 layout: default  
 title: ${row["Title"]}  
-utl_id: ${utl_id}  
+utl_id: ${utl_id}
 ---`
 
             mdBody = `
 
 ### Title
 
-${row["Manuscript Title"]}  
+${row["Manuscript Title"]}
 
 ### Description
 
-${row["Description"]}  
+${row["Description"]}
 
 ### Partial Transcription
 
-${row["Partial Transcription"]}  
+${row["Partial Transcription"]}
 
 ### Related Links
 
@@ -165,8 +165,9 @@ ${links}`
             mdHeader = `---  
 layout: default  
 title: ${row["Title"]}  
-utl_id: ${utl_id}  
+utl_id: ${utl_id}
 ---`
+            
             mdBody = `
 
 ### Title
