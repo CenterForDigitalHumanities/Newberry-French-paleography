@@ -105,12 +105,12 @@ async function createDir(rootDirEntry, folder) {
  * It will save the file to the browser filesystem.  A link will be produced for each file to download it.
  * If possible, it would be great if we could just create a zip folder or something.  
  */
-async function createFiles(rootDirEntry, which, which_now, parsedCSV) {
+function createFiles(rootDirEntry, which, which_now, parsedCSV) {
     /*Go over each "row" and generate the appropriate .md file for it.  Save that md file with strategic name.*/
     console.log("Generate a file for each row")
     let l, links, mdHeader, mdBody, utl_id
     document.getElementById("available" + which).innerHTML = ""
-    parsedCSV.data.forEach(async function(row) {
+    parsedCSV.data.forEach(row => {
         if (which === "transcriptions") {
             l = row["Manuscript Link"] ? row["Manuscript Link"].trim() : "No Link Provided"
             utl_id = l.substr(l.lastIndexOf("paleography:"), l.length - 1).replace("paleography:", "")
@@ -197,9 +197,10 @@ async function createFiles(rootDirEntry, which, which_now, parsedCSV) {
         }
         let fileText = mdHeader + mdBody
         /* Create markdown file*/
-        await createFile(rootDirEntry, which_now, utl_id + ".md", fileText, which)
-        document.getElementById("downloadall"+which).style.display = "block"
+        createFile(rootDirEntry, which_now, utl_id + ".md", fileText, which)
     }, errorHandler)
+    //Show the Download All button
+    document.getElementById("downloadall"+which).style.display = "block"
 }
 
 /**
