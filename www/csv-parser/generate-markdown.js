@@ -132,9 +132,9 @@ layout: default
 title: ${row["Title"]}  
 utl_id: ${utl_id}  
 ---
+
 `
             mdBody = `
-
 ### Title
 
 ${row["Manuscript Title"]}  
@@ -169,10 +169,10 @@ ${links}
 layout: default  
 title: ${row["Title"]}  
 utl_id: ${utl_id}  
----
+---  
+
 `
             mdBody = `
-
 ### Title
 
 ${row["Manuscript Title"]}
