@@ -1,11 +1,18 @@
 # Newberry-French-paleography
 Static pages for the Newberry French Renaissance Paleography project
 [./background-essay](/background-essay)
+[./transcriptions](/transcriptions)
 
 ## Essays
 
 {% for essay in site.background_essay %}
 - [{{ essay.title }}]({{ site.baseurl }}{{ essay.url }})
+{% endfor %}
+
+## Partial Transcriptions
+
+{% for transcription in site.transcriptions %}
+- [{{ transcription.title }}]({{ site.baseurl }}{{ transcription.url }})
 {% endfor %}
 
 ## Content
