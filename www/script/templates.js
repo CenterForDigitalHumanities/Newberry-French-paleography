@@ -6,6 +6,27 @@ NL.set("AUTH", "http://paleo.rerum.io/TPEN-NL/login")
 let header = document.createElement('template')
 let footer = document.createElement('template')
 header.innerHTML = `
+<header class="header clearfix">
+      <div id="branding" class="branding-elements clearfix">
+          <div style="margin: 0px auto;">
+          <div class="newberry-header hiddem-sm hidden-xs">
+              <a href="http://www.newberry.org/">
+                <img alt="newbery" src="https://paleography.library.utoronto.ca/sites/all/themes/stark_paleo/img/NewberryLogo_with_tag.png">
+              </a>
+          </div>
+          
+          <h1 id="site-name"><a href="/">French Renaissance 
+          <div id="logo" style="display: inline;">
+              <img aria-hidden="true" role="presentation" alt="" src="https://paleography.library.utoronto.ca/sites/all/themes/stark_paleo/img/rp-logo.png">
+          </div>
+          <span class="red">Paleography</span> <!-- <div class="newberry-slogan">A Project of the Newberry</div> --></a>
+          </h1>
+          </div>
+
+      </div>
+      <div class="search-icon" id="search-btn"><button title="Search" aria-label="Search" class="icon icon-search"></button></div>
+      <div class="hamburger-icon"><div class="icon icon-menu">&nbsp;</div></div>
+</header>
     <link rel="stylesheet" href="./css/style.css">
     <slot></slot>
     <nav class="container">

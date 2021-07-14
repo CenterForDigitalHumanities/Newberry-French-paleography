@@ -230,7 +230,98 @@ dd p {
     height  : 40em;
 }
 
+/** Imported CSS */
+
+.newberry-header img {
+    position: absolute;
+    max-width: 275px;
+    top: 35px;
+    left: 10px;
+}
+
+#site-name {
+    padding: 0;
+    margin: 0;
+    font-size: 220%;
+    font-weight: normal !important;
+    font-family: 'EB Garamond',serif !important;
+    text-align: center;
+}
+
+#site-name a:link, #site-name a:visited {
+    color: #000;
+    text-decoration: none;
+    -moz-transition: all .5s ease;
+    -webkit-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    transition: color 0.5s ease;
+}
+
+#logo {
+    padding: 5px 1%;
+    height: 100px;
+    display: inline;
+}
+
+.red {
+    color: #b43d2e;
+}
+
+.header .search-icon, .header .hamburger-icon {
+    font-size: 28px;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    cursor: pointer;
+    color: #002a5c;
+}
+.header .search-icon, .header .hamburger-icon {
+    color: #000;
+}
+
+.hamburger-icon {
+    display: none;
+}
+
+.header .search-icon .icon, .header .hamburger-icon .icon {
+    width: 2em;
+    height: 2em;
+}
+
+.header .icon-search {
+    background: none;
+    border: 0;
+}
+
+.header .icon-search:before {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+button, html input[type="button"], input[type="reset"], input[type="submit"] {
+    -webkit-appearance: button;
+    cursor: pointer;
+    overflow: visible;
+}
+
+.icon-search:before {
+    content: "🔎︎";
+    transform: scaleX(-1);
+    font-size: 300%;
+}
+/** end Imported CSS */
+
 @media screen and (max-width: 599px) {
+    #site-name {
+        padding-left: 10px !important;
+        padding-bottom: 15px !important;
+    }
+    .search-icon {
+        top: 15px;
+        right: 58px;
+    }
+
     .container {
         width: 100%;
     }
@@ -248,5 +339,14 @@ dd p {
 @media screen and (max-width: 1399px) {
     .record {
         max-width: 100%;
+    }
+
+    .search-icon {
+        top: 38px;
+        right: 15px;
+    }
+
+    #site-name {
+        text-align: center;
     }
 }
