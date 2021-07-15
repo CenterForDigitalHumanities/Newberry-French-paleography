@@ -1,5 +1,5 @@
 ---
-baseurl: "/Newberry-French-paleography/www"
+baseurl: "/Newberry-French-paleography"
 collections:
   background_essay:
     output: true
