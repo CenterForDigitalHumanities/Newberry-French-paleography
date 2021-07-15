@@ -11,13 +11,13 @@ header.innerHTML = `
           <div style="margin: 0px auto;">
           <div class="newberry-header hiddem-sm hidden-xs">
               <a href="http://www.newberry.org/">
-                <img alt="Newberry" src="images/NewberryLogo_with_tag.png">
+                <img alt="Newberry" src="/images/NewberryLogo_with_tag.png">
               </a>
           </div>
           
-          <h1 id="site-name"><a href="../">French Renaissance 
+          <h1 id="site-name"><a href="/">French Renaissance 
           <div id="logo" style="display: inline;">
-              <img aria-hidden="true" role="presentation" alt="" src="images/rp-logo.png">
+              <img aria-hidden="true" role="presentation" alt="" src="/images/rp-logo.png">
           </div>
           <span class="red">Paleography</span></a>
           </h1>
@@ -77,17 +77,17 @@ header.innerHTML = `
 `
 
 footer.innerHTML = `
-<link rel="stylesheet" href="./css/style.css">
+<link rel="stylesheet" href="/css/style.css">
 <div class="row container">
     <div class="col-8">
         <h2> Partners </h2>
             <div class="row">
-                <a class="col" href="http://www.newberry.org/" target="_blank"><img alt="Newberry" src="images/NewberryLogo_with_tag.png"></a>
-                <a class="col" href="http://onesearch.library.utoronto.ca" target="_blank"><img alt="University of Toronto Libraries" src="images/UTL-logo.png"></a>
+                <a class="col" href="http://www.newberry.org/" target="_blank"><img alt="Newberry" src="/images/NewberryLogo_with_tag.png"></a>
+                <a class="col" href="http://onesearch.library.utoronto.ca" target="_blank"><img alt="University of Toronto Libraries" src="/images/UTL-logo.png"></a>
             </div>
             <div class="row">
-                <a class="col" href="http://lib.slu.edu/" style="line-height: 23.1111px;" target="_blank"><img alt="St. Louis University" src="images/slu.gif" style="width: 346px;"></a>
-                <a class="col" href="http://www.itergateway.org/" target="_blank"><img alt="Iter" src="images/iter-logo-new.png"></a>
+                <a class="col" href="http://lib.slu.edu/" style="line-height: 23.1111px;" target="_blank"><img alt="St. Louis University" src="/images/slu.gif" style="width: 346px;"></a>
+                <a class="col" href="http://www.itergateway.org/" target="_blank"><img alt="Iter" src="/images/iter-logo-new.png"></a>
             </div>
     </div>
     <div class="col">
