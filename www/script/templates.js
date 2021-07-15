@@ -29,12 +29,44 @@ header.innerHTML = `
 </header>
     <link rel="stylesheet" href="./css/style.css">
     <slot></slot>
+    
     <nav class="container">
-        <a href="../"> 🏠 </a> 
-        <a href="manuscripts.html"> manuscripts </a> 
-        <a href="maps.html"> maps </a> 
-        <a href="calligraphy.html"> calligraphy books </a>
-    </nav>`
+      <ul class="nav nav-bar"><li class="first leaf"><a href="/">Home</a></li>
+<li class="leaf active-trail active"><a href="/islandora/object/paleography%3Amanuscripts" title="" class="active-trail active">Manuscripts</a></li>
+<li class="leaf"><a href="/islandora/search" title="">Search</a></li>
+<li class="expanded dropdown"><a href="/resources" title="" data-target="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Resources <span class="caret"></span></a><ul class="dropdown-menu"><li class="first leaf"><a href="/content/background-essays" title="">Background Essays</a></li>
+<li class="leaf"><a href="/content/partial_transcriptions" title="">Partial Transcriptions</a></li>
+<li class="leaf"><a href="/islandora/object/paleography%3Acalligraphybooks" title="">Calligraphy Books</a></li>
+<li class="leaf"><a href="/islandora/object/paleography%3Ahistoricalmaps" title="">Historical Maps</a></li>
+<li class="leaf"><a href="/content/interactive-map">Interactive Map</a></li>
+<li class="leaf"><a href="/content/french-scripts-and-hands">French Scripts and Hands</a></li>
+<li class="leaf"><a href="/content/about-french-documents">About French Documents</a></li>
+<li class="leaf"><a href="/manuscript-preservation">Manuscript Preservation</a></li>
+<li class="leaf"><a href="/content/transcribing-editing-conventions">Transcribing &amp; Editing Conventions</a></li>
+<li class="leaf"><a href="/content/teaching">Teaching</a></li>
+<li class="leaf"><a href="/content/group-work">Group Work</a></li>
+<li class="last leaf"><a href="/content/get-started">Get Started</a></li>
+</ul></li>
+<li class="expanded dropdown"><a href="/reference" data-target="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Reference <span class="caret"></span></a><ul class="dropdown-menu"><li class="first leaf"><a href="/content/abbreviations">Abbreviations</a></li>
+<li class="leaf"><a href="/content/selected-french-dictionaries">Dictionaries</a></li>
+<li class="leaf"><a href="/content/glossary-of-terms">Glossary</a></li>
+<li class="leaf"><a href="/content/french-institutions">French Institutions</a></li>
+<li class="last leaf"><a href="/content/other-reference-resources">Other Reference Resources</a></li>
+</ul></li>
+<li class="expanded dropdown"><a href="/contact" title="" data-target="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Contact <span class="caret"></span></a><ul class="dropdown-menu"><li class="first leaf"><a href="/content/about-team" title="">About the Team</a></li>
+<li class="last leaf"><a href="/content/contributing-institutions" title="">Contributing Institutions</a></li>
+</ul></li>
+<li class="expanded dropdown"><a href="/my-transcriptions" title="" data-target="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">My Transcriptions <span class="caret"></span></a><ul class="dropdown-menu"><li class="first leaf"><a href="/my-transcriptions" title="">My Transcriptions</a></li>
+<li class="last leaf"><a href="/master-transcriptions" title="">Master Transcriptions</a></li>
+</ul></li>
+<li class="last leaf"><a href="/user/logout" title="">Logout</a></li>
+</ul>
+     </nav>
+     <a href="../"> 🏠 </a> 
+     <a href="manuscripts.html"> manuscripts </a> 
+     <a href="maps.html"> maps </a> 
+     <a href="calligraphy.html"> calligraphy books </a>
+ `
 
 footer.innerHTML = `
 <link rel="stylesheet" href="./css/style.css">
