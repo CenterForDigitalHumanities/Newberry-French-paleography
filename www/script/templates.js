@@ -11,15 +11,15 @@ header.innerHTML = `
           <div style="margin: 0px auto;">
           <div class="newberry-header hiddem-sm hidden-xs">
               <a href="http://www.newberry.org/">
-                <img alt="newbery" src="https://paleography.library.utoronto.ca/sites/all/themes/stark_paleo/img/NewberryLogo_with_tag.png">
+                <img alt="Newberry" src="images/NewberryLogo_with_tag.png">
               </a>
           </div>
           
           <h1 id="site-name"><a href="/">French Renaissance 
           <div id="logo" style="display: inline;">
-              <img aria-hidden="true" role="presentation" alt="" src="https://paleography.library.utoronto.ca/sites/all/themes/stark_paleo/img/rp-logo.png">
+              <img aria-hidden="true" role="presentation" alt="" src="images/rp-logo.png">
           </div>
-          <span class="red">Paleography</span> <!-- <div class="newberry-slogan">A Project of the Newberry</div> --></a>
+          <span class="red">Paleography</span></a>
           </h1>
           </div>
 
@@ -31,42 +31,50 @@ header.innerHTML = `
     <slot></slot>
     
     <nav class="container">
-      <ul class="nav nav-bar"><li class="first leaf"><a href="/">Home</a></li>
-<li class="leaf active-trail active"><a href="/islandora/object/paleography%3Amanuscripts" title="" class="active-trail active">Manuscripts</a></li>
-<li class="leaf"><a href="/islandora/search" title="">Search</a></li>
-<li class="expanded dropdown"><a href="/resources" title="" data-target="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Resources <span class="caret"></span></a><ul class="dropdown-menu"><li class="first leaf"><a href="/content/background-essays" title="">Background Essays</a></li>
-<li class="leaf"><a href="/content/partial_transcriptions" title="">Partial Transcriptions</a></li>
-<li class="leaf"><a href="/islandora/object/paleography%3Acalligraphybooks" title="">Calligraphy Books</a></li>
-<li class="leaf"><a href="/islandora/object/paleography%3Ahistoricalmaps" title="">Historical Maps</a></li>
-<li class="leaf"><a href="/content/interactive-map">Interactive Map</a></li>
-<li class="leaf"><a href="/content/french-scripts-and-hands">French Scripts and Hands</a></li>
-<li class="leaf"><a href="/content/about-french-documents">About French Documents</a></li>
-<li class="leaf"><a href="/manuscript-preservation">Manuscript Preservation</a></li>
-<li class="leaf"><a href="/content/transcribing-editing-conventions">Transcribing &amp; Editing Conventions</a></li>
-<li class="leaf"><a href="/content/teaching">Teaching</a></li>
-<li class="leaf"><a href="/content/group-work">Group Work</a></li>
-<li class="last leaf"><a href="/content/get-started">Get Started</a></li>
-</ul></li>
-<li class="expanded dropdown"><a href="/reference" data-target="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Reference <span class="caret"></span></a><ul class="dropdown-menu"><li class="first leaf"><a href="/content/abbreviations">Abbreviations</a></li>
-<li class="leaf"><a href="/content/selected-french-dictionaries">Dictionaries</a></li>
-<li class="leaf"><a href="/content/glossary-of-terms">Glossary</a></li>
-<li class="leaf"><a href="/content/french-institutions">French Institutions</a></li>
-<li class="last leaf"><a href="/content/other-reference-resources">Other Reference Resources</a></li>
-</ul></li>
-<li class="expanded dropdown"><a href="/contact" title="" data-target="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Contact <span class="caret"></span></a><ul class="dropdown-menu"><li class="first leaf"><a href="/content/about-team" title="">About the Team</a></li>
-<li class="last leaf"><a href="/content/contributing-institutions" title="">Contributing Institutions</a></li>
-</ul></li>
-<li class="expanded dropdown"><a href="/my-transcriptions" title="" data-target="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">My Transcriptions <span class="caret"></span></a><ul class="dropdown-menu"><li class="first leaf"><a href="/my-transcriptions" title="">My Transcriptions</a></li>
-<li class="last leaf"><a href="/master-transcriptions" title="">Master Transcriptions</a></li>
-</ul></li>
+      <ul class="nav nav-bar"><li class="first leaf"><a href="../">Home</a></li>
+<li class="leaf active-trail active"><a href="manuscripts.html" title="" class="active-trail active">Manuscripts</a></li>
+<li class="leaf"><a href="search" title="">Search</a></li>
+<li class="expanded dropdown"><a href="resources" title="" data-target="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Resources <span class="caret"></span></a>
+    <ul class="dropdown-menu">
+        <li class="first leaf"><a href="essays" title="">Background Essays</a></li>
+        <li class="leaf"><a href="transcriptions" title="">Partial Transcriptions</a></li>
+        <li class="leaf"><a href="calligraphy.html" title="">Calligraphy Books</a></li>
+        <li class="leaf"><a href="maps.html" title="">Historical Maps</a></li>
+        <li class="leaf"><a href="interactive-map">Interactive Map</a></li>
+        <li class="leaf"><a href="scripts">French Scripts and Hands</a></li>
+        <li class="leaf"><a href="about-french-documents">About French Documents</a></li>
+        <li class="leaf"><a href="manuscript-preservation">Manuscript Preservation</a></li>
+        <li class="leaf"><a href="transcribing-editing-conventions">Transcribing &amp; Editing Conventions</a></li>
+        <li class="leaf"><a href="teaching">Teaching</a></li>
+        <li class="leaf"><a href="group-work">Group Work</a></li>
+        <li class="last leaf"><a href="get-started">Get Started</a></li>
+    </ul>
+</li>
+<li class="expanded dropdown"><a href="reference" data-target="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Reference <span class="caret"></span></a>
+    <ul class="dropdown-menu">
+        <li class="first leaf"><a href="abbreviations">Abbreviations</a></li>
+        <li class="leaf"><a href="selected-french-dictionaries">Dictionaries</a></li>
+        <li class="leaf"><a href="glossary-of-terms">Glossary</a></li>
+        <li class="leaf"><a href="french-institutions">French Institutions</a></li>
+        <li class="last leaf"><a href="other-reference-resources">Other Reference Resources</a></li>
+    </ul>
+</li>
+<li class="expanded dropdown"><a href="contact" title="" data-target="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Contact <span class="caret"></span></a>
+    <ul class="dropdown-menu">
+        <li class="first leaf"><a href="about-team" title="">About the Team</a></li>
+        <li class="last leaf"><a href="contributing-institutions" title="">Contributing Institutions</a></li>
+    </ul>
+</li>
+<li class="expanded dropdown"><a title="" data-target="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">My Transcriptions <span class="caret"></span></a>
+    <ul class="dropdown-menu">
+        <li class="first leaf"><a href="my-transcriptions" title="">My Transcriptions</a></li>
+        <li class="last leaf"><a href="master-transcriptions" title="">Master Transcriptions</a></li>
+    </ul>
+</li>
 <li class="last leaf"><a href="/user/logout" title="">Logout</a></li>
 </ul>
      </nav>
-     <a href="../"> 🏠 </a> 
-     <a href="manuscripts.html"> manuscripts </a> 
-     <a href="maps.html"> maps </a> 
-     <a href="calligraphy.html"> calligraphy books </a>
- `
+`
 
 footer.innerHTML = `
 <link rel="stylesheet" href="./css/style.css">
