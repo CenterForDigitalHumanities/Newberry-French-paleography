@@ -155,7 +155,7 @@
   </script>
   {% if page.replacements=='essays' %}
   <script>
-    document.addEventListener('load', e => {
+    document.onload = e => {
       fetch('{{ site.baseurl}}/iiif-cache/manuscripts.json')
         .then(status => { if (!status.ok) { throw Error(status) } return status })
         .then(response => response.json())
@@ -171,7 +171,7 @@
             }
           })
         })
-    })
+    }
   </script>
   {% endif %}
 </body>
