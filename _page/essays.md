@@ -2,6 +2,7 @@
 layout: default
 title: Background Essays
 slug: essays
+replacements: essays
 ---
 
 ## Essays
@@ -11,7 +12,3 @@ See below for a list of background essays about selected manuscripts in this rep
 {% for essay in site.background_essay %}
 - [{{ essay.title }}]({{ site.baseurl }}{{ essay.url }}) <date data-id="{{ essay.url | split: "/" | last }}">{{ essay.url | split: "/" | last }}</date>
 {% endfor %}
-
-<script>
-    document.onload= ()=> alert('froeep')
-</script>

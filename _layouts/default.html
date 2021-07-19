@@ -7,6 +7,7 @@
 
 {% seo %}
     <link rel="stylesheet" href="{{site.baseurl}}/www/css/style.css?v={{site.github.build_revision}}" >
+    <script src="{{site.baseurl}}/www/script/utils.js"></script>
   </head>
   <body>
     <header class="header clearfix no-embed">
@@ -122,6 +123,23 @@
     if (window.top != window.self) {
       document.querySelectorAll('.no-embed').forEach(el=>el.style.display = 'none')
     }
+
+    {% if page.replacements=='essays' %}
+      document.addEventListener('load',e=>{
+        fetchList('{{ site.baseurl}}/iiif-cache/manuscripts.json')
+        .then(collection => {
+          document.querySelectorAll("date").forEach(el=>{
+            const id_match = `https://iiif.library.utoronto.ca/presentation/v2/paleography:${el.getAttribute("data-id")}/manifest`
+            for (const m of collection.manifests) {
+              if(m['@id']===id_match){
+                el.innerHTML = m.date
+                return
+              }
+            }
+          })
+        })
+      })
+    {% endif %}
   </script>
   </body>
 </html>
