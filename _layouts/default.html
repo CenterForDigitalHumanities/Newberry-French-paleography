@@ -123,8 +123,9 @@
     if (window.top != window.self) {
       document.querySelectorAll('.no-embed').forEach(el=>el.style.display = 'none')
     }
-
+    </script>
     {% if page.replacements=='essays' %}
+    <script>
       document.addEventListener('load',e=>{
         fetchList('{{ site.baseurl}}/iiif-cache/manuscripts.json')
         .then(collection => {
@@ -139,7 +140,7 @@
           })
         })
       })
+      </script>
     {% endif %}
-  </script>
   </body>
 </html>
