@@ -280,15 +280,15 @@ body {
     left     : 10px;
 }
 
-nl-footer {
+footer, nl-footer {
     font-size: 80%;
 }
 
-nl-footer a {
+footer a, nl-footer a {
     text-decoration: none;
 }
 
-nl-footer img {
+footer img, nl-footer img {
     max-width: 250px;
 }
 
