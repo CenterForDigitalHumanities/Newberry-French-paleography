@@ -281,15 +281,15 @@ body {
 }
 
 footer, nl-footer {
-    font-size: 80%;
+    font-size: 80% !important;
 }
 
 footer a, nl-footer a {
-    text-decoration: none;
+    text-decoration: none !important;
 }
 
 footer img, nl-footer img {
-    max-width: 250px;
+    max-width: 250px !important;
 }
 
 #site-name {
