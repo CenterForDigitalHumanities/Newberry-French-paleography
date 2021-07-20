@@ -280,6 +280,18 @@ body {
     left     : 10px;
 }
 
+nl-footer {
+    font-size: 80%;
+}
+
+nl-footer a {
+    text-decoration: none;
+}
+
+nl-footer img {
+    max-width: 250px;
+}
+
 #site-name {
     padding    : 0;
     margin     : 0;
