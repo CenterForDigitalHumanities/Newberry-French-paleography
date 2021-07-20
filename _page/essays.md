@@ -2,7 +2,7 @@
 layout: default
 title: Background Essays
 slug: essays
-replacements: essays
+replacements: dates
 ---
 
 ## Essays

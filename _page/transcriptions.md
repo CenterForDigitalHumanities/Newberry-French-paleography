@@ -2,6 +2,7 @@
 layout: default
 title: Transcriptions
 slug: transcriptions
+replacements: dates
 ---
 
 ## Transcriptions
@@ -9,5 +10,5 @@ slug: transcriptions
 See below for a list of partial transcriptions for selected manuscript documents in this repository. Please feel free to post your own transcriptions to our Google group, for correction and possible uploading to the site later on.
 
 {% for transcription in site.transcriptions %}
-- [{{ transcription.title }}]({{ site.baseurl }}{{ transcription.url }})
+- [{{ transcription.title }}]({{ site.baseurl }}{{ transcription.url }}) <date data-id="{{ essay.url | split: "/" | last }}">{{ essay.url | split: "/" | last }}</date>
 {% endfor %}
