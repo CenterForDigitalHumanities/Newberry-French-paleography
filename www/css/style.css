@@ -227,13 +227,22 @@ dd p {
 }
 
 listing+ul li {
-    width:100%;
     margin:0;
     background-color: #eee;
     border-bottom: 1px solid #ccc;
     padding: 0.1em 0.6em;
     display: flex;
     align-items: center;
+}
+
+listing+ul {
+    display: block;
+    padding: 0;
+    margin: 0;
+}
+
+listing+ul li:hover {
+    background-color: #ddd;
 }
 
 listing+ul a {
