@@ -251,6 +251,7 @@ listing+ul a {
     color: #15628A;
     transition: color 0.5s ease;
     background-color: transparent;
+    line-height: 2.6;
 }
 
 listing+ul date {
