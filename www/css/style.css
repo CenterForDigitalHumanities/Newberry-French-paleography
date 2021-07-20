@@ -227,6 +227,9 @@ dd p {
 listing+ul li {
     width:100%;
     margin:0;
+    background-color: #eee;
+    border-bottom: 1px solid #ccc;
+    padding: 0.1em 0.6em;
     display: flex;
 }
 
@@ -241,12 +244,7 @@ listing+ul a {
 listing+ul date {
     display:block;
     text-align: center;
-}
-
-listing+ul li {
-    background-color: #eee;
-    border-bottom: 1px solid #ccc;
-    padding: 0.1em 0.6em;
+    color: #555;
 }
 
 listing+ul li:nth-child(2n+2) {
@@ -254,6 +252,13 @@ listing+ul li:nth-child(2n+2) {
 }
 
 /** Imported CSS */
+
+body {
+    font-size: 15px;
+    font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 300;
+    line-height: 1.6;
+}
 
 .newberry-header img {
     position : absolute;
