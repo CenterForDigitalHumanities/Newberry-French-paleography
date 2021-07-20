@@ -23,7 +23,7 @@ html {
     font-family: 'Open sans', 'Helvetica Neue', sans-serif;
 }
 
-.container, .container-lg {
+.container {
     max-width: var(--grid-maxWidth);
     margin   : 0 auto;
     width    : 96%;
