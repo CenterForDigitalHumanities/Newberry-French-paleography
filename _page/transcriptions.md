@@ -11,6 +11,6 @@ See below for a list of partial transcriptions for selected manuscript documents
 
 {% for transcription in site.transcriptions %}
 
-[{{ transcription.title }}]({{ site.baseurl }}{{ transcription.url }}) <date class="col" data-id="{{ essay.url | split: "/" | last }}">{{ essay.url | split: "/" | last }}</date>
+[{{ transcription.title }}]({{ site.baseurl }}{{ transcription.url }}) <date class="col" data-id="{{ transcription.url | split: "/" | last }}">{{ transcription.url | split: "/" | last }}</date>
 
 {% endfor %}
