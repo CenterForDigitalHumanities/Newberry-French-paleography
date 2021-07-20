@@ -224,14 +224,14 @@ dd p {
     height  : 40em;
 }
 
-listing+a {
+listing+ul li {
     width:80%;
     margin:0;
+    display: flex;
 }
 
-a+date {
-    width:20%;
-    margin:0;
+listing+ul a {
+    flex-basis: 80%;
 }
 
 /** Imported CSS */
