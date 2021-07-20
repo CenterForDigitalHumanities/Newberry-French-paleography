@@ -225,7 +225,7 @@ dd p {
 }
 
 listing+ul li {
-    width:80%;
+    width:100%;
     margin:0;
     display: flex;
 }
