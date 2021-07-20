@@ -233,6 +233,7 @@ listing+ul li {
     border-bottom: 1px solid #ccc;
     padding: 0.1em 0.6em;
     display: flex;
+    align-items: center;
 }
 
 listing+ul a {
