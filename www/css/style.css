@@ -273,6 +273,10 @@ body {
     line-height: 1.6;
 }
 
+.markdown-body {
+    min-height: 80vh;
+}
+
 .newberry-header img {
     position : absolute;
     max-width: 275px;
