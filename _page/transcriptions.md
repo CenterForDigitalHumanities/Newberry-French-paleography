@@ -9,8 +9,10 @@ replacements: dates
 
 See below for a list of partial transcriptions for selected manuscript documents in this repository. Please feel free to post your own transcriptions to our Google group, for correction and possible uploading to the site later on.
 
-{% for transcription in site.transcriptions %}
+{% for transcription in site.transcriptions | sort %}
 
-[{{ transcription.title }}]({{ site.baseurl }}{{ transcription.url }}) <date class="col" data-id="{{ transcription.url | split: "/" | last }}">{{ transcription.url | split: "/" | last }}</date>
+<listing></listing>
+[{{ transcription.title }}]({{ site.baseurl }}{{ transcription.url }}) 
+<date class="col" data-id="{{ transcription.url | split: "/" | last }}">{{ transcription.url | split: "/" | last }}</date>
 
 {% endfor %}

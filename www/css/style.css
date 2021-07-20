@@ -224,6 +224,16 @@ dd p {
     height  : 40em;
 }
 
+listing+a {
+    width:80%;
+    margin:0;
+}
+
+a+date {
+    width:20%;
+    margin:0;
+}
+
 /** Imported CSS */
 
 .newberry-header img {
