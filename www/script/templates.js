@@ -79,7 +79,7 @@ header.innerHTML = `
 footer.innerHTML = `
 <link rel="stylesheet" href="/css/style.css">
 <div class="row container">
-    <div class="col-8">
+    <div class="col" style="flex-grow:2;">
         <h2> Partners </h2>
             <div class="row">
                 <a class="col" href="http://www.newberry.org/" target="_blank"><img alt="Newberry" src="/images/NewberryLogo_with_tag.png"></a>
