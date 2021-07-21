@@ -1,3 +1,8 @@
+---
+layout: default
+title: Resources
+slug: resources
+---
 
 - [Background Essays]({{ site.baseurl}}/essays) 
 - [Partial Transcriptions]({{ site.baseurl}}/transcriptions) 

@@ -1,3 +1,8 @@
+---
+layout: default
+title: References
+slug: reference
+---
 
 - [Abbreviations]({site.baseurl}/abbreviations)
 - [Dictionaries]({site.baseurl}/selected-french-dictionaries)
