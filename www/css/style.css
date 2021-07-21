@@ -242,10 +242,6 @@ listing+ul {
     margin: 0;
 }
 
-listing+ul li:hover {
-    background-color: #ddd;
-}
-
 listing+ul a {
     flex-basis: 80%;
     text-decoration: none;
@@ -259,10 +255,15 @@ listing+ul date {
     display:block;
     text-align: center;
     color: #555;
+    flex-grow: 1;
 }
 
 listing+ul li:nth-child(2n+2) {
     background-color: #f5f5f5;
+}
+
+listing+ul li:hover {
+    background-color: #ddd !important;
 }
 
 /** Imported CSS */
