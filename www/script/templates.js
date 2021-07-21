@@ -38,8 +38,8 @@ header.innerHTML = `
             <ul class="dropdown-menu">
                 <li class="first leaf"><a href="/Newberry-French-paleography/essays" title="">Background Essays</a></li>
                 <li class="leaf"><a href="/Newberry-French-paleography/transcriptions" title="">Partial Transcriptions</a></li>
-                <li class="leaf"><a href="/Newberry-French-paleography/calligraphy.html" title="">Calligraphy Books</a></li>
-                <li class="leaf"><a href="/Newberry-French-paleography/maps.html" title="">Historical Maps</a></li>
+                <li class="leaf"><a href="/Newberry-French-paleography/www/calligraphy.html" title="">Calligraphy Books</a></li>
+                <li class="leaf"><a href="/Newberry-French-paleography/www/maps.html" title="">Historical Maps</a></li>
                 <li class="leaf"><a href="/Newberry-French-paleography/interactive-map">Interactive Map</a></li>
                 <li class="leaf"><a href="/Newberry-French-paleography/scripts">French Scripts and Hands</a></li>
                 <li class="leaf"><a href="/Newberry-French-paleography/about-french-documents">About French Documents</a></li>
@@ -77,7 +77,7 @@ header.innerHTML = `
 `
 
 footer.innerHTML = `
-<link rel="stylesheet" href="/css/style.css">
+<link rel="stylesheet" href="/Newberry-French-paleography/css/style.css">
 <div class="row container">
     <div class="col" style="flex-grow:2;">
         <h2> Partners </h2>
