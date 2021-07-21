@@ -11,5 +11,5 @@ See below for a list of background essays about selected manuscripts in this rep
 
 <listing></listing>
 {% for essay in site.background_essay | sort: 'title' %}
-- [{{ essay.title }}]({{ site.baseurl }}{{ essay.url }}) <date data-id="{{ essay.url | split: "/" | last }}">{{ essay.url | split: "/" | last }}</date>
-{% endfor %}
+- [{{ essay.title }}]({{ site.baseurl }}{{ essay.url }}) <date data-id="{{ essay.url | split: "/" | last }}">{{ essay.url | split: "/" | last }}</date>{% endfor %}
+
