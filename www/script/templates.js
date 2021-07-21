@@ -77,7 +77,7 @@ header.innerHTML = `
 `
 
 footer.innerHTML = `
-<link rel="stylesheet" href="/Newberry-French-paleography/css/style.css">
+<link rel="stylesheet" href="/Newberry-French-paleography/www/css/style.css">
 <div class="row container">
     <div class="col" style="flex-grow:2;">
         <h2> Partners </h2>
