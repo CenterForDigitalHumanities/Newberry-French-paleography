@@ -82,12 +82,12 @@ footer.innerHTML = `
     <div class="col" style="flex-grow:2;">
         <h2> Partners </h2>
             <div class="row">
-                <a class="col" href="http://www.newberry.org/" target="_blank"><img alt="Newberry" src="/images/NewberryLogo_with_tag.png"></a>
-                <a class="col" href="http://onesearch.library.utoronto.ca" target="_blank"><img alt="University of Toronto Libraries" src="/images/UTL-logo.png"></a>
+                <a class="col" href="http://www.newberry.org/" target="_blank"><img alt="Newberry" src="/www/images/NewberryLogo_with_tag.png"></a>
+                <a class="col" href="http://onesearch.library.utoronto.ca" target="_blank"><img alt="University of Toronto Libraries" src="/www/images/UTL-logo.png"></a>
             </div>
             <div class="row">
-                <a class="col" href="http://lib.slu.edu/" style="line-height: 23.1111px;" target="_blank"><img alt="St. Louis University" src="/images/slu.gif" style="width: 346px;"></a>
-                <a class="col" href="http://www.itergateway.org/" target="_blank"><img alt="Iter" src="/images/iter-logo-new.png"></a>
+                <a class="col" href="http://lib.slu.edu/" style="line-height: 23.1111px;" target="_blank"><img alt="St. Louis University" src="/www/images/slu.gif" style="width: 346px;"></a>
+                <a class="col" href="http://www.itergateway.org/" target="_blank"><img alt="Iter" src="/www/images/iter-logo-new.png"></a>
             </div>
     </div>
     <div class="col">
