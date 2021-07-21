@@ -67,8 +67,8 @@ header.innerHTML = `
         </li>
         <li class="expanded dropdown"><a title="" data-target="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">My Transcriptions <span class="caret"></span></a>
             <ul class="dropdown-menu">
-                <li class="first leaf"><a href="/Newberry-French-paleography/my-transcriptions" title="">My Transcriptions</a></li>
-                <li class="last leaf"><a href="/Newberry-French-paleography/master-transcriptions" title="">Master Transcriptions</a></li>
+                <li class="first leaf"><a href="http://paleo.rerum.io/TPEN-NL/my_transcriptions.html" title="">My Transcriptions</a></li>
+                <li class="last leaf"><a href="/Newberry-French-paleography/transcriptions" title="">Master Transcriptions</a></li>
             </ul>
         </li>
         <li class="last leaf"><a href="http://paleo.rerum.io/TPEN-NL/logout.html" title="">Logout</a></li>
