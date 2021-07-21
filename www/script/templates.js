@@ -31,7 +31,7 @@ header.innerHTML = `
 <slot></slot>
 
 <nav class="container">
-    <ul class="nav nav-bar"><li class="first leaf"><a href="../">Home</a></li>
+    <ul class="nav nav-bar"><li class="first leaf"><a href="/">Home</a></li>
         <li class="leaf active-trail active"><a href="/manuscripts.html" title="" class="active-trail active">Manuscripts</a></li>
         <li class="leaf"><a href="/search" title="">Search</a></li>
         <li class="expanded dropdown"><a href="/resources" title="" data-target="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Resources <span class="caret"></span></a>
