@@ -33,18 +33,17 @@ header.innerHTML = `
 <nav class="container">
     <ul class="nav nav-bar"><li class="first leaf"><a href="/Newberry-French-paleography/">Home</a></li>
         <li class="leaf active-trail active"><a href="/Newberry-French-paleography/www/manuscripts.html" title="" class="active-trail active">Manuscripts</a></li>
-        <li class="leaf"><a href="/Newberry-French-paleography/search" title="">Search</a></li>
         <li class="expanded dropdown"><a href="/Newberry-French-paleography/resources" title="" data-target="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Resources <span class="caret"></span></a>
             <ul class="dropdown-menu">
                 <li class="first leaf"><a href="/Newberry-French-paleography/essays" title="">Background Essays</a></li>
                 <li class="leaf"><a href="/Newberry-French-paleography/transcriptions" title="">Partial Transcriptions</a></li>
                 <li class="leaf"><a href="/Newberry-French-paleography/www/calligraphy.html" title="">Calligraphy Books</a></li>
                 <li class="leaf"><a href="/Newberry-French-paleography/www/maps.html" title="">Historical Maps</a></li>
-                <li class="leaf"><a href="/Newberry-French-paleography/interactive-map">Interactive Map</a></li>
+                <li class="leaf"><a href="/Newberry-French-paleography/map">Interactive Map</a></li>
                 <li class="leaf"><a href="/Newberry-French-paleography/scripts">French Scripts and Hands</a></li>
                 <li class="leaf"><a href="/Newberry-French-paleography/about-french-documents">About French Documents</a></li>
                 <li class="leaf"><a href="/Newberry-French-paleography/manuscript-preservation">Manuscript Preservation</a></li>
-                <li class="leaf"><a href="/Newberry-French-paleography/transcribing-editing-conventions">Transcribing &amp; Editing Conventions</a></li>
+                <li class="leaf"><a href="/Newberry-French-paleography/conventions">Transcribing &amp; Editing Conventions</a></li>
                 <li class="leaf"><a href="/Newberry-French-paleography/teaching">Teaching</a></li>
                 <li class="leaf"><a href="/Newberry-French-paleography/group-work">Group Work</a></li>
                 <li class="last leaf"><a href="/Newberry-French-paleography/get-started">Get Started</a></li>
