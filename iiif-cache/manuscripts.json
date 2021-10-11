@@ -1,672 +1,753 @@
 {
-    "accessed": 1606770612300,
     "@context": "http://iiif.io/api/presentation/2/context.json",
     "@id": "https://iiif.library.utoronto.ca/presentation/v2/collections/paleography:manuscripts",
     "@type": "sc:Collection",
     "label": "Manuscripts",
-    "metadata": [
-        {
-            "label": "title",
-            "value": [
-                "Manuscripts",
-                "",
-                ""
-            ]
-        },
-        {
-            "label": "dateIssued",
-            "value": [
-                "",
-                "",
-                "",
-                ""
-            ]
-        }
-    ],
+    "metadata": [],
     "attribution": "For rights and reproduction information please contact collections@library.utoronto.ca",
     "manifests": [
-        {
-            "tpenProject": 123,
-            "@id": "https://iiif.library.utoronto.ca/presentation/v2/paleography:1807/manifest",
-            "@type": "sc:Manifest",
-            "label": "Troisieme registre des contracts d'acquets faits dans l'etendue du fief et seigneurie de l'Epiniere"
-        },
-        {
-            "tpenProject": 123,
-            "@id": "https://iiif.library.utoronto.ca/presentation/v2/paleography:1808/manifest",
-            "@type": "sc:Manifest",
-            "label": "Troisieme registre des contracts d'acquets faits dans l'etendue du fief et seigneurie de l'Epiniere"
-        },
-        {
-            "tpenProject": 123,
-            "@id": "https://iiif.library.utoronto.ca/presentation/v2/paleography:1809/manifest",
-            "@type": "sc:Manifest",
-            "label": "Contracts, charters, financial records of the St. Lambert's Cathedral in Liège"
-        },
-        {
-            "tpenProject": 123,
-            "@id": "https://iiif.library.utoronto.ca/presentation/v2/paleography:1810/manifest",
-            "@type": "sc:Manifest",
-            "label": "Itinerarium [French]"
-        },
-        {
-            "tpenProject": 123,
-            "@id": "https://iiif.library.utoronto.ca/presentation/v2/paleography:1811/manifest",
-            "@type": "sc:Manifest",
-            "label": "Roman de Mandevie : les melancolies sur les conditions de ce monde"
-        },
-        {
-            "tpenProject": 123,
-            "@id": "https://iiif.library.utoronto.ca/presentation/v2/paleography:1812/manifest",
-            "@type": "sc:Manifest",
-            "label": "Les croniques de Nicolas Trivet"
-        },
-        {
-            "tpenProject": 123,
-            "@id": "https://iiif.library.utoronto.ca/presentation/v2/paleography:1813/manifest",
-            "@type": "sc:Manifest",
-            "label": "L'enfant sage à trois ans [qui] fut interrogé par Adrian empereur lequel luy rendit responce de chacune chose qui luy demande"
-        },
-        {
-            "tpenProject": 123,
-            "@id": "https://iiif.library.utoronto.ca/presentation/v2/paleography:1814/manifest",
-            "@type": "sc:Manifest",
-            "label": "Confirmation by King Henry II of the privileges granted to the Sainte-Chapelle of Dijon by his predecessors the Dukes of Burgundy and Kings of France"
-        },
-        {
-            "tpenProject": 123,
-            "@id": "https://iiif.library.utoronto.ca/presentation/v2/paleography:1815/manifest",
-            "@type": "sc:Manifest",
-            "label": "Le roman de Tristan de Léonois"
-        },
-        {
-            "tpenProject": 123,
-            "@id": "https://iiif.library.utoronto.ca/presentation/v2/paleography:1816/manifest",
-            "@type": "sc:Manifest",
-            "label": "Book of Esther (beginning)"
-        },
-        {
-            "tpenProject": 123,
-            "@id": "https://iiif.library.utoronto.ca/presentation/v2/paleography:1817/manifest",
-            "@type": "sc:Manifest",
-            "label": "Chronique de Normandie"
-        },
-        {
-            "tpenProject": 123,
-            "@id": "https://iiif.library.utoronto.ca/presentation/v2/paleography:2055/manifest",
-            "@type": "sc:Manifest",
-            "label": "Cartulaire de l'Abbaye-aux-Bois"
-        },
-        {
-            "tpenProject": 123,
-            "@id": "https://iiif.library.utoronto.ca/presentation/v2/paleography:2065/manifest",
-            "@type": "sc:Manifest",
-            "label": "Fables and Other Poems"
-        },
-        {
-            "tpenProject": 123,
-            "@id": "https://iiif.library.utoronto.ca/presentation/v2/paleography:2066/manifest",
-            "@type": "sc:Manifest",
-            "label": "Acknowledgment of patronage"
-        },
-        {
-            "tpenProject": 123,
-            "@id": "https://iiif.library.utoronto.ca/presentation/v2/paleography:2067/manifest",
-            "@type": "sc:Manifest",
-            "label": "Agreement to join fiefs"
-        },
-        {
-            "tpenProject": 123,
-            "@id": "https://iiif.library.utoronto.ca/presentation/v2/paleography:2068/manifest",
-            "@type": "sc:Manifest",
-            "label": "Leasing contract"
-        },
-        {
-            "tpenProject": 123,
-            "@id": "https://iiif.library.utoronto.ca/presentation/v2/paleography:2069/manifest",
-            "@type": "sc:Manifest",
-            "label": "Homage for fiefs (Acknowledgement of fiefs)"
-        },
-        {
-            "tpenProject": 123,
-            "@id": "https://iiif.library.utoronto.ca/presentation/v2/paleography:2070/manifest",
-            "@type": "sc:Manifest",
-            "label": "Account book"
-        },
-        {
-            "tpenProject": 123,
-            "@id": "https://iiif.library.utoronto.ca/presentation/v2/paleography:2071/manifest",
-            "@type": "sc:Manifest",
-            "label": "Ethica ad Nicomadum [Translation by Nicole Oresme]"
-        },
-        {
-            "tpenProject": 123,
-            "@id": "https://iiif.library.utoronto.ca/presentation/v2/paleography:2072/manifest",
-            "@type": "sc:Manifest",
-            "label": "Payment for the defense of Guyenne"
-        },
-        {
-            "tpenProject": 123,
-            "@id": "https://iiif.library.utoronto.ca/presentation/v2/paleography:2073/manifest",
-            "@type": "sc:Manifest",
-            "label": "Quittance for payment for military expenses in Picardy"
-        },
-        {
-            "tpenProject": 123,
-            "@id": "https://iiif.library.utoronto.ca/presentation/v2/paleography:2074/manifest",
-            "@type": "sc:Manifest",
-            "label": "Acte de foy et hommage au profit de noble homme Claude de Vignes, seigneur de la Vischardière"
-        },
-        {
-            "tpenProject": 123,
-            "@id": "https://iiif.library.utoronto.ca/presentation/v2/paleography:2075/manifest",
-            "@type": "sc:Manifest",
-            "label": "La Charité quittance"
-        },
-        {
-            "tpenProject": 123,
-            "@id": "https://iiif.library.utoronto.ca/presentation/v2/paleography:2076/manifest",
-            "@type": "sc:Manifest",
-            "label": "Receipt for repairs made to the castle of Rochefort"
-        },
-        {
-            "tpenProject": 123,
-            "@id": "https://iiif.library.utoronto.ca/presentation/v2/paleography:2077/manifest",
-            "@type": "sc:Manifest",
-            "label": "Hommage de Jehan Vepres, dit le Moine, à son frère, pour un fief"
-        },
-        {
-            "tpenProject": 123,
-            "@id": "https://iiif.library.utoronto.ca/presentation/v2/paleography:2078/manifest",
-            "@type": "sc:Manifest",
-            "label": "Land sale by Pierre le Canu"
-        },
-        {
-            "tpenProject": 123,
-            "@id": "https://iiif.library.utoronto.ca/presentation/v2/paleography:2079/manifest",
-            "@type": "sc:Manifest",
-            "label": "Payment au nain de la reine"
-        },
-        {
-            "tpenProject": 123,
-            "@id": "https://iiif.library.utoronto.ca/presentation/v2/paleography:404/manifest",
-            "@type": "sc:Manifest",
-            "label": "Les xv joyes Nostre Dame"
-        },
-        {
-            "tpenProject": 123,
-            "@id": "https://iiif.library.utoronto.ca/presentation/v2/paleography:418/manifest",
-            "@type": "sc:Manifest",
-            "label": "A nosseigneurs de la Cour des Aydes [calligraphy sample: mock legal document]"
-        },
-        {
-            "tpenProject": 123,
-            "@id": "https://iiif.library.utoronto.ca/presentation/v2/paleography:422/manifest",
-            "@type": "sc:Manifest",
-            "label": "De la preuve par comparaison d'ecritures"
-        },
-        {
-            "tpenProject": 123,
-            "@id": "https://iiif.library.utoronto.ca/presentation/v2/paleography:426/manifest",
-            "@type": "sc:Manifest",
-            "label": "Legal notebook"
-        },
-        {
-            "tpenProject": 123,
-            "@id": "https://iiif.library.utoronto.ca/presentation/v2/paleography:427/manifest",
-            "@type": "sc:Manifest",
-            "label": "Lectures on the Charter of the Forests, reissued by Henry III in 1225"
-        },
-        {
-            "tpenProject": 123,
-            "@id": "https://iiif.library.utoronto.ca/presentation/v2/paleography:428/manifest",
-            "@type": "sc:Manifest",
-            "label": "Negotiations at Calais"
-        },
-        {
-            "tpenProject": 123,
-            "@id": "https://iiif.library.utoronto.ca/presentation/v2/paleography:429/manifest",
-            "@type": "sc:Manifest",
-            "label": "Harangue faicte à la Royne mere du Roy à Poictiers par le seigneur de Salevert, presidial de ladicte ville, le lendemain de son arrivée qui fut le vingt huictiesme novembre 1575"
-        },
-        {
-            "tpenProject": 123,
-            "@id": "https://iiif.library.utoronto.ca/presentation/v2/paleography:430/manifest",
-            "@type": "sc:Manifest",
-            "label": "Discours et harangue des ambassadeurs du Roy avec ceulx d'Angleterre touchant le pourparler du mariaige d'entre monseigneur le duc d'Anjou et d'Alençon avec la Royne d'Angleterre"
-        },
-        {
-            "tpenProject": 123,
-            "@id": "https://iiif.library.utoronto.ca/presentation/v2/paleography:431/manifest",
-            "@type": "sc:Manifest",
-            "label": "Letter signed by Philip II, King of Spain, to his nephew Rudolf II, Holy Roman Emperor"
-        },
-        {
-            "tpenProject": 123,
-            "@id": "https://iiif.library.utoronto.ca/presentation/v2/paleography:432/manifest",
-            "@type": "sc:Manifest",
-            "label": "Letter of John Stanlaw to John Randulf, viscount of Caen, regarding a program of repairs to be made at the castle of Caen"
-        },
-        {
-            "tpenProject": 123,
-            "@id": "https://iiif.library.utoronto.ca/presentation/v2/paleography:433/manifest",
-            "@type": "sc:Manifest",
-            "label": "Memoranda about Charles d'Orléans's rights as Count of Blois"
-        },
-        {
-            "tpenProject": 123,
-            "@id": "https://iiif.library.utoronto.ca/presentation/v2/paleography:434/manifest",
-            "@type": "sc:Manifest",
-            "label": "Roole des parties payees par maistre Estienne Petit, tresorier et receveur general des pays de Languedoc et duchié de Guienne par le commandement et ordonnance du Roy nostre seigneur"
-        },
-        {
-            "tpenProject": 123,
-            "@id": "https://iiif.library.utoronto.ca/presentation/v2/paleography:435/manifest",
-            "@type": "sc:Manifest",
-            "label": "Confirmation of the donations made by Louis, Duke of Orléans, and his mother to the convent of Sainte-Croix in Chauny"
-        },
-        {
-            "tpenProject": 123,
-            "@id": "https://iiif.library.utoronto.ca/presentation/v2/paleography:436/manifest",
-            "@type": "sc:Manifest",
-            "label": "Lettre de la reine mère Catherine de Médicis au secrétaire d’État Nicolas de Neufville, seigneur de Villeroy"
-        },
-        {
-            "tpenProject": 123,
-            "@id": "https://iiif.library.utoronto.ca/presentation/v2/paleography:437/manifest",
-            "@type": "sc:Manifest",
-            "label": "Letter of Paul Lejeune to Cardinal de Richelieu"
-        },
-        {
-            "tpenProject": 123,
-            "@id": "https://iiif.library.utoronto.ca/presentation/v2/paleography:438/manifest",
-            "@type": "sc:Manifest",
-            "label": "Recueil des Serées"
-        },
-        {
-            "tpenProject": 123,
-            "@id": "https://iiif.library.utoronto.ca/presentation/v2/paleography:439/manifest",
-            "@type": "sc:Manifest",
-            "label": "Composition de toutes sortes de feux artificiels"
-        },
-        {
-            "tpenProject": 123,
-            "@id": "https://iiif.library.utoronto.ca/presentation/v2/paleography:440/manifest",
-            "@type": "sc:Manifest",
-            "label": "Receipt by Guillaume Duru, \"clerc de Monsieur le tresorier de Normandie,\" for six skins of parchment to be used for writing certain royal ordinances for the government of Normandy"
-        },
-        {
-            "tpenProject": 123,
-            "@id": "https://iiif.library.utoronto.ca/presentation/v2/paleography:441/manifest",
-            "@type": "sc:Manifest",
-            "label": "Letters patent by King Henry III authorizing Pietro Angèli da Barga to hold ecclesiastical benefices in France"
-        },
-        {
-            "tpenProject": 123,
-            "@id": "https://iiif.library.utoronto.ca/presentation/v2/paleography:442/manifest",
-            "@type": "sc:Manifest",
-            "label": "Cession de créance par Charles de Biencourt"
-        },
-        {
-            "tpenProject": 123,
-            "@id": "https://iiif.library.utoronto.ca/presentation/v2/paleography:443/manifest",
-            "@type": "sc:Manifest",
-            "label": "Investiture de l'Ile d'Orléans donnée au procureur des concessionnaires par le gouverneur de la Nouvelle-France"
-        },
-        {
-            "tpenProject": 123,
-            "@id": "https://iiif.library.utoronto.ca/presentation/v2/paleography:444/manifest",
-            "@type": "sc:Manifest",
-            "label": "Letter: Residence de la Conception-aux-Hurons, to M. le curé de St. Martin, à Beauvais [France], 1639 May 25"
-        },
-        {
-            "tpenProject": 123,
-            "@id": "https://iiif.library.utoronto.ca/presentation/v2/paleography:445/manifest",
-            "@type": "sc:Manifest",
-            "label": "Legal documents concerning the inventory of the estate of Jean Nicollet"
-        },
-        {
-            "tpenProject": 123,
-            "@id": "https://iiif.library.utoronto.ca/presentation/v2/paleography:446/manifest",
-            "@type": "sc:Manifest",
-            "label": "Pompe funebre de Mr le cardinal de Richelieu"
-        },
-        {
-            "tpenProject": 123,
-            "@id": "https://iiif.library.utoronto.ca/presentation/v2/paleography:447/manifest",
-            "@type": "sc:Manifest",
-            "label": "Fur trade contract between François Francoeur and four \"voyageurs\" for transport of goods and purchase of beaver pelts in Michilimackinac and Chicago"
-        },
-        {
-            "tpenProject": 123,
-            "@id": "https://iiif.library.utoronto.ca/presentation/v2/paleography:448/manifest",
-            "@type": "sc:Manifest",
-            "label": "Aveu et dénombrement de la seigneurie de Taillepied"
-        },
-        {
-            "tpenProject": 123,
-            "@id": "https://iiif.library.utoronto.ca/presentation/v2/paleography:449/manifest",
-            "@type": "sc:Manifest",
-            "label": "Ordinance by which King Charles VI of France prohibits assistance to his disinherited son Charles in the aftermath of the assassination of John the Fearless"
-        },
-        {
-            "tpenProject": 123,
-            "@id": "https://iiif.library.utoronto.ca/presentation/v2/paleography:450/manifest",
-            "@type": "sc:Manifest",
-            "label": "De l'occasion et de la fortune"
-        },
-        {
-            "tpenProject": 123,
-            "@id": "https://iiif.library.utoronto.ca/presentation/v2/paleography:451/manifest",
-            "@type": "sc:Manifest",
-            "label": "Lancelot du lac"
-        },
-        {
-            "tpenProject": 123,
-            "@id": "https://iiif.library.utoronto.ca/presentation/v2/paleography:452/manifest",
-            "@type": "sc:Manifest",
-            "label": "Commentaries on William Rastell's Collection of all the statutes"
-        },
-        {
-            "tpenProject": 123,
-            "@id": "https://iiif.library.utoronto.ca/presentation/v2/paleography:453/manifest",
-            "@type": "sc:Manifest",
-            "label": "Sixieme livre du Proces d'amour"
-        },
-        {
-            "tpenProject": 123,
-            "@id": "https://iiif.library.utoronto.ca/presentation/v2/paleography:454/manifest",
-            "@type": "sc:Manifest",
-            "label": "Double contrat de mariage entre les familles Berugnot et Baptauld"
-        },
-        {
-            "tpenProject": 123,
-            "@id": "https://iiif.library.utoronto.ca/presentation/v2/paleography:455/manifest",
-            "@type": "sc:Manifest",
-            "label": "Déclaration de Michel Mercier de tenue en bourgage de sa maison à Alencon"
-        },
-        {
-            "tpenProject": 123,
-            "@id": "https://iiif.library.utoronto.ca/presentation/v2/paleography:456/manifest",
-            "@type": "sc:Manifest",
-            "label": "Register of notary Guillaume Peytralis for 1582-1583 (part 1)"
-        },
-        {
-            "tpenProject": 123,
-            "@id": "https://iiif.library.utoronto.ca/presentation/v2/paleography:457/manifest",
-            "@type": "sc:Manifest",
-            "label": "Pensées (doctrines de la sainte foy chretienne)"
-        },
-        {
-            "tpenProject": 123,
-            "@id": "https://iiif.library.utoronto.ca/presentation/v2/paleography:458/manifest",
-            "@type": "sc:Manifest",
-            "label": "Chroniques de Jean Froissart, vol. 1"
-        },
-        {
-            "tpenProject": 123,
-            "@id": "https://iiif.library.utoronto.ca/presentation/v2/paleography:459/manifest",
-            "@type": "sc:Manifest",
-            "label": "Chroniques de Jean Froissart, vol. 2"
-        },
-        {
-            "tpenProject": 123,
-            "@id": "https://iiif.library.utoronto.ca/presentation/v2/paleography:460/manifest",
-            "@type": "sc:Manifest",
-            "label": "Recognoissance des enfans et heretiers de feu Berthomé de Bazas"
-        },
-        {
-            "tpenProject": 123,
-            "@id": "https://iiif.library.utoronto.ca/presentation/v2/paleography:461/manifest",
-            "@type": "sc:Manifest",
-            "label": "Household account for the French royal household at Amboise"
-        },
-        {
-            "tpenProject": 123,
-            "@id": "https://iiif.library.utoronto.ca/presentation/v2/paleography:462/manifest",
-            "@type": "sc:Manifest",
-            "label": "Vers d'amour"
-        },
-        {
-            "tpenProject": 123,
-            "@id": "https://iiif.library.utoronto.ca/presentation/v2/paleography:463/manifest",
-            "@type": "sc:Manifest",
-            "label": "Certified account rendered for vellum, ink and paper, furnished to the office of the King’s advocate at Toulouse from St. Martin’s day 1485 to October 1486, by Simon, \"marchant parcheminier\""
-        },
-        {
-            "tpenProject": 123,
-            "@id": "https://iiif.library.utoronto.ca/presentation/v2/paleography:464/manifest",
-            "@type": "sc:Manifest",
-            "label": "Marriage contract of Sauveur de Lombard and Antoinette de Geoffroy"
-        },
-        {
-            "tpenProject": 123,
-            "@id": "https://iiif.library.utoronto.ca/presentation/v2/paleography:465/manifest",
-            "@type": "sc:Manifest",
-            "label": "Censier du seizième siècle pour la paroisse de Payns, bailliage de Troyes"
-        },
-        {
-            "tpenProject": 123,
-            "@id": "https://iiif.library.utoronto.ca/presentation/v2/paleography:466/manifest",
-            "@type": "sc:Manifest",
-            "label": "Papier terrier de la seignerie de Perthes, renouvelé en l’an 1578 pour les Célestins de Paris"
-        },
-        {
-            "tpenProject": 123,
-            "@id": "https://iiif.library.utoronto.ca/presentation/v2/paleography:467/manifest",
-            "@type": "sc:Manifest",
-            "label": "Grosse d'un jugement du bailli d'Orléans"
-        },
-        {
-            "tpenProject": 123,
-            "@id": "https://iiif.library.utoronto.ca/presentation/v2/paleography:468/manifest",
-            "@type": "sc:Manifest",
-            "label": "Bail du moulin de Les Roches-l'Evêque, 1593"
-        },
-        {
-            "tpenProject": 123,
-            "@id": "https://iiif.library.utoronto.ca/presentation/v2/paleography:469/manifest",
-            "@type": "sc:Manifest",
-            "label": "Etats généraux du Languedoc, 1501-1516"
-        },
-        {
-            "tpenProject": 123,
-            "@id": "https://iiif.library.utoronto.ca/presentation/v2/paleography:470/manifest",
-            "@type": "sc:Manifest",
-            "label": "Traicté des modes, ou tons, de la musique"
-        },
-        {
-            "tpenProject": 123,
-            "@id": "https://iiif.library.utoronto.ca/presentation/v2/paleography:471/manifest",
-            "@type": "sc:Manifest",
-            "label": "Registre de la seigneurie de Gourdon tenue par Louis et François de Lombard"
-        },
-        {
-            "tpenProject": 123,
-            "@id": "https://iiif.library.utoronto.ca/presentation/v2/paleography:472/manifest",
-            "@type": "sc:Manifest",
-            "label": "Letters and decrees issued by the Parlement de Bordeaux"
-        },
-        {
-            "tpenProject": 123,
-            "@id": "https://iiif.library.utoronto.ca/presentation/v2/paleography:473/manifest",
-            "@type": "sc:Manifest",
-            "label": "Charitable donation of land to benefit the poor of Quebec City"
-        },
-        {
-            "tpenProject": 123,
-            "@id": "https://iiif.library.utoronto.ca/presentation/v2/paleography:474/manifest",
-            "@type": "sc:Manifest",
-            "label": "Inventaire du mobilier et du matériel d’imprimerie de Jean Chardon"
-        },
-        {
-            "tpenProject": 123,
-            "@id": "https://iiif.library.utoronto.ca/presentation/v2/paleography:475/manifest",
-            "@type": "sc:Manifest",
-            "label": "Mortgage contract on properties of Pontchartrain and Palluau"
-        },
-        {
-            "tpenProject": 123,
-            "@id": "https://iiif.library.utoronto.ca/presentation/v2/paleography:476/manifest",
-            "@type": "sc:Manifest",
-            "label": "Expédition du contrat de mariage de Guillaume Lobeyrie et Anthonie Anglade"
-        },
-        {
-            "tpenProject": 123,
-            "@id": "https://iiif.library.utoronto.ca/presentation/v2/paleography:477/manifest",
-            "@type": "sc:Manifest",
-            "label": "Vente de la moitié d'une maison"
-        },
-        {
-            "tpenProject": 123,
-            "@id": "https://iiif.library.utoronto.ca/presentation/v2/paleography:478/manifest",
-            "@type": "sc:Manifest",
-            "label": "Contrat de vente au profit de Gilles de l'Espine"
-        },
-        {
-            "tpenProject": 123,
-            "@id": "https://iiif.library.utoronto.ca/presentation/v2/paleography:479/manifest",
-            "@type": "sc:Manifest",
-            "label": "Register of notary Guillaume Peytralis for 1582-1583 (part 2)"
-        },
-        {
-            "tpenProject": 123,
-            "@id": "https://iiif.library.utoronto.ca/presentation/v2/paleography:480/manifest",
-            "@type": "sc:Manifest",
-            "label": "Register of notary Guillaume Peytralis for 1582-1583 (part 3)"
-        },
-        {
-            "tpenProject": 123,
-            "@id": "https://iiif.library.utoronto.ca/presentation/v2/paleography:481/manifest",
-            "@type": "sc:Manifest",
-            "label": "Sentence du sénéchal d'Auvergne"
-        },
-        {
-            "tpenProject": 123,
-            "@id": "https://iiif.library.utoronto.ca/presentation/v2/paleography:482/manifest",
-            "@type": "sc:Manifest",
-            "label": "Vente au profit de Gabriel de Langeac"
-        },
-        {
-            "tpenProject": 123,
-            "@id": "https://iiif.library.utoronto.ca/presentation/v2/paleography:483/manifest",
-            "@type": "sc:Manifest",
-            "label": "Expédition du contrat de mariage de Catherine Lobeyrie et Jean Favy"
-        },
-        {
-            "tpenProject": 123,
-            "@id": "https://iiif.library.utoronto.ca/presentation/v2/paleography:484/manifest",
-            "@type": "sc:Manifest",
-            "label": "Expédition du contrat de mariage de Jean de Jardon et Françoise de Rochefort"
-        },
-        {
-            "tpenProject": 123,
-            "@id": "https://iiif.library.utoronto.ca/presentation/v2/paleography:485/manifest",
-            "@type": "sc:Manifest",
-            "label": "Partage de l'héritage de François de L'Estang"
-        },
-        {
-            "tpenProject": 123,
-            "@id": "https://iiif.library.utoronto.ca/presentation/v2/paleography:486/manifest",
-            "@type": "sc:Manifest",
-            "label": "Pièce du procès de Jacques de Langeac"
-        },
-        {
-            "tpenProject": 123,
-            "@id": "https://iiif.library.utoronto.ca/presentation/v2/paleography:487/manifest",
-            "@type": "sc:Manifest",
-            "label": "Contrat du mariage d'Annet d'Anglars et d'Anne de Rochegude"
-        },
-        {
-            "tpenProject": 123,
-            "@id": "https://iiif.library.utoronto.ca/presentation/v2/paleography:488/manifest",
-            "@type": "sc:Manifest",
-            "label": "Land grant of Annet d'Anglars to his mother Avoise de Tabou"
-        },
-        {
-            "tpenProject": 123,
-            "@id": "https://iiif.library.utoronto.ca/presentation/v2/paleography:489/manifest",
-            "@type": "sc:Manifest",
-            "label": "Printing agreement by Jacques de Sanlecque and Toussaint du Bray"
-        },
-        {
-            "tpenProject": 123,
-            "@id": "https://iiif.library.utoronto.ca/presentation/v2/paleography:490/manifest",
-            "@type": "sc:Manifest",
-            "label": "Inquest regarding land disputes"
-        },
-        {
-            "tpenProject": 123,
-            "@id": "https://iiif.library.utoronto.ca/presentation/v2/paleography:491/manifest",
-            "@type": "sc:Manifest",
-            "label": "Bail à cens de la seigneurie de Bonnabaud"
-        },
-        {
-            "tpenProject": 123,
-            "@id": "https://iiif.library.utoronto.ca/presentation/v2/paleography:492/manifest",
-            "@type": "sc:Manifest",
-            "label": "Legal papers concerning the estate of René de Hodon"
-        },
-        {
-            "tpenProject": 123,
-            "@id": "https://iiif.library.utoronto.ca/presentation/v2/paleography:493/manifest",
-            "@type": "sc:Manifest",
-            "label": "Contrat d'échange de propriétés entre Gilbert de La Fayette et Delphine de Bonnabaud"
-        },
-        {
-            "tpenProject": 123,
-            "@id": "https://iiif.library.utoronto.ca/presentation/v2/paleography:494/manifest",
-            "@type": "sc:Manifest",
-            "label": "La Fayette-Langeac Contredict"
-        },
-        {
-            "tpenProject": 123,
-            "@id": "https://iiif.library.utoronto.ca/presentation/v2/paleography:495/manifest",
-            "@type": "sc:Manifest",
-            "label": "La Fayette-Langeac Contredict 2"
-        },
-        {
-            "tpenProject": 123,
-            "@id": "https://iiif.library.utoronto.ca/presentation/v2/paleography:496/manifest",
-            "@type": "sc:Manifest",
-            "label": "Meslanges curieux de litterature et d'histoire"
-        },
-        {
-            "tpenProject": 123,
-            "@id": "https://iiif.library.utoronto.ca/presentation/v2/paleography:497/manifest",
-            "@type": "sc:Manifest",
-            "label": "Sentence du maître des requêtes de l'hôtel du roi concernant le moulin suzereain de François de Taillevis au lieu dit Moulin de Bessé"
-        },
-        {
-            "tpenProject": 123,
-            "@id": "https://iiif.library.utoronto.ca/presentation/v2/paleography:498/manifest",
-            "@type": "sc:Manifest",
-            "label": "Grosse d'un arrêt du maître des Requêtes du Parlement de Paris"
-        },
-        {
-            "tpenProject": 123,
-            "@id": "https://iiif.library.utoronto.ca/presentation/v2/paleography:499/manifest",
-            "@type": "sc:Manifest",
-            "label": "Procuration au profit de Jean Lobeyrie accordée par son beau-père Guillaume Du Pré"
-        },
-        {
-            "tpenProject": 123,
-            "@id": "https://iiif.library.utoronto.ca/presentation/v2/paleography:500/manifest",
-            "@type": "sc:Manifest",
-            "label": "Prussurot-Raveneau partnership agreement"
-        },
-        {
-            "tpenProject": 123,
-            "@id": "https://iiif.library.utoronto.ca/presentation/v2/paleography:501/manifest",
-            "@type": "sc:Manifest",
-            "label": "Tournon papers"
-        },
-        {
-            "tpenProject": 123,
-            "@id": "https://iiif.library.utoronto.ca/presentation/v2/paleography:502/manifest",
-            "@type": "sc:Manifest",
-            "label": "Simiane papers"
-        }
+      {
+        "@id": "https://iiif.library.utoronto.ca/presentation/v2/paleography:1807/manifest",
+        "@type": "sc:Manifest",
+        "label": "Troisieme registre des contracts d'acquets faits dans l'etendue du fief et seigneurie de l'Epiniere",
+        "date": 1581,
+        "difficulty": "Advanced"
+      },
+      {
+        "@id": "https://iiif.library.utoronto.ca/presentation/v2/paleography:1808/manifest",
+        "@type": "sc:Manifest",
+        "label": "Troisieme registre des contracts d'acquets faits dans l'etendue du fief et seigneurie de l'Epiniere",
+        "date": 1608,
+        "difficulty": "Advanced"
+      },
+      {
+        "@id": "https://iiif.library.utoronto.ca/presentation/v2/paleography:1809/manifest",
+        "@type": "sc:Manifest",
+        "label": "Contracts, charters, financial records of the St. Lambert's Cathedral in Liège",
+        "date": 1681,
+        "difficulty": "Intermediate"
+      },
+      {
+        "@id": "https://iiif.library.utoronto.ca/presentation/v2/paleography:1810/manifest",
+        "@type": "sc:Manifest",
+        "label": "Itinerarium [French]",
+        "date": 1400,
+        "difficulty": "Intermediate"
+      },
+      {
+        "@id": "https://iiif.library.utoronto.ca/presentation/v2/paleography:1811/manifest",
+        "@type": "sc:Manifest",
+        "label": "Roman de Mandevie : les melancolies sur les conditions de ce monde",
+        "date": 1450,
+        "difficulty": "Advanced"
+      },
+      {
+        "@id": "https://iiif.library.utoronto.ca/presentation/v2/paleography:1812/manifest",
+        "@type": "sc:Manifest",
+        "label": "Les croniques de Nicolas Trivet",
+        "date": 1490,
+        "difficulty": "Introductory"
+      },
+      {
+        "@id": "https://iiif.library.utoronto.ca/presentation/v2/paleography:1813/manifest",
+        "@type": "sc:Manifest",
+        "label": "L'enfant sage à trois ans [qui] fut interrogé par Adrian empereur lequel luy rendit responce de chacune chose qui luy demande",
+        "date": 1515,
+        "difficulty": "Advanced"
+      },
+      {
+        "@id": "https://iiif.library.utoronto.ca/presentation/v2/paleography:1814/manifest",
+        "@type": "sc:Manifest",
+        "label": "Confirmation by King Henry II of the privileges granted to the Sainte-Chapelle of Dijon by his predecessors the Dukes of Burgundy and Kings of France",
+        "date": 1547,
+        "difficulty": "Intermediate"
+      },
+      {
+        "@id": "https://iiif.library.utoronto.ca/presentation/v2/paleography:1815/manifest",
+        "@type": "sc:Manifest",
+        "label": "Le roman de Tristan de Léonois",
+        "date": 1320,
+        "difficulty": "Introductory"
+      },
+      {
+        "@id": "https://iiif.library.utoronto.ca/presentation/v2/paleography:1816/manifest",
+        "@type": "sc:Manifest",
+        "label": "Book of Esther (beginning)",
+        "date": 1360,
+        "difficulty": "Introductory"
+      },
+      {
+        "@id": "https://iiif.library.utoronto.ca/presentation/v2/paleography:1817/manifest",
+        "@type": "sc:Manifest",
+        "label": "Chronique de Normandie",
+        "date": 1400,
+        "difficulty": "Introductory"
+      },
+      {
+        "@id": "https://iiif.library.utoronto.ca/presentation/v2/paleography:2055/manifest",
+        "@type": "sc:Manifest",
+        "label": "Cartulaire de l'Abbaye-aux-Bois",
+        "date": 1243,
+        "difficulty": "Introductory"
+      },
+      {
+        "@id": "https://iiif.library.utoronto.ca/presentation/v2/paleography:2065/manifest",
+        "@type": "sc:Manifest",
+        "label": "Fables and Other Poems",
+        "date": 1515,
+        "difficulty": "Introductory"
+      },
+      {
+        "@id": "https://iiif.library.utoronto.ca/presentation/v2/paleography:2066/manifest",
+        "@type": "sc:Manifest",
+        "label": "Acknowledgment of patronage",
+        "date": 1315,
+        "difficulty": "Introductory"
+      },
+      {
+        "@id": "https://iiif.library.utoronto.ca/presentation/v2/paleography:2067/manifest",
+        "@type": "sc:Manifest",
+        "label": "Agreement to join fiefs",
+        "date": 1358,
+        "difficulty": "Advanced"
+      },
+      {
+        "@id": "https://iiif.library.utoronto.ca/presentation/v2/paleography:2068/manifest",
+        "@type": "sc:Manifest",
+        "label": "Leasing contract",
+        "date": 1459,
+        "difficulty": "Introductory"
+      },
+      {
+        "@id": "https://iiif.library.utoronto.ca/presentation/v2/paleography:2069/manifest",
+        "@type": "sc:Manifest",
+        "label": "Homage for fiefs (Acknowledgement of fiefs)",
+        "date": 1476,
+        "difficulty": "Introductory"
+      },
+      {
+        "@id": "https://iiif.library.utoronto.ca/presentation/v2/paleography:2070/manifest",
+        "@type": "sc:Manifest",
+        "label": "Account book",
+        "date": 1400,
+        "difficulty": "Advanced"
+      },
+      {
+        "@id": "https://iiif.library.utoronto.ca/presentation/v2/paleography:2071/manifest",
+        "@type": "sc:Manifest",
+        "label": "Ethica ad Nicomadum [Translation by Nicole Oresme]",
+        "date": 1370,
+        "difficulty": "Introductory"
+      },
+      {
+        "@id": "https://iiif.library.utoronto.ca/presentation/v2/paleography:2072/manifest",
+        "@type": "sc:Manifest",
+        "label": "Payment for the defense of Guyenne",
+        "date": 1423,
+        "difficulty": "Introductory"
+      },
+      {
+        "@id": "https://iiif.library.utoronto.ca/presentation/v2/paleography:2073/manifest",
+        "@type": "sc:Manifest",
+        "label": "Quittance for payment for military expenses in Picardy",
+        "date": 1507,
+        "difficulty": "Intermediate"
+      },
+      {
+        "@id": "https://iiif.library.utoronto.ca/presentation/v2/paleography:2074/manifest",
+        "@type": "sc:Manifest",
+        "label": "Acte de foy et hommage au profit de noble homme Claude de Vignes, seigneur de la Vischardière",
+        "date": 1517,
+        "difficulty": "Introductory"
+      },
+      {
+        "@id": "https://iiif.library.utoronto.ca/presentation/v2/paleography:2075/manifest",
+        "@type": "sc:Manifest",
+        "label": "La Charité quittance",
+        "date": 1522,
+        "difficulty": "Advanced"
+      },
+      {
+        "@id": "https://iiif.library.utoronto.ca/presentation/v2/paleography:2076/manifest",
+        "@type": "sc:Manifest",
+        "label": "Receipt for repairs made to the castle of Rochefort",
+        "date": 1522,
+        "difficulty": "Advanced"
+      },
+      {
+        "@id": "https://iiif.library.utoronto.ca/presentation/v2/paleography:2077/manifest",
+        "@type": "sc:Manifest",
+        "label": "Hommage de Jehan Vepres, dit le Moine, à son frère, pour un fief",
+        "date": 1540,
+        "difficulty": "Advanced"
+      },
+      {
+        "@id": "https://iiif.library.utoronto.ca/presentation/v2/paleography:2078/manifest",
+        "@type": "sc:Manifest",
+        "label": "Land sale by Pierre le Canu",
+        "date": 1541,
+        "difficulty": "Advanced"
+      },
+      {
+        "@id": "https://iiif.library.utoronto.ca/presentation/v2/paleography:2079/manifest",
+        "@type": "sc:Manifest",
+        "label": "Payment au nain de la reine",
+        "date": 1569
+      },
+      {
+        "@id": "https://iiif.library.utoronto.ca/presentation/v2/paleography:404/manifest",
+        "@type": "sc:Manifest",
+        "label": "Les xv joyes Nostre Dame",
+        "date": 1480,
+        "difficulty": "Introductory"
+      },
+      {
+        "@id": "https://iiif.library.utoronto.ca/presentation/v2/paleography:418/manifest",
+        "@type": "sc:Manifest",
+        "label": "A nosseigneurs de la Cour des Aydes [calligraphy sample: mock legal document]",
+        "date": 1663,
+        "difficulty": "Introductory"
+      },
+      {
+        "@id": "https://iiif.library.utoronto.ca/presentation/v2/paleography:422/manifest",
+        "@type": "sc:Manifest",
+        "label": "De la preuve par comparaison d'ecritures",
+        "date": 1650,
+        "difficulty": "Introductory"
+      },
+      {
+        "@id": "https://iiif.library.utoronto.ca/presentation/v2/paleography:429/manifest",
+        "@type": "sc:Manifest",
+        "label": "Harangue faicte à la Royne mere du Roy à Poictiers par le seigneur de Salevert, presidial de ladicte ville, le lendemain de son arrivée qui fut le vingt huictiesme novembre 1575",
+        "date": 1575,
+        "difficulty": "Intermediate"
+      },
+      {
+        "@id": "https://iiif.library.utoronto.ca/presentation/v2/paleography:430/manifest",
+        "@type": "sc:Manifest",
+        "label": "Discours et harangue des ambassadeurs du Roy avec ceulx d'Angleterre touchant le pourparler du mariaige d'entre monseigneur le duc d'Anjou et d'Alençon avec la Royne d'Angleterre",
+        "date": 1581,
+        "difficulty": "Intermediate"
+      },
+      {
+        "@id": "https://iiif.library.utoronto.ca/presentation/v2/paleography:431/manifest",
+        "@type": "sc:Manifest",
+        "label": "Letter signed by Philip II, King of Spain, to his nephew Rudolf II, Holy Roman Emperor",
+        "date": 1597,
+        "difficulty": "Introductory"
+      },
+      {
+        "@id": "https://iiif.library.utoronto.ca/presentation/v2/paleography:432/manifest",
+        "@type": "sc:Manifest",
+        "label": "Letter of John Stanlaw to John Randulf, viscount of Caen, regarding a program of repairs to be made at the castle of Caen",
+        "date": 1435,
+        "difficulty": "Introductory"
+      },
+      {
+        "@id": "https://iiif.library.utoronto.ca/presentation/v2/paleography:433/manifest",
+        "@type": "sc:Manifest",
+        "label": "Memoranda about Charles d'Orléans's rights as Count of Blois",
+        "date": 1434,
+        "difficulty": "Introductory"
+      },
+      {
+        "@id": "https://iiif.library.utoronto.ca/presentation/v2/paleography:434/manifest",
+        "@type": "sc:Manifest",
+        "label": "Roole des parties payees par maistre Estienne Petit, tresorier et receveur general des pays de Languedoc et duchié de Guienne par le commandement et ordonnance du Roy nostre seigneur",
+        "date": 1445,
+        "difficulty": "Introductory"
+      },
+      {
+        "@id": "https://iiif.library.utoronto.ca/presentation/v2/paleography:435/manifest",
+        "@type": "sc:Manifest",
+        "label": "Confirmation of the donations made by Louis, Duke of Orléans, and his mother to the convent of Sainte-Croix in Chauny",
+        "date": 1492,
+        "difficulty": "Intermediate"
+      },
+      {
+        "@id": "https://iiif.library.utoronto.ca/presentation/v2/paleography:436/manifest",
+        "@type": "sc:Manifest",
+        "label": "Lettre de la reine mère Catherine de Médicis au secrétaire d’État Nicolas de Neufville, seigneur de Villeroy",
+        "date": 1578,
+        "difficulty": "Advanced"
+      },
+      {
+        "@id": "https://iiif.library.utoronto.ca/presentation/v2/paleography:437/manifest",
+        "@type": "sc:Manifest",
+        "label": "Letter of Paul Lejeune to Cardinal de Richelieu",
+        "date": 1642,
+        "difficulty": "Introductory"
+      },
+      {
+        "@id": "https://iiif.library.utoronto.ca/presentation/v2/paleography:438/manifest",
+        "@type": "sc:Manifest",
+        "label": "Recueil des Serées",
+        "date": 1589,
+        "difficulty": "Introductory"
+      },
+      {
+        "@id": "https://iiif.library.utoronto.ca/presentation/v2/paleography:440/manifest",
+        "@type": "sc:Manifest",
+        "label": "Receipt by Guillaume Duru, \"clerc de Monsieur le tresorier de Normandie,\" for six skins of parchment to be used for writing certain royal ordinances for the government of Normandy",
+        "date": 1448,
+        "difficulty": "Introductory"
+      },
+      {
+        "@id": "https://iiif.library.utoronto.ca/presentation/v2/paleography:441/manifest",
+        "@type": "sc:Manifest",
+        "label": "Letters patent by King Henry III authorizing Pietro Angèli da Barga to hold ecclesiastical benefices in France",
+        "date": 1582,
+        "difficulty": "Introductory"
+      },
+      {
+        "@id": "https://iiif.library.utoronto.ca/presentation/v2/paleography:442/manifest",
+        "@type": "sc:Manifest",
+        "label": "Cession de créance par Charles de Biencourt",
+        "date": 1638,
+        "difficulty": "Advanced"
+      },
+      {
+        "@id": "https://iiif.library.utoronto.ca/presentation/v2/paleography:443/manifest",
+        "@type": "sc:Manifest",
+        "label": "Investiture de l'Ile d'Orléans donnée au procureur des concessionnaires par le gouverneur de la Nouvelle-France",
+        "date": 1638,
+        "difficulty": "Introductory"
+      },
+      {
+        "@id": "https://iiif.library.utoronto.ca/presentation/v2/paleography:444/manifest",
+        "@type": "sc:Manifest",
+        "label": "Letter: Residence de la Conception-aux-Hurons, to M. le curé de St. Martin, à Beauvais [France], 1639 May 25",
+        "date": 1639,
+        "difficulty": "Introductory"
+      },
+      {
+        "@id": "https://iiif.library.utoronto.ca/presentation/v2/paleography:445/manifest",
+        "@type": "sc:Manifest",
+        "label": "Legal documents concerning the inventory of the estate of Jean Nicollet",
+        "date": 1642,
+        "difficulty": "Intermediate"
+      },
+      {
+        "@id": "https://iiif.library.utoronto.ca/presentation/v2/paleography:446/manifest",
+        "@type": "sc:Manifest",
+        "label": "Pompe funebre de Mr le cardinal de Richelieu",
+        "date": 1643,
+        "difficulty": "Advanced"
+      },
+      {
+        "@id": "https://iiif.library.utoronto.ca/presentation/v2/paleography:447/manifest",
+        "@type": "sc:Manifest",
+        "label": "Fur trade contract between François Francoeur and four \"voyageurs\" for transport of goods and purchase of beaver pelts in Michilimackinac and Chicago",
+        "date": 1692,
+        "difficulty": "Intermediate"
+      },
+      {
+        "@id": "https://iiif.library.utoronto.ca/presentation/v2/paleography:449/manifest",
+        "@type": "sc:Manifest",
+        "label": "Ordinance by which King Charles VI of France prohibits assistance to his disinherited son Charles in the aftermath of the assassination of John the Fearless",
+        "date": 1419,
+        "difficulty": "Intermediate"
+      },
+      {
+        "@id": "https://iiif.library.utoronto.ca/presentation/v2/paleography:450/manifest",
+        "@type": "sc:Manifest",
+        "label": "De l'occasion et de la fortune",
+        "date": 1580,
+        "difficulty": "Intermediate"
+      },
+      {
+        "@id": "https://iiif.library.utoronto.ca/presentation/v2/paleography:451/manifest",
+        "@type": "sc:Manifest",
+        "label": "Lancelot du lac",
+        "date": 1275,
+        "difficulty": "Introductory"
+      },
+      {
+        "@id": "https://iiif.library.utoronto.ca/presentation/v2/paleography:452/manifest",
+        "@type": "sc:Manifest",
+        "label": "Commentaries on William Rastell's Collection of all the statutes",
+        "date": 1560,
+        "difficulty": "Advanced"
+      },
+      {
+        "@id": "https://iiif.library.utoronto.ca/presentation/v2/paleography:453/manifest",
+        "@type": "sc:Manifest",
+        "label": "Sixieme livre du Proces d'amour",
+        "date": 1610,
+        "difficulty": "Intermediate"
+      },
+      {
+        "@id": "https://iiif.library.utoronto.ca/presentation/v2/paleography:454/manifest",
+        "@type": "sc:Manifest",
+        "label": "Double contrat de mariage entre les familles Berugnot et Baptauld",
+        "date": 1616,
+        "difficulty": "Advanced"
+      },
+      {
+        "@id": "https://iiif.library.utoronto.ca/presentation/v2/paleography:455/manifest",
+        "@type": "sc:Manifest",
+        "label": "Déclaration de Michel Mercier de tenue en bourgage de sa maison à Alencon",
+        "date": 1574,
+        "difficulty": "Intermediate"
+      },
+      {
+        "@id": "https://iiif.library.utoronto.ca/presentation/v2/paleography:456/manifest",
+        "@type": "sc:Manifest",
+        "label": "Register of notary Guillaume Peytralis for 1582-1583 (part 1)",
+        "date": 1582,
+        "difficulty": "Advanced"
+      },
+      {
+        "@id": "https://iiif.library.utoronto.ca/presentation/v2/paleography:457/manifest",
+        "@type": "sc:Manifest",
+        "label": "Pensées (doctrines de la sainte foy chretienne)",
+        "date": 1520,
+        "difficulty": "Introductory"
+      },
+      {
+        "@id": "https://iiif.library.utoronto.ca/presentation/v2/paleography:458/manifest",
+        "@type": "sc:Manifest",
+        "label": "Chroniques de Jean Froissart, vol. 1",
+        "date": 1425,
+        "difficulty": "Introductory"
+      },
+      {
+        "@id": "https://iiif.library.utoronto.ca/presentation/v2/paleography:459/manifest",
+        "@type": "sc:Manifest",
+        "label": "Chroniques de Jean Froissart, vol. 2",
+        "date": 1425,
+        "difficulty": "Intermediate"
+      },
+      {
+        "@id": "https://iiif.library.utoronto.ca/presentation/v2/paleography:460/manifest",
+        "@type": "sc:Manifest",
+        "label": "Recognoissance des enfans et heretiers de feu Berthomé de Bazas",
+        "date": 1555,
+        "difficulty": "Advanced"
+      },
+      {
+        "@id": "https://iiif.library.utoronto.ca/presentation/v2/paleography:461/manifest",
+        "@type": "sc:Manifest",
+        "label": "Household account for the French royal household at Amboise",
+        "date": 1552,
+        "difficulty": "Advanced"
+      },
+      {
+        "@id": "https://iiif.library.utoronto.ca/presentation/v2/paleography:462/manifest",
+        "@type": "sc:Manifest",
+        "label": "Vers d'amour",
+        "date": 1550,
+        "difficulty": "Intermediate"
+      },
+      {
+        "@id": "https://iiif.library.utoronto.ca/presentation/v2/paleography:463/manifest",
+        "@type": "sc:Manifest",
+        "label": "Certified account rendered for vellum, ink and paper, furnished to the office of the King’s advocate at Toulouse from St. Martin’s day 1485 to October 1486, by Simon, \"marchant parcheminier\"",
+        "date": 1486,
+        "difficulty": "Advanced"
+      },
+      {
+        "@id": "https://iiif.library.utoronto.ca/presentation/v2/paleography:464/manifest",
+        "@type": "sc:Manifest",
+        "label": "Marriage contract of Sauveur de Lombard and Antoinette de Geoffroy",
+        "date": 1545,
+        "difficulty": "Intermediate"
+      },
+      {
+        "@id": "https://iiif.library.utoronto.ca/presentation/v2/paleography:465/manifest",
+        "@type": "sc:Manifest",
+        "label": "Censier du seizième siècle pour la paroisse de Payns, bailliage de Troyes",
+        "date": 1579,
+        "difficulty": "Introductory"
+      },
+      {
+        "@id": "https://iiif.library.utoronto.ca/presentation/v2/paleography:466/manifest",
+        "@type": "sc:Manifest",
+        "label": "Papier terrier de la seignerie de Perthes, renouvelé en l’an 1578 pour les Célestins de Paris",
+        "date": 1578,
+        "difficulty": "Advanced"
+      },
+      {
+        "@id": "https://iiif.library.utoronto.ca/presentation/v2/paleography:467/manifest",
+        "@type": "sc:Manifest",
+        "label": "Grosse d'un jugement du bailli d'Orléans",
+        "date": 1584,
+        "difficulty": "Introductory"
+      },
+      {
+        "@id": "https://iiif.library.utoronto.ca/presentation/v2/paleography:468/manifest",
+        "@type": "sc:Manifest",
+        "label": "Bail du moulin de Les Roches-l'Evêque, 1593",
+        "date": 1593,
+        "difficulty": "Intermediate"
+      },
+      {
+        "@id": "https://iiif.library.utoronto.ca/presentation/v2/paleography:469/manifest",
+        "@type": "sc:Manifest",
+        "label": "Etats généraux du Languedoc, 1501-1516",
+        "date": 1514,
+        "difficulty": "Introductory"
+      },
+      {
+        "@id": "https://iiif.library.utoronto.ca/presentation/v2/paleography:470/manifest",
+        "@type": "sc:Manifest",
+        "label": "Traicté des modes, ou tons, de la musique",
+        "date": 1630,
+        "difficulty": "Introductory"
+      },
+      {
+        "@id": "https://iiif.library.utoronto.ca/presentation/v2/paleography:471/manifest",
+        "@type": "sc:Manifest",
+        "label": "Registre de la seigneurie de Gourdon tenue par Louis et François de Lombard",
+        "date": 1645,
+        "difficulty": "Intermediate"
+      },
+      {
+        "@id": "https://iiif.library.utoronto.ca/presentation/v2/paleography:472/manifest",
+        "@type": "sc:Manifest",
+        "label": "Letters and decrees issued by the Parlement de Bordeaux",
+        "date": 1649,
+        "difficulty": "Introductory"
+      },
+      {
+        "@id": "https://iiif.library.utoronto.ca/presentation/v2/paleography:473/manifest",
+        "@type": "sc:Manifest",
+        "label": "Charitable donation of land to benefit the poor of Quebec City",
+        "date": 1665,
+        "difficulty": "Introductory"
+      },
+      {
+        "@id": "https://iiif.library.utoronto.ca/presentation/v2/paleography:474/manifest",
+        "@type": "sc:Manifest",
+        "label": "Inventaire du mobilier et du matériel d’imprimerie de Jean Chardon",
+        "date": 1682,
+        "difficulty": "Intermediate"
+      },
+      {
+        "@id": "https://iiif.library.utoronto.ca/presentation/v2/paleography:475/manifest",
+        "@type": "sc:Manifest",
+        "label": "Mortgage contract on properties of Pontchartrain and Palluau",
+        "date": 1606,
+        "difficulty": "Intermediate"
+      },
+      {
+        "@id": "https://iiif.library.utoronto.ca/presentation/v2/paleography:476/manifest",
+        "@type": "sc:Manifest",
+        "label": "Expédition du contrat de mariage de Guillaume Lobeyrie et Anthonie Anglade",
+        "date": 1577,
+        "difficulty": "Advanced"
+      },
+      {
+        "@id": "https://iiif.library.utoronto.ca/presentation/v2/paleography:477/manifest",
+        "@type": "sc:Manifest",
+        "label": "Vente de la moitié d'une maison",
+        "date": 1601,
+        "difficulty": "Intermediate"
+      },
+      {
+        "@id": "https://iiif.library.utoronto.ca/presentation/v2/paleography:478/manifest",
+        "@type": "sc:Manifest",
+        "label": "Contrat de vente au profit de Gilles de l'Espine",
+        "date": 1656,
+        "difficulty": "Intermediate"
+      },
+      {
+        "@id": "https://iiif.library.utoronto.ca/presentation/v2/paleography:479/manifest",
+        "@type": "sc:Manifest",
+        "label": "Register of notary Guillaume Peytralis for 1582-1583 (part 2)",
+        "date": 1582,
+        "difficulty": "Advanced"
+      },
+      {
+        "@id": "https://iiif.library.utoronto.ca/presentation/v2/paleography:480/manifest",
+        "@type": "sc:Manifest",
+        "label": "Register of notary Guillaume Peytralis for 1582-1583 (part 3)",
+        "date": 1582,
+        "difficulty": "Advanced"
+      },
+      {
+        "@id": "https://iiif.library.utoronto.ca/presentation/v2/paleography:481/manifest",
+        "@type": "sc:Manifest",
+        "label": "Sentence du sénéchal d'Auvergne",
+        "date": 1635,
+        "difficulty": "Intermediate"
+      },
+      {
+        "@id": "https://iiif.library.utoronto.ca/presentation/v2/paleography:482/manifest",
+        "@type": "sc:Manifest",
+        "label": "Vente au profit de Gabriel de Langeac",
+        "date": 1585,
+        "difficulty": "Advanced"
+      },
+      {
+        "@id": "https://iiif.library.utoronto.ca/presentation/v2/paleography:483/manifest",
+        "@type": "sc:Manifest",
+        "label": "Expédition du contrat de mariage de Catherine Lobeyrie et Jean Favy",
+        "date": 1599,
+        "difficulty": "Advanced"
+      },
+      {
+        "@id": "https://iiif.library.utoronto.ca/presentation/v2/paleography:484/manifest",
+        "@type": "sc:Manifest",
+        "label": "Expédition du contrat de mariage de Jean de Jardon et Françoise de Rochefort",
+        "date": 1494,
+        "difficulty": "Advanced"
+      },
+      {
+        "@id": "https://iiif.library.utoronto.ca/presentation/v2/paleography:485/manifest",
+        "@type": "sc:Manifest",
+        "label": "Partage de l'héritage de François de L'Estang",
+        "date": 1650,
+        "difficulty": "Intermediate"
+      },
+      {
+        "@id": "https://iiif.library.utoronto.ca/presentation/v2/paleography:486/manifest",
+        "@type": "sc:Manifest",
+        "label": "Pièce du procès de Jacques de Langeac",
+        "date": 1541,
+        "difficulty": "Advanced"
+      },
+      {
+        "@id": "https://iiif.library.utoronto.ca/presentation/v2/paleography:487/manifest",
+        "@type": "sc:Manifest",
+        "label": "Contrat du mariage d'Annet d'Anglars et d'Anne de Rochegude",
+        "date": 1571,
+        "difficulty": "Intermediate"
+      },
+      {
+        "@id": "https://iiif.library.utoronto.ca/presentation/v2/paleography:488/manifest",
+        "@type": "sc:Manifest",
+        "label": "Land grant of Annet d'Anglars to his mother Avoise de Tabou",
+        "date": 1564,
+        "difficulty": "Intermediate"
+      },
+      {
+        "@id": "https://iiif.library.utoronto.ca/presentation/v2/paleography:489/manifest",
+        "@type": "sc:Manifest",
+        "label": "Printing agreement by Jacques de Sanlecque and Toussaint du Bray",
+        "date": 1614,
+        "difficulty": "Intermediate"
+      },
+      {
+        "@id": "https://iiif.library.utoronto.ca/presentation/v2/paleography:490/manifest",
+        "@type": "sc:Manifest",
+        "label": "Inquest regarding land disputes",
+        "date": 1637,
+        "difficulty": "Advanced"
+      },
+      {
+        "@id": "https://iiif.library.utoronto.ca/presentation/v2/paleography:491/manifest",
+        "@type": "sc:Manifest",
+        "label": "Bail à cens de la seigneurie de Bonnabaud",
+        "date": 1604,
+        "difficulty": "Advanced"
+      },
+      {
+        "@id": "https://iiif.library.utoronto.ca/presentation/v2/paleography:492/manifest",
+        "@type": "sc:Manifest",
+        "label": "Legal papers concerning the estate of René de Hodon",
+        "date": 1696,
+        "difficulty": "Advanced"
+      },
+      {
+        "@id": "https://iiif.library.utoronto.ca/presentation/v2/paleography:493/manifest",
+        "@type": "sc:Manifest",
+        "label": "Contrat d'échange de propriétés entre Gilbert de La Fayette et Delphine de Bonnabaud",
+        "date": 1437,
+        "difficulty": "Intermediate"
+      },
+      {
+        "@id": "https://iiif.library.utoronto.ca/presentation/v2/paleography:494/manifest",
+        "@type": "sc:Manifest",
+        "label": "La Fayette-Langeac Contredict",
+        "date": 1564,
+        "difficulty": "Intermediate"
+      },
+      {
+        "@id": "https://iiif.library.utoronto.ca/presentation/v2/paleography:495/manifest",
+        "@type": "sc:Manifest",
+        "label": "La Fayette-Langeac Contredict 2",
+        "date": 1564,
+        "difficulty": "Advanced"
+      },
+      {
+        "@id": "https://iiif.library.utoronto.ca/presentation/v2/paleography:496/manifest",
+        "@type": "sc:Manifest",
+        "label": "Meslanges curieux de litterature et d'histoire",
+        "date": 1572,
+        "difficulty": "Introductory"
+      },
+      {
+        "@id": "https://iiif.library.utoronto.ca/presentation/v2/paleography:497/manifest",
+        "@type": "sc:Manifest",
+        "label": "Sentence du maître des requêtes de l'hôtel du roi concernant le moulin suzereain de François de Taillevis au lieu dit Moulin de Bessé",
+        "date": 1693,
+        "difficulty": "Intermediate"
+      },
+      {
+        "@id": "https://iiif.library.utoronto.ca/presentation/v2/paleography:498/manifest",
+        "@type": "sc:Manifest",
+        "label": "Grosse d'un arrêt du maître des Requêtes du Parlement de Paris",
+        "date": 1564,
+        "difficulty": "Advanced"
+      },
+      {
+        "@id": "https://iiif.library.utoronto.ca/presentation/v2/paleography:499/manifest",
+        "@type": "sc:Manifest",
+        "label": "Procuration au profit de Jean Lobeyrie accordée par son beau-père Guillaume Du Pré",
+        "date": 1568
+      },
+      {
+        "@id": "https://iiif.library.utoronto.ca/presentation/v2/paleography:500/manifest",
+        "@type": "sc:Manifest",
+        "label": "Prussurot-Raveneau partnership agreement",
+        "date": 1690,
+        "difficulty": "Intermediate"
+      },
+      {
+        "@id": "https://iiif.library.utoronto.ca/presentation/v2/paleography:501/manifest",
+        "@type": "sc:Manifest",
+        "label": "Tournon papers",
+        "date": 1644,
+        "difficulty": "Intermediate"
+      },
+      {
+        "@id": "https://iiif.library.utoronto.ca/presentation/v2/paleography:502/manifest",
+        "@type": "sc:Manifest",
+        "label": "Simiane papers",
+        "date": 1622,
+        "difficulty": "Intermediate"
+      },
+      {
+        "@id": "https://iiif.library.utoronto.ca/presentation/v2/paleography:426/manifest",
+        "@type": "sc:Manifest",
+        "label": "Legal notebook",
+        "date": 1625
+      },
+      {
+        "@id": "https://iiif.library.utoronto.ca/presentation/v2/paleography:427/manifest",
+        "@type": "sc:Manifest",
+        "label": "Lectures on the Charter of the Forests, reissued by Henry III in 1225",
+        "date": 1600
+      },
+      {
+        "@id": "https://iiif.library.utoronto.ca/presentation/v2/paleography:428/manifest",
+        "@type": "sc:Manifest",
+        "label": "Negotiations at Calais",
+        "date": 1521
+      },
+      {
+        "@id": "https://iiif.library.utoronto.ca/presentation/v2/paleography:439/manifest",
+        "@type": "sc:Manifest",
+        "label": "Composition de toutes sortes de feux artificiels",
+        "date": 1599
+      },
+      {
+        "@id": "https://iiif.library.utoronto.ca/presentation/v2/paleography:448/manifest",
+        "@type": "sc:Manifest",
+        "label": "Aveu et dénombrement de la seigneurie de Taillepied",
+        "date": 1490
+      }
     ],
     "total": 107
-}
+  }

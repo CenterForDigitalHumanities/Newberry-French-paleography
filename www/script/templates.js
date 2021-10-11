@@ -11,13 +11,13 @@ header.innerHTML = `
           <div style="margin: 0px auto;">
           <div class="newberry-header hiddem-sm hidden-xs">
               <a href="http://www.newberry.org/">
-                <img alt="Newberry" src="images/NewberryLogo_with_tag.png">
+                <img alt="Newberry" src="/Newberry-French-paleography/www/images/NewberryLogo_with_tag.png">
               </a>
           </div>
           
-          <h1 id="site-name"><a href="/">French Renaissance 
+          <h1 id="site-name"><a href="/Newberry-French-paleography/">French Renaissance 
           <div id="logo" style="display: inline;">
-              <img aria-hidden="true" role="presentation" alt="" src="images/rp-logo.png">
+              <img aria-hidden="true" role="presentation" alt="" src="/Newberry-French-paleography/www/images/rp-logo.png">
           </div>
           <span class="red">Paleography</span></a>
           </h1>
@@ -27,73 +27,73 @@ header.innerHTML = `
       <div class="search-icon" id="search-btn"><button title="Search" aria-label="Search" class="icon icon-search"></button></div>
       <div class="hamburger-icon"><div class="icon icon-menu">&nbsp;</div></div>
 </header>
-    <link rel="stylesheet" href="./css/style.css">
-    <slot></slot>
-    
-    <nav class="container">
-      <ul class="nav nav-bar"><li class="first leaf"><a href="../">Home</a></li>
-<li class="leaf active-trail active"><a href="manuscripts.html" title="" class="active-trail active">Manuscripts</a></li>
-<li class="leaf"><a href="search" title="">Search</a></li>
-<li class="expanded dropdown"><a href="resources" title="" data-target="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Resources <span class="caret"></span></a>
-    <ul class="dropdown-menu">
-        <li class="first leaf"><a href="essays" title="">Background Essays</a></li>
-        <li class="leaf"><a href="transcriptions" title="">Partial Transcriptions</a></li>
-        <li class="leaf"><a href="calligraphy.html" title="">Calligraphy Books</a></li>
-        <li class="leaf"><a href="maps.html" title="">Historical Maps</a></li>
-        <li class="leaf"><a href="interactive-map">Interactive Map</a></li>
-        <li class="leaf"><a href="scripts">French Scripts and Hands</a></li>
-        <li class="leaf"><a href="about-french-documents">About French Documents</a></li>
-        <li class="leaf"><a href="manuscript-preservation">Manuscript Preservation</a></li>
-        <li class="leaf"><a href="transcribing-editing-conventions">Transcribing &amp; Editing Conventions</a></li>
-        <li class="leaf"><a href="teaching">Teaching</a></li>
-        <li class="leaf"><a href="group-work">Group Work</a></li>
-        <li class="last leaf"><a href="get-started">Get Started</a></li>
+<link rel="stylesheet" href="/Newberry-French-paleography/www/css/style.css">
+<slot></slot>
+
+<nav class="container">
+    <ul class="nav nav-bar"><li class="first leaf"><a href="/Newberry-French-paleography/">Home</a></li>
+        <li class="leaf active-trail active"><a href="/Newberry-French-paleography/www/manuscripts.html" title="" class="active-trail active">Manuscripts</a></li>
+        <li class="leaf"><a href="/Newberry-French-paleography/search" title="">Search</a></li>
+        <li class="expanded dropdown"><a href="/Newberry-French-paleography/resources" title="" data-target="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Resources <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+                <li class="first leaf"><a href="/Newberry-French-paleography/essays" title="">Background Essays</a></li>
+                <li class="leaf"><a href="/Newberry-French-paleography/transcriptions" title="">Partial Transcriptions</a></li>
+                <li class="leaf"><a href="/Newberry-French-paleography/www/calligraphy.html" title="">Calligraphy Books</a></li>
+                <li class="leaf"><a href="/Newberry-French-paleography/www/maps.html" title="">Historical Maps</a></li>
+                <li class="leaf"><a href="/Newberry-French-paleography/interactive-map">Interactive Map</a></li>
+                <li class="leaf"><a href="/Newberry-French-paleography/scripts">French Scripts and Hands</a></li>
+                <li class="leaf"><a href="/Newberry-French-paleography/about-french-documents">About French Documents</a></li>
+                <li class="leaf"><a href="/Newberry-French-paleography/manuscript-preservation">Manuscript Preservation</a></li>
+                <li class="leaf"><a href="/Newberry-French-paleography/transcribing-editing-conventions">Transcribing &amp; Editing Conventions</a></li>
+                <li class="leaf"><a href="/Newberry-French-paleography/teaching">Teaching</a></li>
+                <li class="leaf"><a href="/Newberry-French-paleography/group-work">Group Work</a></li>
+                <li class="last leaf"><a href="/Newberry-French-paleography/get-started">Get Started</a></li>
+            </ul>
+        </li>
+        <li class="expanded dropdown"><a href="/Newberry-French-paleography/reference" data-target="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Reference <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+                <li class="first leaf"><a href="/Newberry-French-paleography/abbreviations">Abbreviations</a></li>
+                <li class="leaf"><a href="/Newberry-French-paleography/dictionaries">Dictionaries</a></li>
+                <li class="leaf"><a href="/Newberry-French-paleography/glossary">Glossary</a></li>
+                <li class="leaf"><a href="/Newberry-French-paleography/institutions">French Institutions</a></li>
+                <li class="last leaf"><a href="/Newberry-French-paleography/reference-resources">Other Reference Resources</a></li>
+            </ul>
+        </li>
+        <li class="expanded dropdown"><a href="/Newberry-French-paleography/contact" title="" data-target="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Contact <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+                <li class="first leaf"><a href="/Newberry-French-paleography/about-team" title="">About the Team</a></li>
+                <li class="last leaf"><a href="/Newberry-French-paleography/contributing-institutions" title="">Contributing Institutions</a></li>
+            </ul>
+        </li>
+        <li class="expanded dropdown"><a title="" data-target="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">My Transcriptions <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+                <li class="first leaf"><a href="http://paleo.rerum.io/TPEN-NL/my_transcriptions.html" title="">My Transcriptions</a></li>
+                <li class="last leaf"><a href="/Newberry-French-paleography/transcriptions" title="">Master Transcriptions</a></li>
+            </ul>
+        </li>
+        <li class="last leaf"><a href="http://paleo.rerum.io/TPEN-NL/logout.html" title="">Logout</a></li>
     </ul>
-</li>
-<li class="expanded dropdown"><a href="reference" data-target="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Reference <span class="caret"></span></a>
-    <ul class="dropdown-menu">
-        <li class="first leaf"><a href="abbreviations">Abbreviations</a></li>
-        <li class="leaf"><a href="dictionaries">Dictionaries</a></li>
-        <li class="leaf"><a href="glossary">Glossary</a></li>
-        <li class="leaf"><a href="institutions">French Institutions</a></li>
-        <li class="last leaf"><a href="reference-resources">Other Reference Resources</a></li>
-    </ul>
-</li>
-<li class="expanded dropdown"><a href="contact" title="" data-target="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Contact <span class="caret"></span></a>
-    <ul class="dropdown-menu">
-        <li class="first leaf"><a href="about-team" title="">About the Team</a></li>
-        <li class="last leaf"><a href="contributing-institutions" title="">Contributing Institutions</a></li>
-    </ul>
-</li>
-<li class="expanded dropdown"><a title="" data-target="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">My Transcriptions <span class="caret"></span></a>
-    <ul class="dropdown-menu">
-        <li class="first leaf"><a href="my-transcriptions" title="">My Transcriptions</a></li>
-        <li class="last leaf"><a href="master-transcriptions" title="">Master Transcriptions</a></li>
-    </ul>
-</li>
-<li class="last leaf"><a href="/user/logout" title="">Logout</a></li>
-</ul>
-     </nav>
+</nav>
 `
 
 footer.innerHTML = `
-<link rel="stylesheet" href="./css/style.css">
+<link rel="stylesheet" href="/Newberry-French-paleography/www/css/style.css">
 <div class="row container">
-    <div class="col-8">
+    <div class="col" style="flex-grow:2;">
         <h2> Partners </h2>
             <div class="row">
-                <a class="col" href="http://www.newberry.org/" target="_blank"><img alt="Newberry" src="images/NewberryLogo_with_tag.png"></a>
-                <a class="col" href="http://onesearch.library.utoronto.ca" target="_blank"><img alt="University of Toronto Libraries" src="images/UTL-logo.png"></a>
+                <a class="col" href="http://www.newberry.org/" target="_blank"><img alt="Newberry" src="/Newberry-French-paleography/www/images/NewberryLogo_with_tag.png"></a>
+                <a class="col" href="http://onesearch.library.utoronto.ca" target="_blank"><img alt="University of Toronto Libraries" src="/Newberry-French-paleography/www/images/UTL-logo.png"></a>
             </div>
             <div class="row">
-                <a class="col" href="http://lib.slu.edu/" style="line-height: 23.1111px;" target="_blank"><img alt="St. Louis University" src="images/slu.gif" style="width: 346px;"></a>
-                <a class="col" href="http://www.itergateway.org/" target="_blank"><img alt="Iter" src="images/iter-logo-new.png"></a>
+                <a class="col" href="http://lib.slu.edu/" style="line-height: 23.1111px;" target="_blank"><img alt="St. Louis University" src="/Newberry-French-paleography/www/images/slu.gif" style="width: 346px;"></a>
+                <a class="col" href="http://www.itergateway.org/" target="_blank"><img alt="Iter" src="/Newberry-French-paleography/www/images/iter-logo-new.png"></a>
             </div>
     </div>
     <div class="col">
-    <slot></slot>
+        <slot></slot>
         <h2 class="pane-title"> Contact </h2>
-        <p><a href="contact">Contact</a><br><a href="about-team">About the Team</a><br><a href="contact">Terms of Use</a></p>
+        <p><a href="/Newberry-French-paleography/contact">Contact</a><br><a href="/Newberry-French-paleography/about-team">About the Team</a><br><a href="/Newberry-French-paleography/contact">Terms of Use</a></p>
         <p>Supported by a grant from The Andrew W. Mellon Foundation</p>
         <p><a href="http://creativecommons.org/licenses/by-nc-nd/4.0/" rel="license"><img alt="Creative Commons Licence" src="https://i.creativecommons.org/l/by-nc-nd/4.0/88x31.png" style="border-width:0"></a><br><a href="https://www.newberry.org/paleography">French Renaissance Paleography</a> is licensed under a <a href="http://creativecommons.org/licenses/by-nc-nd/4.0/" rel="license">Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License</a>.</p>
     </div>

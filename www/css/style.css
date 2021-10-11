@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,700;1,300;1,700&display=swap');
+
 :root {
     --bg-color          : #ffffff;
     --bg-secondary-color: #f3f3f6;
@@ -7,7 +9,7 @@
     --color-darkGrey    : #3f4144;
     --color-error       : #d43939;
     --color-success     : #28bd14;
-    --grid-maxWidth     : 120rem;
+    --grid-maxWidth     : 60rem;
     --grid-gutter       : 2rem;
     --font-size         : 1.6rem;
     --font-color        : #333333;
@@ -27,6 +29,7 @@ html {
     width    : 96%;
     padding  : 0 calc(var(--grid-gutter) / 2);
     display  : flex;
+    flex-direction: column;
 }
 
 .row {
@@ -224,13 +227,75 @@ dd p {
     height  : 40em;
 }
 
+listing+ul li {
+    margin:0;
+    background-color: #eee;
+    border-bottom: 1px solid #ccc;
+    padding: 0.1em 0.6em;
+    display: flex;
+    align-items: center;
+}
+
+listing+ul {
+    display: block;
+    padding: 0;
+    margin: 0;
+}
+
+listing+ul a {
+    flex-basis: 80%;
+    text-decoration: none;
+    color: #15628A;
+    transition: color 0.5s ease;
+    background-color: transparent;
+    line-height: 2.6;
+}
+
+listing+ul date {
+    display:block;
+    text-align: center;
+    color: #555;
+    flex-grow: 1;
+}
+
+listing+ul li:nth-child(2n+2) {
+    background-color: #f5f5f5;
+}
+
+listing+ul li:hover {
+    background-color: #ddd !important;
+}
+
 /** Imported CSS */
+
+body {
+    font-size: 15px;
+    font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 300;
+    line-height: 1.6;
+}
+
+.markdown-body {
+    min-height: 80vh;
+}
 
 .newberry-header img {
     position : absolute;
     max-width: 275px;
     top      : 35px;
     left     : 10px;
+}
+
+footer, nl-footer {
+    font-size: 80% !important;
+}
+
+footer a, nl-footer a {
+    text-decoration: none !important;
+}
+
+footer img, nl-footer img {
+    max-width: 250px !important;
 }
 
 #site-name {
@@ -440,6 +505,29 @@ input[type="submit"] {
     font-size: 300%;
 }
 
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'EB Garamond','Times New Roman',serif;
+    font-family: 'Carrois Gothic',sans-serif;
+    margin: 0;
+    padding: 0;
+    font-weight: normal !important;
+    padding: 2% 0 1.5% 0;
+}
+
+h1, h2, h3, h4 {
+    font-weight: 200 !important;
+    font-family: 'EB Garamond','Times New Roman',serif !important;
+    color: black;
+}
+
+h3[id] {
+    padding: 2% 0 1.5% 3%;
+    color: #002a5c;
+    margin: 0 0 20px;
+    border-bottom: 1px solid lightblue;
+    font-size: 2em;
+}
+
 /** end Imported CSS */
 
 @media screen and (max-width: 599px) {
@@ -495,7 +583,7 @@ input[type="submit"] {
         float                  : left;
         min-width              : 160px;
         padding                : 5px 0;
-        margin                 : 4px 0 0;
+        margin                 : 5px 0 0;
         list-style             : none;
         font-size              : 14px;
         text-align             : left;
