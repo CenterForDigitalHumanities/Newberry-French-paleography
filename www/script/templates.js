@@ -53,10 +53,10 @@ header.innerHTML = `
 <li class="expanded dropdown"><a href="reference" data-target="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Reference <span class="caret"></span></a>
     <ul class="dropdown-menu">
         <li class="first leaf"><a href="abbreviations">Abbreviations</a></li>
-        <li class="leaf"><a href="selected-french-dictionaries">Dictionaries</a></li>
-        <li class="leaf"><a href="glossary-of-terms">Glossary</a></li>
-        <li class="leaf"><a href="french-institutions">French Institutions</a></li>
-        <li class="last leaf"><a href="other-reference-resources">Other Reference Resources</a></li>
+        <li class="leaf"><a href="dictionaries">Dictionaries</a></li>
+        <li class="leaf"><a href="glossary">Glossary</a></li>
+        <li class="leaf"><a href="institutions">French Institutions</a></li>
+        <li class="last leaf"><a href="reference-resources">Other Reference Resources</a></li>
     </ul>
 </li>
 <li class="expanded dropdown"><a href="contact" title="" data-target="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Contact <span class="caret"></span></a>
