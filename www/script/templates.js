@@ -11,13 +11,13 @@ header.innerHTML = `
           <div style="margin: 0px auto;">
           <div class="newberry-header hiddem-sm hidden-xs">
               <a href="http://www.newberry.org/">
-                <img alt="Newberry" src="/Newberry-French-paleography/www/images/NewberryLogo_with_tag.png">
+                <img alt="Newberry" src="https://centerfordigitalhumanities.github.io/Newberry-French-paleography/www/images/NewberryLogo_with_tag.png">
               </a>
           </div>
           
           <h1 id="site-name"><a href="https://centerfordigitalhumanities.github.io/Newberry-French-paleography/">French Renaissance 
           <div id="logo" style="display: inline;">
-              <img aria-hidden="true" role="presentation" alt="" src="/Newberry-French-paleography/www/images/rp-logo.png">
+              <img aria-hidden="true" role="presentation" alt="" src="https://centerfordigitalhumanities.github.io/Newberry-French-paleography/www/images/rp-logo.png">
           </div>
           <span class="red">Paleography</span></a>
           </h1>
@@ -81,12 +81,12 @@ footer.innerHTML = `
     <div class="col" style="flex-grow:2;">
         <h2> Partners </h2>
             <div class="row">
-                <a class="col" href="http://www.newberry.org/" target="_blank"><img alt="Newberry" src="/Newberry-French-paleography/www/images/NewberryLogo_with_tag.png"></a>
-                <a class="col" href="http://onesearch.library.utoronto.ca" target="_blank"><img alt="University of Toronto Libraries" src="/Newberry-French-paleography/www/images/UTL-logo.png"></a>
+                <a class="col" href="http://www.newberry.org/" target="_blank"><img alt="Newberry" src="https://centerfordigitalhumanities.github.io/Newberry-French-paleography/www/images/NewberryLogo_with_tag.png"></a>
+                <a class="col" href="http://onesearch.library.utoronto.ca" target="_blank"><img alt="University of Toronto Libraries" src="https://centerfordigitalhumanities.github.io/Newberry-French-paleography/www/images/UTL-logo.png"></a>
             </div>
             <div class="row">
-                <a class="col" href="http://lib.slu.edu/" style="line-height: 23.1111px;" target="_blank"><img alt="St. Louis University" src="/Newberry-French-paleography/www/images/slu.gif" style="width: 346px;"></a>
-                <a class="col" href="http://www.itergateway.org/" target="_blank"><img alt="Iter" src="/Newberry-French-paleography/www/images/iter-logo-new.png"></a>
+                <a class="col" href="http://lib.slu.edu/" style="line-height: 23.1111px;" target="_blank"><img alt="St. Louis University" src="https://centerfordigitalhumanities.github.io/Newberry-French-paleography/www/images/slu.gif" style="width: 346px;"></a>
+                <a class="col" href="http://www.itergateway.org/" target="_blank"><img alt="Iter" src="https://centerfordigitalhumanities.github.io/Newberry-French-paleography/www/images/iter-logo-new.png"></a>
             </div>
     </div>
     <div class="col">
