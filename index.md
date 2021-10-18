@@ -1,6 +1,6 @@
 <style>
     h1, h2 {color: #b43d2e;}
-    p a {
+    p a:not(footer a) {
     width: 30%;
     display: inline-block;
     margin: 1.5%;
