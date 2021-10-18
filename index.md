@@ -17,6 +17,9 @@ Paleography is the history and study of handwriting. Old scripts can be very bea
 ## [Get Started](get-started)
 
 ## Digital Collections
+
+The Newberry Library has curated several collections for the study of scripts in context. Filter documents to discover an interesting topic, reading difficulty level, or time period.
+
 [![](www/images/manuscripts-icon-new.png)Manuscripts](https://centerfordigitalhumanities.github.io/Newberry-French-paleography/www/manuscripts.html)
 [![](www/images/calligraphy-books.png)Calligraphy Books](https://centerfordigitalhumanities.github.io/Newberry-French-paleography/www/manuscripts.html)
 [![](www/images/map-icon-new.png)Historical Maps](https://centerfordigitalhumanities.github.io/Newberry-French-paleography/www/manuscripts.html)
