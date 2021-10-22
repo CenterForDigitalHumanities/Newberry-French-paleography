@@ -1,7 +1,7 @@
 var NL = new Map()
 
-NL.set("USER", "http://paleo.rerum.io/TPEN-NL/geti")
-NL.set("AUTH", "http://paleo.rerum.io/TPEN-NL/login")
+NL.set("USER", "http://newberry.rerum.io/paleography/geti")
+NL.set("AUTH", "http://newberry.rerum.io/paleography/login")
 
 let header = document.createElement('template')
 let footer = document.createElement('template')
@@ -66,11 +66,11 @@ header.innerHTML = `
         </li>
         <li class="expanded dropdown"><a title="" data-target="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">My Transcriptions <span class="caret"></span></a>
             <ul class="dropdown-menu">
-                <li class="first leaf"><a href="http://paleo.rerum.io/TPEN-NL/my_transcriptions.html" title="">My Transcriptions</a></li>
+                <li class="first leaf"><a href="http://newberry.rerum.io/paleography/my-transcriptions.html" title="">My Transcriptions</a></li>
                 <li class="last leaf"><a href="https://centerfordigitalhumanities.github.io/Newberry-French-paleography/transcriptions" title="">Master Transcriptions</a></li>
             </ul>
         </li>
-        <li class="last leaf"><a href="http://paleo.rerum.io/TPEN-NL/logout.html" title="">Logout</a></li>
+        <li class="last leaf"><a href="http://newberry.rerum.io/paleography/logout.html" title="">Logout</a></li>
     </ul>
 </nav>
 `
