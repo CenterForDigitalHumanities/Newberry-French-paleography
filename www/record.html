@@ -41,7 +41,6 @@
             .then(status => { if (!status.ok) { throw Error(status) } return status })
             .then(response => response.json())
             .then(manifest => {
-                transcribeLink.href+=manifest.label
                 Mirador.viewer({
                     id: "mirador-bookreader",
                     windows: [{
@@ -72,6 +71,7 @@
                 })
                 metadata.innerHTML = `<dl>${dl}</dl>`
                 pageHeader.textContent = manifest.label
+                transcribeLink.setAttribute("href", `http://newberry.rerum.io/paleography/transcribe/${manifest.label}`)
             })
             .catch(err => { throw Error(err) })
 
