@@ -66,11 +66,11 @@ header.innerHTML = `
         </li>
         <li class="expanded dropdown"><a title="" data-target="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">My Transcriptions <span class="caret"></span></a>
             <ul class="dropdown-menu">
-                <li class="first leaf"><a href="http://newberry.rerum.io/paleography/my-transcriptions.html" title="">My Transcriptions</a></li>
+                <li class="first leaf"><a href="http://newberry.rerum.io/paleography/my-transcriptions.html?language=French" title="">My Transcriptions</a></li>
                 <li class="last leaf"><a href="https://centerfordigitalhumanities.github.io/Newberry-French-paleography/transcriptions" title="">Master Transcriptions</a></li>
             </ul>
         </li>
-        <li class="last leaf"><a href="http://newberry.rerum.io/paleography/logout.html" title="">Logout</a></li>
+        <li class="last leaf"><a href="http://newberry.rerum.io/paleography/logout.html?language=French" title="">Logout</a></li>
     </ul>
 </nav>
 `
