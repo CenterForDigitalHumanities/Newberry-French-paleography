@@ -1,32 +1,27 @@
 @import 'https://centerfordigitalhumanities.github.io/Newberry-paleography/styles/main.css';
 
 :root {
-    --bg-color          : #ffffff;
-    --bg-secondary-color: #f3f3f6;
-    --color-primary     : #14854F;
-    --color-lightGrey   : #d2d6dd;
-    --color-grey        : #747681;
-    --color-darkGrey    : #3f4144;
-    --color-error       : #d43939;
-    --color-success     : #28bd14;
-    --grid-maxWidth     : 60rem;
-    --grid-gutter       : 2rem;
-    --font-size         : 1.6rem;
-    --font-color        : #333333;
-    --font-family-sans  : -apple-system, BlinkMacSystemFont, Avenir, "Avenir Next",
-        "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans",
-        "Droid Sans", "Helvetica Neue", sans-serif;
-    --font-family-mono: monaco, "Consolas", "Lucida Console", monospace;
+    --color-primary: #b43d2e;
+    --color-secondary: #baebbc;
+    --color-link: #b43d2e;
+    --color-link-active: #ffa500;
+    --font-color: #002a5c;
 }
 .record h4 {
     margin: 0 auto;
 }
 
 .record a {
-    background : white;
-    color      : #be3c2b;
+    background : var(--bg-color);
+    color      : var(--color-link);
     border     : 1px solid #be3c2b;
     padding    : 3px 6px;
     text-align : center;
     font-weight: bold;
+    transition: all .25s;
+}
+
+.record a:hover {
+    background : var(--color-link);
+    color      : var(--bg-color);
 }
