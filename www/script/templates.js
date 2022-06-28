@@ -77,7 +77,7 @@ header.innerHTML = `
 
 footer.innerHTML = `
 <link rel="stylesheet" href="https://centerfordigitalhumanities.github.io/Newberry-French-paleography/www/css/style.css">
-<div class="row container">
+<div class="row container no-embed">
     <div class="col" style="flex-grow:2;">
         <h2> Partners </h2>
             <div class="row">
