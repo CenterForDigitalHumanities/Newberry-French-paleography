@@ -70,7 +70,6 @@ header.innerHTML = `
                 <li class="last leaf"><a href="https://centerfordigitalhumanities.github.io/Newberry-French-paleography/transcriptions" title="">Master Transcriptions</a></li>
             </ul>
         </li>
-        <li class="last leaf"><a href="http://newberry.rerum.io/paleography/logout.html?language=French" title="">Logout</a></li>
     </ul>
 </nav>
 `
