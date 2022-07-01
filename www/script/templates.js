@@ -24,8 +24,6 @@ header.innerHTML = `
           </div>
 
       </div>
-      <div class="search-icon" id="search-btn"><button title="Search" aria-label="Search" class="icon icon-search"></button></div>
-      <div class="hamburger-icon"><div class="icon icon-menu">&nbsp;</div></div>
 </header>
 <link rel="stylesheet" href="https://centerfordigitalhumanities.github.io/Newberry-French-paleography/www/css/style.css">
 <slot></slot>
