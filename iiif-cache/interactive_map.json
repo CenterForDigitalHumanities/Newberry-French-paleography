@@ -12,7 +12,7 @@
             },
             "properties": {
                 "cartodb_id": 5,
-                "doclink1": "https://centerfordigitalhumanities.github.io/Newberry-French-paleography/www/manuscripts.html?q=catch_all_fields_mt:%28Asnelles%29",
+                "doclink1": "https://centerfordigitalhumanities.github.io/Newberry-French-paleography/www/manuscripts.html?q=Asnelles",
                 "imageright": null,
                 "city": "Asnelles",
                 "region": "France--Northern France",
@@ -159,7 +159,7 @@
             },
             "properties": {
                 "cartodb_id": 9,
-                "doclink1": "https://centerfordigitalhumanities.github.io/Newberry-French-paleography/www/manuscripts.html?q=catch_all_fields_mt%3A%28Blois%29",
+                "doclink1": "https://centerfordigitalhumanities.github.io/Newberry-French-paleography/www/manuscripts.html?q=Blois",
                 "imageright": null,
                 "city": "Blois",
                 "region": "France--Central France",
@@ -453,7 +453,7 @@
             },
             "properties": {
                 "cartodb_id": 41,
-                "doclink1": "https://centerfordigitalhumanities.github.io/Newberry-French-paleography/www/manuscripts.html?q=catch_all_fields_mt%3A%28Lunay%29",
+                "doclink1": "https://centerfordigitalhumanities.github.io/Newberry-French-paleography/www/manuscripts.html?q=Lunay",
                 "imageright": "The Newberry Library",
                 "city": "Lunay",
                 "region": "France--Central France",
@@ -474,7 +474,7 @@
             },
             "properties": {
                 "cartodb_id": 19,
-                "doclink1": "https://centerfordigitalhumanities.github.io/Newberry-French-paleography/www/manuscripts.html?q=mods_titleInfo__title_mt%3A%28Troisieme%20registre%20des%20contracts%20d'acquets%20faits%20dans%20l'etendue%20du%20fief%20et%20seigneurie%20de%20l'Epiniere%29",
+                "doclink1": "https://centerfordigitalhumanities.github.io/Newberry-French-paleography/www/manuscripts.html?q=mods_titleInfo__title_mt%3A%28Troisieme%20registre%20des%20contracts%20d'acquets%20faits%20dans%20l'etendue%20du%20fief%20et%20seigneurie%20de%20l'Epiniere",
                 "imageright": "University of Chicago",
                 "city": "Corzé",
                 "region": "France--Northern France",
@@ -600,7 +600,7 @@
             },
             "properties": {
                 "cartodb_id": 26,
-                "doclink1": "https://centerfordigitalhumanities.github.io/Newberry-French-paleography/www/manuscripts.html?q=catch_all_fields_mt:%28%C3%89pieds%29",
+                "doclink1": "https://centerfordigitalhumanities.github.io/Newberry-French-paleography/www/manuscripts.html?q=%C3%89pieds",
                 "imageright": "Digital Scriptorium?",
                 "city": "Épieds",
                 "region": "France--Northern France",
@@ -1125,7 +1125,7 @@
             },
             "properties": {
                 "cartodb_id": 53,
-                "doclink1": "https://centerfordigitalhumanities.github.io/Newberry-French-paleography/www/manuscripts.html?q=catch_all_fields_mt%3A%28Orl%C3%A9ans%29",
+                "doclink1": "https://centerfordigitalhumanities.github.io/Newberry-French-paleography/www/manuscripts.html?q=Orl%C3%A9ans",
                 "imageright": "The Newberry Library",
                 "city": "Orléans",
                 "region": "France--Central France",
@@ -1398,7 +1398,7 @@
             },
             "properties": {
                 "cartodb_id": 66,
-                "doclink1": "https://centerfordigitalhumanities.github.io/Newberry-French-paleography/www/manuscripts.html?q=catch_all_fields_mt%3A%28Saint-Pierre-le-Chastel%29",
+                "doclink1": "https://centerfordigitalhumanities.github.io/Newberry-French-paleography/www/manuscripts.html?q=Saint-Pierre-le-Chastel",
                 "imageright": "The Newberry Library",
                 "city": "Saint-Pierre-le-Chastel",
                 "region": "France--Central France",
