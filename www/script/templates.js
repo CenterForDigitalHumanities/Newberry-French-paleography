@@ -82,7 +82,7 @@ footer.innerHTML = `
                 <a class="col" href="http://onesearch.library.utoronto.ca" target="_blank"><img alt="University of Toronto Libraries" src="https://centerfordigitalhumanities.github.io/Newberry-French-paleography/www/images/UTL-logo.png"></a>
             </div>
             <div class="row">
-                <a class="col" href="http://lib.slu.edu/" style="line-height: 23.1111px;" target="_blank"><img alt="St. Louis University" src="https://centerfordigitalhumanities.github.io/Newberry-French-paleography/www/images/slu.gif" style="width: 346px;"></a>
+                <a class="col" href="http://lib.slu.edu/" style="line-height: 23.1111px;" target="_blank"><img alt="St. Louis University" src="https://centerfordigitalhumanities.github.io/Newberry-paleography/images/slu_ovpr.png" style="width: 470px;"></a>
                 <a class="col" href="http://www.itergateway.org/" target="_blank"><img alt="Iter" src="https://centerfordigitalhumanities.github.io/Newberry-French-paleography/www/images/iter-logo-new.png"></a>
             </div>
     </div>
