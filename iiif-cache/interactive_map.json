@@ -11,15 +11,12 @@
                 ]
             },
             "properties": {
-                "cartodb_id": 5,
-                "doclink1": "https://centerfordigitalhumanities.github.io/Newberry-French-paleography/www/manuscripts.html?q=Asnelles",
+                "doclink1": "https://centerfordigitalhumanities.github.io/Newberry-French-paleography/www/record.html?id=2078",
                 "imageright": null,
                 "city": "Asnelles",
                 "region": "France--Northern France",
                 "identifier": "FP_338",
-                "title": "Land sale by Pierre le Canu",
-                "y_lat": 49.338333,
-                "x_long": -0.582778
+                "title": "Land sale by Pierre le Canu"
             }
         },
         {
@@ -32,15 +29,12 @@
                 ]
             },
             "properties": {
-                "cartodb_id": 23,
-                "doclink1": "https://centerfordigitalhumanities.github.io/Newberry-French-paleography/www/record.html?id=459#0b74face-2e09-4339-ac77-2af21e6ee5f5",
+                "doclink1": "https://centerfordigitalhumanities.github.io/Newberry-French-paleography/www/record.html?id=459",
                 "imageright": "The Newberry Library",
                 "city": "Damme",
                 "region": "Belgium",
                 "identifier": "FP_023",
-                "title": "Chroniques, v.2",
-                "y_lat": 51.250965,
-                "x_long": 3.282646
+                "title": "Chroniques, v.2"
             }
         },
         {
@@ -53,15 +47,12 @@
                 ]
             },
             "properties": {
-                "cartodb_id": 1,
-                "doclink1": "https://centerfordigitalhumanities.github.io/Newberry-French-paleography/www/record.html?id=455#87370854-01cd-4bd7-993d-57d699993a0a",
+                "doclink1": "https://centerfordigitalhumanities.github.io/Newberry-French-paleography/www/record.html?id=455",
                 "imageright": "The Newberry Library",
                 "city": "Alençon",
                 "region": "France--Northern France",
                 "identifier": "FP_019",
-                "title": "Aveu de Michel Mercier pour sa maison à Alençon",
-                "y_lat": 48.431206,
-                "x_long": 0.091137
+                "title": "Aveu de Michel Mercier pour sa maison à Alençon"
             }
         },
         {
@@ -74,15 +65,12 @@
                 ]
             },
             "properties": {
-                "cartodb_id": 2,
-                "doclink1": "https://centerfordigitalhumanities.github.io/Newberry-French-paleography/www/record.html?id=461#c563b230-ac5d-42b7-a277-4741106db4ef",
+                "doclink1": "https://centerfordigitalhumanities.github.io/Newberry-French-paleography/www/record.html?id=461",
                 "imageright": "The Newberry Library",
                 "city": "Amboise",
                 "region": "France--Central France",
                 "identifier": "FP_025",
-                "title": "Household accounts for the French royal household at Amboise",
-                "y_lat": 47.411035,
-                "x_long": 0.983698
+                "title": "Household accounts for the French royal household at Amboise"
             }
         },
         {
@@ -95,15 +83,12 @@
                 ]
             },
             "properties": {
-                "cartodb_id": 3,
-                "doclink1": "https://centerfordigitalhumanities.github.io/Newberry-French-paleography/www/record.html?id=488#461c0df5-874c-42d1-b3e5-f25acec41a91",
+                "doclink1": "https://centerfordigitalhumanities.github.io/Newberry-French-paleography/www/record.html?id=488",
                 "imageright": "The Newberry Library",
                 "city": "Anglards-de-Salers",
                 "region": "France--Southern France",
                 "identifier": "FP_052",
-                "title": "Land grant of Annet d'Anglars to his mother Avoise de Tabou",
-                "y_lat": 45.203454,
-                "x_long": 2.440127
+                "title": "Land grant of Annet d'Anglars to his mother Avoise de Tabou"
             }
         },
         {
@@ -116,15 +101,12 @@
                 ]
             },
             "properties": {
-                "cartodb_id": 4,
-                "doclink1": "https://centerfordigitalhumanities.github.io/Newberry-French-paleography/www/record.html?id=518#ebf5c722-e613-4b0f-a1be-2b4b88e1053f",
+                "doclink1": "https://centerfordigitalhumanities.github.io/Newberry-French-paleography/www/record.html?id=518",
                 "imageright": "The Newberry Library",
                 "city": "Anvers",
                 "region": "Belgium",
                 "identifier": "FP_204",
-                "title": "ABC, ou Exemples propres pour apprendre les enfans à escrire, contenants plusieurs sentences morales pour l'instruction de la jeunesse",
-                "y_lat": 51.2213,
-                "x_long": 4.3977
+                "title": "ABC, ou Exemples propres pour apprendre les enfans à escrire, contenants plusieurs sentences morales pour l'instruction de la jeunesse"
             }
         },
         {
@@ -137,15 +119,12 @@
                 ]
             },
             "properties": {
-                "cartodb_id": 8,
-                "doclink1": "https://centerfordigitalhumanities.github.io/Newberry-French-paleography/www/record.html?id=444#73fc943c-92f3-4da9-a572-c8101a35b58d",
+                "doclink1": "https://centerfordigitalhumanities.github.io/Newberry-French-paleography/www/record.html?id=444",
                 "imageright": "The Newberry Library",
                 "city": "Beauvais",
                 "region": "France--Northern France",
                 "identifier": "FP_008",
-                "title": "Letter from Father Simon Le Moyne to his cousin, priest at the church of St. Martin in Beauvais",
-                "y_lat": 49.3966,
-                "x_long": 2.0613
+                "title": "Letter from Father Simon Le Moyne to his cousin, priest at the church of St. Martin in Beauvais"
             }
         },
         {
@@ -158,15 +137,15 @@
                 ]
             },
             "properties": {
-                "cartodb_id": 9,
-                "doclink1": "https://centerfordigitalhumanities.github.io/Newberry-French-paleography/www/manuscripts.html?q=Blois",
+                "doclink1": [
+                    "https://centerfordigitalhumanities.github.io/Newberry-French-paleography/www/record.html?id=2068",
+                    "https://centerfordigitalhumanities.github.io/Newberry-French-paleography/www/record.html?id=2074"
+                ],
                 "imageright": null,
                 "city": "Blois",
                 "region": "France--Central France",
                 "identifier": "FP_328, FP_334",
-                "title": "[Multiple Documents]",
-                "y_lat": 47.589419,
-                "x_long": 1.328232
+                "title": "[Multiple Documents]"
             }
         },
         {
@@ -179,15 +158,12 @@
                 ]
             },
             "properties": {
-                "cartodb_id": 10,
-                "doclink1": "https://centerfordigitalhumanities.github.io/Newberry-French-paleography/www/manuscripts.html?q=*%3A*?f[0]=mods_subject_cartographics_coordinates_ms%3A%2244%C2%B0%C2%A050%E2%80%B2%C2%A0N%2C%200%C2%B0%C2%A035%E2%80%B2%C2%A0W%22",
+                "doclink1": "https://centerfordigitalhumanities.github.io/Newberry-French-paleography/www/record.html?id=472",
                 "imageright": "The Newberry Library",
                 "city": "Bordeaux",
                 "region": "France--Southern France",
                 "identifier": "FP_036, FP_253, FP_332",
-                "title": "[Multiple Documents]",
-                "y_lat": 44.841086,
-                "x_long": -0.580054
+                "title": "[Multiple Documents]"
             }
         },
         {
@@ -200,15 +176,12 @@
                 ]
             },
             "properties": {
-                "cartodb_id": 11,
-                "doclink1": "https://centerfordigitalhumanities.github.io/Newberry-French-paleography/www/record.html?id=522#2baa179d-880c-4a09-bb73-3140b246fa71",
+                "doclink1": "https://centerfordigitalhumanities.github.io/Newberry-French-paleography/www/record.html?id=522",
                 "imageright": "The Newberry Library",
                 "city": "Bruxelles",
                 "region": "Belgium",
                 "identifier": "FP_208",
-                "title": "Livre contenant plusieurs sortes d'escritures avecq divers traicts, faict inventé et mis en lumiere par Baldri van Horicke, maistre à escrire des pages de leurs Altesses serenissimes de glorieuse mémoire en Bruxelles",
-                "y_lat": 50.8492,
-                "x_long": 4.3502
+                "title": "Livre contenant plusieurs sortes d'escritures avecq divers traicts, faict inventé et mis en lumiere par Baldri van Horicke, maistre à escrire des pages de leurs Altesses serenissimes de glorieuse mémoire en Bruxelles"
             }
         },
         {
@@ -221,15 +194,15 @@
                 ]
             },
             "properties": {
-                "cartodb_id": 12,
-                "doclink1": "https://centerfordigitalhumanities.github.io/Newberry-French-paleography/www/manuscripts.html?q=*%3A*?f[0]=mods_subject_cartographics_coordinates_ms%3A%2249%C2%B0%C2%A011%E2%80%B2%C2%A0N%2C%200%C2%B0%C2%A022%E2%80%B2%C2%A0W%22",
+                "doclink1": [
+                    "https://centerfordigitalhumanities.github.io/Newberry-French-paleography/www/record.html?id=432",
+                    "https://centerfordigitalhumanities.github.io/Newberry-French-paleography/www/record.html?id=2078"
+                ],
                 "imageright": "The Folger Shakespeare Library",
                 "city": "Caen",
                 "region": "France--Northern France",
                 "identifier": "FP_306, FP_338",
-                "title": "[Multiple Documents]",
-                "y_lat": 49.183056,
-                "x_long": -0.369444
+                "title": "[Multiple Documents]"
             }
         },
         {
@@ -242,15 +215,12 @@
                 ]
             },
             "properties": {
-                "cartodb_id": 13,
-                "doclink1": "https://centerfordigitalhumanities.github.io/Newberry-French-paleography/www/record.html?id=428#1af78f08-1bb9-4b4f-b3b0-1ecd0d9f725f",
+                "doclink1": "https://centerfordigitalhumanities.github.io/Newberry-French-paleography/www/record.html?id=428",
                 "imageright": "The Folger Shakespeare Library",
                 "city": "Calais",
                 "region": "France –-Northern France",
                 "identifier": "FP_302",
-                "title": "Negotiations at Calais",
-                "y_lat": 50.950923,
-                "x_long": 1.857578
+                "title": "Negotiations at Calais"
             }
         },
         {
@@ -263,15 +233,12 @@
                 ]
             },
             "properties": {
-                "cartodb_id": 14,
-                "doclink1": "https://centerfordigitalhumanities.github.io/Newberry-French-paleography/www/record.html?id=487#bf49b269-5ba6-40aa-9b8d-d849dd06b009",
+                "doclink1": "https://centerfordigitalhumanities.github.io/Newberry-French-paleography/www/record.html?id=487",
                 "imageright": "The Newberry Library",
                 "city": "Charbonnières-les-Vieilles",
                 "region": "France--Southern France",
                 "identifier": "FP_051",
-                "title": "Mariage d'Annet d'Anglars et d'Anne de Rochegude",
-                "y_lat": 45.9956,
-                "x_long": 2.9992
+                "title": "Mariage d'Annet d'Anglars et d'Anne de Rochegude"
             }
         },
         {
@@ -284,15 +251,12 @@
                 ]
             },
             "properties": {
-                "cartodb_id": 15,
-                "doclink1": "https://centerfordigitalhumanities.github.io/Newberry-French-paleography/www/record.html?id=435#2c123fa8-580b-46c0-a5af-412e1418e657",
+                "doclink1": "https://centerfordigitalhumanities.github.io/Newberry-French-paleography/www/record.html?id=435",
                 "imageright": "The Huntington Library",
                 "city": "Chauny",
                 "region": "France–-Northern France",
                 "identifier": "FP_309",
-                "title": "Loys duc d'Orleans, de Millan et de Valois, conte de Blois, de Pavie et de Beaumont, seigneur d'Ast et de Coucy",
-                "y_lat": 49.616389,
-                "x_long": 3.22
+                "title": "Loys duc d'Orleans, de Millan et de Valois, conte de Blois, de Pavie et de Beaumont, seigneur d'Ast et de Coucy"
             }
         },
         {
@@ -305,15 +269,12 @@
                 ]
             },
             "properties": {
-                "cartodb_id": 49,
-                "doclink1": "https://centerfordigitalhumanities.github.io/Newberry-French-paleography/www/record.html?id=462#8368fe32-e44f-424c-9e83-e694b5366f7d",
+                "doclink1": "https://centerfordigitalhumanities.github.io/Newberry-French-paleography/www/record.html?id=462",
                 "imageright": "The Newberry Library",
                 "city": "Nevers",
                 "region": "France--Central France",
                 "identifier": "FP_026",
-                "title": "Vers d'amour",
-                "y_lat": 46.993912,
-                "x_long": 3.15976
+                "title": "Vers d'amour"
             }
         },
         {
@@ -326,15 +287,12 @@
                 ]
             },
             "properties": {
-                "cartodb_id": 16,
-                "doclink1": "https://centerfordigitalhumanities.github.io/Newberry-French-paleography/www/record.html?id=447#d617ad8c-6d64-4770-a4c9-0227812e33b0",
+                "doclink1": "https://centerfordigitalhumanities.github.io/Newberry-French-paleography/www/record.html?id=447",
                 "imageright": "The Newberry Library",
                 "city": "Chicago",
                 "region": "New France",
                 "identifier": "FP_011",
-                "title": "Fur trade contract between François Francoeur and four voyageurs for transport of goods and purchase of beaver pelts in Michilimackinac and Chicago",
-                "y_lat": 41.88194,
-                "x_long": -87.62778
+                "title": "Fur trade contract between François Francoeur and four voyageurs for transport of goods and purchase of beaver pelts in Michilimackinac and Chicago"
             }
         },
         {
@@ -347,15 +305,12 @@
                 ]
             },
             "properties": {
-                "cartodb_id": 17,
-                "doclink1": "https://centerfordigitalhumanities.github.io/Newberry-French-paleography/www/record.html?id=434#04215d26-23d3-4a11-a8ef-061a6e8b7602",
+                "doclink1": "https://centerfordigitalhumanities.github.io/Newberry-French-paleography/www/record.html?id=434",
                 "imageright": "The Huntington Library",
                 "city": "Chinon",
                 "region": "France--Central France; France--Southern France",
                 "identifier": "FP_308",
-                "title": "Roole des parties payees par maistre Estienne Petit, tresorier et Receveur general des pays de Languedoc et duchié de Guienne par le commandement et ordonnance du Roy nostre seigneur",
-                "y_lat": 47.1697,
-                "x_long": 0.244751
+                "title": "Roole des parties payees par maistre Estienne Petit, tresorier et Receveur general des pays de Languedoc et duchié de Guienne par le commandement et ordonnance du Roy nostre seigneur"
             }
         },
         {
@@ -368,15 +323,12 @@
                 ]
             },
             "properties": {
-                "cartodb_id": 75,
                 "doclink1": "https://centerfordigitalhumanities.github.io/Newberry-French-paleography/www/record.html?id=423",
                 "imageright": "The Newberry Library",
                 "city": "Ulm",
                 "region": "Germany",
                 "identifier": "FP_250",
-                "title": "Tabula moderna Francie",
-                "y_lat": 48.3959,
-                "x_long": 9.9858
+                "title": "Tabula moderna Francie"
             }
         },
         {
@@ -389,15 +341,12 @@
                 ]
             },
             "properties": {
-                "cartodb_id": 6,
-                "doclink1": "https://centerfordigitalhumanities.github.io/Newberry-French-paleography/www/record.html?id=457#7a5e6066-7b68-433f-ae3e-6fa1b7e52fc2",
+                "doclink1": "https://centerfordigitalhumanities.github.io/Newberry-French-paleography/www/record.html?id=457",
                 "imageright": "The Newberry Library",
                 "city": "Basel",
                 "region": "Switzerland",
                 "identifier": "FP_021",
-                "title": "Pensées",
-                "y_lat": 47.566667,
-                "x_long": 7.6
+                "title": "Pensées"
             }
         },
         {
@@ -410,15 +359,12 @@
                 ]
             },
             "properties": {
-                "cartodb_id": 7,
-                "doclink1": "https://centerfordigitalhumanities.github.io/Newberry-French-paleography/www/record.html?id=460#f82aa247-8752-412a-8093-d466c0d61883",
+                "doclink1": "https://centerfordigitalhumanities.github.io/Newberry-French-paleography/www/record.html?id=460",
                 "imageright": "The Newberry Library",
                 "city": "Bazas",
                 "region": "France--Southern France",
                 "identifier": "FP_024",
-                "title": "Recognoissance des enfans et heretiers de feu Berthomé de Bazas",
-                "y_lat": 44.432778,
-                "x_long": -0.210556
+                "title": "Recognoissance des enfans et heretiers de feu Berthomé de Bazas"
             }
         },
         {
@@ -431,15 +377,12 @@
                 ]
             },
             "properties": {
-                "cartodb_id": 18,
-                "doclink1": "https://centerfordigitalhumanities.github.io/Newberry-French-paleography/www/record.html?id=481#774e9f5e-b439-45ba-89b2-18240de42127",
+                "doclink1": "https://centerfordigitalhumanities.github.io/Newberry-French-paleography/www/record.html?id=481",
                 "imageright": "The Newberry Library",
                 "city": "Clerlande",
                 "region": "France--Central France",
                 "identifier": "FP_045",
-                "title": "Sentence du sénéchal d'Auvergne",
-                "y_lat": 45.9192,
-                "x_long": 3.1922
+                "title": "Sentence du sénéchal d'Auvergne"
             }
         },
         {
@@ -452,15 +395,12 @@
                 ]
             },
             "properties": {
-                "cartodb_id": 41,
-                "doclink1": "https://centerfordigitalhumanities.github.io/Newberry-French-paleography/www/manuscripts.html?q=Lunay",
+                "doclink1": "https://centerfordigitalhumanities.github.io/Newberry-French-paleography/www/manuscripts.html?q=leases%20for",
                 "imageright": "The Newberry Library",
                 "city": "Lunay",
                 "region": "France--Central France",
                 "identifier": "FP_032, FP_61",
-                "title": "[Multiple Documents]",
-                "y_lat": 47.81003,
-                "x_long": 0.915163
+                "title": "[Multiple Documents]"
             }
         },
         {
@@ -473,15 +413,12 @@
                 ]
             },
             "properties": {
-                "cartodb_id": 19,
-                "doclink1": "https://centerfordigitalhumanities.github.io/Newberry-French-paleography/www/manuscripts.html?q=mods_titleInfo__title_mt%3A%28Troisieme%20registre%20des%20contracts%20d'acquets%20faits%20dans%20l'etendue%20du%20fief%20et%20seigneurie%20de%20l'Epiniere",
+                "doclink1": "https://centerfordigitalhumanities.github.io/Newberry-French-paleography/www/manuscripts.html?q=Epiniere",
                 "imageright": "University of Chicago",
                 "city": "Corzé",
                 "region": "France--Northern France",
                 "identifier": "FP_314, FP_315",
-                "title": "[Multiple Documents]\n",
-                "y_lat": 47.557935,
-                "x_long": -0.389181
+                "title": "[Multiple Documents]"
             }
         },
         {
@@ -494,15 +431,12 @@
                 ]
             },
             "properties": {
-                "cartodb_id": 20,
-                "doclink1": "https://centerfordigitalhumanities.github.io/Newberry-French-paleography/www/record.html?id=477#e5954c3d-eaa1-45bb-b2f3-426d570be004",
+                "doclink1": "https://centerfordigitalhumanities.github.io/Newberry-French-paleography/www/record.html?id=477",
                 "imageright": "The Newberry Library",
                 "city": "Coulommiers",
                 "region": "France--Ile-de-France",
                 "identifier": "FP_041",
-                "title": "Vente de la moitié d'une maison, Coulommiers, 1601",
-                "y_lat": 48.8094,
-                "x_long": 3.09228
+                "title": "Vente de la moitié d'une maison, Coulommiers, 1601"
             }
         },
         {
@@ -515,15 +449,12 @@
                 ]
             },
             "properties": {
-                "cartodb_id": 21,
-                "doclink1": "https://centerfordigitalhumanities.github.io/Newberry-French-paleography/www/record.html?id=478#be8cd356-9e35-406d-bbed-4ba8db32978a",
+                "doclink1": "https://centerfordigitalhumanities.github.io/Newberry-French-paleography/www/record.html?id=478",
                 "imageright": "The Newberry Library",
                 "city": "Coutances",
                 "region": "France--Northern France",
                 "identifier": "FP_042",
-                "title": "Contrat de vente au profit de Gilles de l'Espine, Coutances 1656",
-                "y_lat": 49.047505,
-                "x_long": -1.443753
+                "title": "Contrat de vente au profit de Gilles de l'Espine, Coutances 1656"
             }
         },
         {
@@ -536,15 +467,12 @@
                 ]
             },
             "properties": {
-                "cartodb_id": 22,
-                "doclink1": "https://centerfordigitalhumanities.github.io/Newberry-French-paleography/www/record.html?id=488#e60256ac-249f-4315-91a8-c220359d02c7",
+                "doclink1": "https://centerfordigitalhumanities.github.io/Newberry-French-paleography/www/record.html?id=488",
                 "imageright": "The Newberry Library",
                 "city": "Crezancy-en-Sancerre",
                 "region": "France--Central France",
                 "identifier": "FP_052",
-                "title": "Land grant of Annet d'Anglars to his mother Avoise de Tabou",
-                "y_lat": 47.305209,
-                "x_long": 2.744649
+                "title": "Land grant of Annet d'Anglars to his mother Avoise de Tabou"
             }
         },
         {
@@ -557,15 +485,12 @@
                 ]
             },
             "properties": {
-                "cartodb_id": 24,
-                "doclink1": "https://centerfordigitalhumanities.github.io/Newberry-French-paleography/www/record.html?id=1814#630228e4-98a3-4317-ad1c-f537c8d40430",
+                "doclink1": "https://centerfordigitalhumanities.github.io/Newberry-French-paleography/www/record.html?id=1814",
                 "imageright": "Harvard University",
                 "city": "Dijon",
                 "region": "France-–Central France",
                 "identifier": "FP_321",
-                "title": "Confirmation by King Henry II of the privileges granted to the Sainte-Chapelle of Dijon by his predecessors the Dukes of Burgundy and Kings of France",
-                "y_lat": 47.3283,
-                "x_long": 5.0434
+                "title": "Confirmation by King Henry II of the privileges granted to the Sainte-Chapelle of Dijon by his predecessors the Dukes of Burgundy and Kings of France"
             }
         },
         {
@@ -578,15 +503,12 @@
                 ]
             },
             "properties": {
-                "cartodb_id": 25,
-                "doclink1": "https://centerfordigitalhumanities.github.io/Newberry-French-paleography/www/record.html?id=428#17bf3ecf-98a3-474e-b2f5-5c5a94d47852",
+                "doclink1": "https://centerfordigitalhumanities.github.io/Newberry-French-paleography/www/record.html?id=428",
                 "imageright": "The Folger Shakespeare Library",
                 "city": "Dole",
                 "region": "France –-Central France",
                 "identifier": "FP_302",
-                "title": "Negotiations at Calais",
-                "y_lat": 47.092105,
-                "x_long": 5.492546
+                "title": "Negotiations at Calais"
             }
         },
         {
@@ -599,15 +521,12 @@
                 ]
             },
             "properties": {
-                "cartodb_id": 26,
-                "doclink1": "https://centerfordigitalhumanities.github.io/Newberry-French-paleography/www/manuscripts.html?q=%C3%89pieds",
+                "doclink1": "https://centerfordigitalhumanities.github.io/Newberry-French-paleography/www/manuscripts.html?q=fiefs",
                 "imageright": "Digital Scriptorium?",
                 "city": "Épieds",
                 "region": "France--Northern France",
                 "identifier": "FP_327, FP_329",
-                "title": "[Multiple Documents]",
-                "y_lat": 47.14472,
-                "x_long": 0.045
+                "title": "[Multiple Documents]"
             }
         },
         {
@@ -620,15 +539,12 @@
                 ]
             },
             "properties": {
-                "cartodb_id": 27,
-                "doclink1": "https://centerfordigitalhumanities.github.io/Newberry-French-paleography/www/record.html?id=2075#59a5e904-8616-476f-96bd-3f88e783ec0b",
+                "doclink1": "https://centerfordigitalhumanities.github.io/Newberry-French-paleography/www/record.html?id=2075",
                 "imageright": null,
                 "city": "Flers",
                 "region": "France--Northern France",
                 "identifier": "FP_335",
-                "title": "La Charité quittance",
-                "y_lat": 48.7518,
-                "x_long": -0.5605
+                "title": "La Charité quittance"
             }
         },
         {
@@ -641,15 +557,12 @@
                 ]
             },
             "properties": {
-                "cartodb_id": 28,
-                "doclink1": "https://centerfordigitalhumanities.github.io/Newberry-French-paleography/www/record.html?id=447#2ff444c3-1c24-4def-bc43-c482c1a28670",
+                "doclink1": "https://centerfordigitalhumanities.github.io/Newberry-French-paleography/www/record.html?id=447",
                 "imageright": "The Newberry Library",
                 "city": "Fort Michilimackinac",
                 "region": "New France",
                 "identifier": "FP_011",
-                "title": "Fur trade contract between François Francoeur and four voyageurs for transport of goods and purchase of beaver pelts in Michilimackinac and Chicago",
-                "y_lat": 45.78389,
-                "x_long": -84.72778
+                "title": "Fur trade contract between François Francoeur and four voyageurs for transport of goods and purchase of beaver pelts in Michilimackinac and Chicago"
             }
         },
         {
@@ -662,15 +575,15 @@
                 ]
             },
             "properties": {
-                "cartodb_id": 29,
-                "doclink1": "https://centerfordigitalhumanities.github.io/Newberry-French-paleography/www/manuscripts.html?q=*%3A*?f[0]=mods_subject_cartographics_coordinates_ms%3A%2246%C2%B0%C2%A048%E2%80%B2%C2%A044.64%E2%80%B3%C2%A0N%2C%2071%C2%B0%C2%A012%E2%80%B2%C2%A015.84%E2%80%B3%C2%A0W%22",
+                "doclink1": [
+                    "https://centerfordigitalhumanities.github.io/Newberry-French-paleography/www/record.html?id=443",
+                    "https://centerfordigitalhumanities.github.io/Newberry-French-paleography/www/record.html?id=445"
+                ],
                 "imageright": "The Newberry Library",
                 "city": "Fort Saint-Louis",
                 "region": "New France",
                 "identifier": "FP_007, FP_009",
-                "title": "[Multiple Documents]",
-                "y_lat": 46.81222,
-                "x_long": -71.20444
+                "title": "[Multiple Documents]"
             }
         },
         {
@@ -683,15 +596,12 @@
                 ]
             },
             "properties": {
-                "cartodb_id": 30,
-                "doclink1": "https://centerfordigitalhumanities.github.io/Newberry-French-paleography/www/record.html?id=471#45f47e3d-d4f2-46a5-8ebe-1c5c20d393ce",
+                "doclink1": "https://centerfordigitalhumanities.github.io/Newberry-French-paleography/www/record.html?id=471",
                 "imageright": "The Newberry Library",
                 "city": "Gourdon",
                 "region": "France--Southern France",
                 "identifier": "FP_035",
-                "title": "Registre de la seigneurie de Gourdon tenue par Louis et François de Lombard",
-                "y_lat": 43.720055,
-                "x_long": 6.978759
+                "title": "Registre de la seigneurie de Gourdon tenue par Louis et François de Lombard"
             }
         },
         {
@@ -704,15 +614,12 @@
                 ]
             },
             "properties": {
-                "cartodb_id": 31,
-                "doclink1": "https://centerfordigitalhumanities.github.io/Newberry-French-paleography/www/record.html?id=471#be430749-79c9-4b7c-8b17-b34e696821bf",
+                "doclink1": "https://centerfordigitalhumanities.github.io/Newberry-French-paleography/www/record.html?id=471",
                 "imageright": "The Newberry Library",
                 "city": "Grasse",
                 "region": "France--Southern France",
                 "identifier": "FP_035",
-                "title": "Registre de la seigneurie de Gourdon tenue par Louis et François de Lombard",
-                "y_lat": 43.658901,
-                "x_long": 6.92391
+                "title": "Registre de la seigneurie de Gourdon tenue par Louis et François de Lombard"
             }
         },
         {
@@ -725,15 +632,12 @@
                 ]
             },
             "properties": {
-                "cartodb_id": 32,
-                "doclink1": "https://centerfordigitalhumanities.github.io/Newberry-French-paleography/www/record.html?id=521#f0129c5e-1ab9-4a9e-9bbb-90de5f8bad73",
+                "doclink1": "https://centerfordigitalhumanities.github.io/Newberry-French-paleography/www/record.html?id=521",
                 "imageright": "The Newberry Library",
                 "city": "Haarlem",
                 "region": "The Netherlands",
                 "identifier": "FP_207",
-                "title": "Thresor litteraire, contenant plusieurs diverses escritures, les plus usitees es escoles francoises des Provinces unies du Pays-Bas. Escrit et mis en lumiere par Jan Van den Velde, maistre d'escole francois en la populeuse et tres antique ville marchande",
-                "y_lat": 52.3901,
-                "x_long": 4.6388
+                "title": "Thresor litteraire,contenant plusieurs diverses escritures, les plus usitees es escoles francoises des Provinces unies du Pays-Bas. Escrit et mis en lumiere par Jan Van den Velde,  maistre d'escole francois en la populeuse et tres antique ville marchande"
             }
         },
         {
@@ -746,15 +650,12 @@
                 ]
             },
             "properties": {
-                "cartodb_id": 33,
-                "doclink1": "https://centerfordigitalhumanities.github.io/Newberry-French-paleography/www/record.html?id=443#a87e03d1-b211-46f4-b8f7-d7b2de1d1a03",
+                "doclink1": "https://centerfordigitalhumanities.github.io/Newberry-French-paleography/www/record.html?id=443",
                 "imageright": "The Newberry Library",
                 "city": "ile d'Orléans",
                 "region": "New France",
                 "identifier": "FP_007",
-                "title": "Investiture de l’île d’Orléans donnée au procureur des concessionnaires par le gouverneur général de la Nouvelle-France",
-                "y_lat": 46.91833,
-                "x_long": -70.97639
+                "title": "Investiture de l’île d’Orléans donnée au procureur des concessionnaires par le gouverneur général de la Nouvelle-France"
             }
         },
         {
@@ -767,15 +668,12 @@
                 ]
             },
             "properties": {
-                "cartodb_id": 34,
-                "doclink1": "https://centerfordigitalhumanities.github.io/Newberry-French-paleography/www/record.html?id=475#6efa92e6-7354-4c5c-b8a8-d84c02c69767",
+                "doclink1": "https://centerfordigitalhumanities.github.io/Newberry-French-paleography/www/record.html?id=475",
                 "imageright": "The Newberry Library",
                 "city": "Jouars-Pontchartrain",
                 "region": "France--Ile-de-France",
                 "identifier": "FP_039",
-                "title": "Mortgage contract on properties of Pontchartrain and Palluau",
-                "y_lat": 48.803268,
-                "x_long": 1.900021
+                "title": "Mortgage contract on properties of Pontchartrain and Palluau"
             }
         },
         {
@@ -788,15 +686,12 @@
                 ]
             },
             "properties": {
-                "cartodb_id": 35,
-                "doclink1": "https://centerfordigitalhumanities.github.io/Newberry-French-paleography/www/record.html?id=492#9f10af9b-dba6-4730-a973-e38744b3e566",
+                "doclink1": "https://centerfordigitalhumanities.github.io/Newberry-French-paleography/www/record.html?id=492",
                 "imageright": "The Newberry Library",
                 "city": "Le Mans",
                 "region": "France--Central France",
                 "identifier": "FP_056",
-                "title": "Legal papers concerning the estate of René de Hodon",
-                "y_lat": 48.007737,
-                "x_long": 0.199527
+                "title": "Legal papers concerning the estate of René de Hodon"
             }
         },
         {
@@ -809,15 +704,12 @@
                 ]
             },
             "properties": {
-                "cartodb_id": 36,
-                "doclink1": "https://centerfordigitalhumanities.github.io/Newberry-French-paleography/www/record.html?id=469#2ae562ba-3017-419b-9b11-dea41bf0ecf9",
+                "doclink1": "https://centerfordigitalhumanities.github.io/Newberry-French-paleography/www/record.html?id=469",
                 "imageright": "The Newberry Library",
                 "city": "Le Puy-en-Velay",
                 "region": "France--Southern France",
                 "identifier": "FP_033",
-                "title": "Etats généraux du Languedoc, 1501-1516",
-                "y_lat": 45.045974,
-                "x_long": 3.885554
+                "title": "Etats généraux du Languedoc, 1501-1516"
             }
         },
         {
@@ -830,15 +722,12 @@
                 ]
             },
             "properties": {
-                "cartodb_id": 37,
-                "doclink1": "https://centerfordigitalhumanities.github.io/Newberry-French-paleography/www/record.html?id=468#cc32bad6-9a0a-4880-83ac-2f5751528e66",
+                "doclink1": "https://centerfordigitalhumanities.github.io/Newberry-French-paleography/www/record.html?id=468",
                 "imageright": "The Newberry Library",
                 "city": "Les Roches-l'Evêque",
                 "region": "France--Central France",
                 "identifier": "FP_032",
-                "title": "Bail du moulin de Les Roches-l'Evêque, 1593",
-                "y_lat": 47.77722,
-                "x_long": 0.892222
+                "title": "Bail du moulin de Les Roches-l'Evêque, 1593"
             }
         },
         {
@@ -851,15 +740,12 @@
                 ]
             },
             "properties": {
-                "cartodb_id": 38,
-                "doclink1": "https://centerfordigitalhumanities.github.io/Newberry-French-paleography/www/record.html?id=1809#c556ff73-9d57-4e9e-9d2a-3e3d9354bb38",
+                "doclink1": "https://centerfordigitalhumanities.github.io/Newberry-French-paleography/www/record.html?id=1809",
                 "imageright": "University of Chicago",
                 "city": "Liège",
                 "region": "Belgium",
                 "identifier": "FP_316",
-                "title": "Contracts, charters, financial records of the St. Lambert's Cathedral in Liège",
-                "y_lat": 50.6455,
-                "x_long": 5.5735
+                "title": "Contracts, charters, financial records of the St. Lambert's Cathedral in Liège"
             }
         },
         {
@@ -872,15 +758,12 @@
                 ]
             },
             "properties": {
-                "cartodb_id": 39,
-                "doclink1": "https://centerfordigitalhumanities.github.io/Newberry-French-paleography/www/record.html?id=430#cf7bb1b8-5375-49f5-b869-6eca0d3e1708",
+                "doclink1": "https://centerfordigitalhumanities.github.io/Newberry-French-paleography/www/record.html?id=430",
                 "imageright": "The Folger Shakespeare Library",
                 "city": "London",
                 "region": "England; France",
                 "identifier": "FP_304",
-                "title": "Discours et harangue des ambassadeurs du Roy avec ceulx d'Angleterre touchant le pourparler du mariage d'entre monseigneur le duc d'Anjou et d'Alençon avec la Royne d'Angleterre",
-                "y_lat": 51.507252,
-                "x_long": -0.12782
+                "title": "Discours et harangue des ambassadeurs du Roy avec ceulx d'Angleterre touchant le pourparler du mariage d'entre monseigneur le duc d'Anjou et d'Alençon avec la Royne d'Angleterre"
             }
         },
         {
@@ -893,15 +776,12 @@
                 ]
             },
             "properties": {
-                "cartodb_id": 40,
-                "doclink1": "https://centerfordigitalhumanities.github.io/Newberry-French-paleography/www/record.html?id=1811#6e367fd0-e418-46b0-8567-1b9e9e6539cc",
+                "doclink1": "https://centerfordigitalhumanities.github.io/Newberry-French-paleography/www/record.html?id=1811",
                 "imageright": "Harvard University",
                 "city": "Lorris",
                 "region": "France--Northern France",
                 "identifier": "FP_318",
-                "title": "Roman de Mandevie : les melancolies sur les conditions de ce monde",
-                "y_lat": 47.8648,
-                "x_long": 2.50012
+                "title": "Roman de Mandevie : les melancolies sur les conditions de ce monde"
             }
         },
         {
@@ -914,15 +794,15 @@
                 ]
             },
             "properties": {
-                "cartodb_id": 42,
-                "doclink1": "https://centerfordigitalhumanities.github.io/Newberry-French-paleography/www/manuscripts.html?q=*%3A*?f[0]=mods_subject_cartographics_coordinates_ms%3A%2245%C2%B0%C2%A046\\%27%20N%2C%204%C2%B0%C2%A050%E2%80%B2%C2%A0E%22",
+                "doclink1": [
+                    "https://centerfordigitalhumanities.github.io/Newberry-French-paleography/www/record.html?id=501",
+                    "https://centerfordigitalhumanities.github.io/Newberry-French-paleography/www/record.html?id=502"
+                ],
                 "imageright": "The Newberry Library",
                 "city": "Lyon",
                 "region": "France--Central France",
                 "identifier": "FP_066, FP_67, FP_205, FP_253",
-                "title": "[Multiple Documents]",
-                "y_lat": 45.757562,
-                "x_long": 4.831778
+                "title": "[Multiple Documents]"
             }
         },
         {
@@ -935,15 +815,12 @@
                 ]
             },
             "properties": {
-                "cartodb_id": 43,
-                "doclink1": "https://centerfordigitalhumanities.github.io/Newberry-French-paleography/www/record.html?id=431#8e89ecc0-9f3d-4a31-8da7-27cf207e2b9e",
+                "doclink1": "https://centerfordigitalhumanities.github.io/Newberry-French-paleography/www/record.html?id=431",
                 "imageright": "The Folger Shakespeare Library",
                 "city": "Madrid",
                 "region": "Spain",
                 "identifier": "FP_305",
-                "title": "Letter signed from Philip II, King of Spain, to his nephew Rudolf II, Holy Roman Emperor",
-                "y_lat": 40.4193,
-                "x_long": -3.6916
+                "title": "Letter signed from Philip II, King of Spain, to his nephew Rudolf II,  Holy Roman Emperor"
             }
         },
         {
@@ -956,15 +833,12 @@
                 ]
             },
             "properties": {
-                "cartodb_id": 44,
-                "doclink1": "https://centerfordigitalhumanities.github.io/Newberry-French-paleography/www/record.html?id=460#ab506bf9-602d-415f-a008-199bc937116f",
+                "doclink1": "https://centerfordigitalhumanities.github.io/Newberry-French-paleography/www/record.html?id=460",
                 "imageright": "The Newberry Library",
                 "city": "Marmande",
                 "region": "France--Southern France",
                 "identifier": "FP_024",
-                "title": "Recognoissance des enfans et heretiers de feu Berthomé de Bazas",
-                "y_lat": 44.500794,
-                "x_long": 0.164274
+                "title": "Recognoissance des enfans et heretiers de feu Berthomé de Bazas"
             }
         },
         {
@@ -977,15 +851,12 @@
                 ]
             },
             "properties": {
-                "cartodb_id": 45,
-                "doclink1": "https://centerfordigitalhumanities.github.io/Newberry-French-paleography/www/record.html?id=454#5dbd5f09-32cc-4b29-a2ff-70c29fd4c84e",
+                "doclink1": "https://centerfordigitalhumanities.github.io/Newberry-French-paleography/www/record.html?id=454",
                 "imageright": "The Newberry Library",
                 "city": "Meursault",
                 "region": "France--Central France",
                 "identifier": "FP_018",
-                "title": "Contrat de mariage de Philippe Berugnot et Nicole Baptaud et de Jehan Baptaud et Jeanne Berugnot",
-                "y_lat": 46.978391,
-                "x_long": 4.7694
+                "title": "Contrat de mariage de Philippe Berugnot et Nicole Baptaud et de Jehan Baptaud et Jeanne Berugnot"
             }
         },
         {
@@ -998,15 +869,12 @@
                 ]
             },
             "properties": {
-                "cartodb_id": 46,
-                "doclink1": "https://centerfordigitalhumanities.github.io/Newberry-French-paleography/www/record.html?id=449#f78b7923-773a-420e-a9c3-c5d673141d8d",
+                "doclink1": "https://centerfordigitalhumanities.github.io/Newberry-French-paleography/www/record.html?id=449",
                 "imageright": "The Newberry Library",
                 "city": "Montereault-Fault-Yonne",
                 "region": "France--Ile-de-France",
                 "identifier": "FP_013",
-                "title": "Proclamation dated January 1420 by which King Charles VI of France disinherits his son the dauphin (future King Charles VII)",
-                "y_lat": 48.386082,
-                "x_long": 2.956218
+                "title": "Proclamation dated January 1420 by which King Charles VI of France disinherits his son the dauphin (future King Charles VII)"
             }
         },
         {
@@ -1019,15 +887,12 @@
                 ]
             },
             "properties": {
-                "cartodb_id": 47,
-                "doclink1": "https://centerfordigitalhumanities.github.io/Newberry-French-paleography/www/record.html?id=514#e68346c1-36af-48c6-b25a-bd40c5046a58",
+                "doclink1": "https://centerfordigitalhumanities.github.io/Newberry-French-paleography/www/record.html?id=514",
                 "imageright": "The Newberry Library",
                 "city": "Montpellier",
                 "region": "France--Southern France",
                 "identifier": "FP_200",
-                "title": "Exemplaires du Sieur Beaulieu: où sont monstrées fidellement toutes sortes de lettres et caracteres de finance, chancelleries, et autres de service: avec une methodique instruction d’icelles: livre premier / taillé par Mathieu Greuter Alleman",
-                "y_lat": 43.611242,
-                "x_long": 3.876734
+                "title": "Exemplaires du Sieur Beaulieu: où sont monstrées fidellement toutes sortes de lettres et caracteres de finance, chancelleries, et autres de service: avec une methodique instruction d’icelles: livre premier / taillé par Mathieu Greuter Alleman"
             }
         },
         {
@@ -1040,15 +905,12 @@
                 ]
             },
             "properties": {
-                "cartodb_id": 48,
-                "doclink1": "https://centerfordigitalhumanities.github.io/Newberry-French-paleography/www/record.html?id=523#2dbd6610-0e60-48bd-a5e0-f0d85be26770",
+                "doclink1": "https://centerfordigitalhumanities.github.io/Newberry-French-paleography/www/record.html?id=523",
                 "imageright": "The Newberry Library",
                 "city": "Moulins",
                 "region": "France-–Central France",
                 "identifier": "FP_209",
-                "title": "Le paranimphe de l'escriture ronde, financiere et italienne de nouvelle forme promte et de tres bons  services enrichies de divers traictz des inventions de François Desmoulins, escrivain, le tout faict et gravé par lui mesme",
-                "y_lat": 46.567153,
-                "x_long": 3.333527
+                "title": "Le paranimphe de l'escriture ronde, financiere et italienne de nouvelle forme promte et de tres bons  services enrichies de divers traictz des inventions de François Desmoulins, escrivain, le tout faict et gravé par lui mesme"
             }
         },
         {
@@ -1061,15 +923,12 @@
                 ]
             },
             "properties": {
-                "cartodb_id": 50,
-                "doclink1": "https://centerfordigitalhumanities.github.io/Newberry-French-paleography/www/record.html?id=464#f6d87250-57f4-409c-9544-27acab85bcb9",
+                "doclink1": "https://centerfordigitalhumanities.github.io/Newberry-French-paleography/www/record.html?id=464",
                 "imageright": "The Newberry Library",
                 "city": "Nice",
                 "region": "France--Southern France",
                 "identifier": "FP_028",
-                "title": "Marriage contract of Sauveur de Lombard and Antoinette de Geoffroy",
-                "y_lat": 43.7096,
-                "x_long": 7.2622
+                "title": "Marriage contract of Sauveur de Lombard and Antoinette de Geoffroy"
             }
         },
         {
@@ -1082,15 +941,12 @@
                 ]
             },
             "properties": {
-                "cartodb_id": 51,
-                "doclink1": "https://centerfordigitalhumanities.github.io/Newberry-French-paleography/www/record.html?id=485#a476b56b-0f62-49ce-91d6-68c79474f426",
+                "doclink1": "https://centerfordigitalhumanities.github.io/Newberry-French-paleography/www/record.html?id=485",
                 "imageright": "The Newberry Library",
                 "city": "Nouhant",
                 "region": "France--Central France",
                 "identifier": "FP_049",
-                "title": "Partage de l'heritage de la famille de l'Estang",
-                "y_lat": 46.285,
-                "x_long": 2.391389
+                "title": "Partage de l'heritage de la famille de l'Estang"
             }
         },
         {
@@ -1103,15 +959,12 @@
                 ]
             },
             "properties": {
-                "cartodb_id": 52,
-                "doclink1": "https://centerfordigitalhumanities.github.io/Newberry-French-paleography/www/record.html?id=2055#bfc5b377-72ff-4514-a8c7-890010f71793",
+                "doclink1": "https://centerfordigitalhumanities.github.io/Newberry-French-paleography/www/record.html?id=2055",
                 "imageright": "The Newberry Library",
                 "city": "Ognolles",
                 "region": "France–-Northern France",
                 "identifier": "FP_068",
-                "title": "Cartulaire de l'Abbaye-aux-Bois",
-                "y_lat": 49.69333,
-                "x_long": 2.915556
+                "title": "Cartulaire de l'Abbaye-aux-Bois"
             }
         },
         {
@@ -1124,15 +977,12 @@
                 ]
             },
             "properties": {
-                "cartodb_id": 53,
                 "doclink1": "https://centerfordigitalhumanities.github.io/Newberry-French-paleography/www/manuscripts.html?q=Orl%C3%A9ans",
                 "imageright": "The Newberry Library",
                 "city": "Orléans",
                 "region": "France--Central France",
                 "identifier": "FP_001, FP_031",
-                "title": "[Multiple Documents]",
-                "y_lat": 47.898941,
-                "x_long": 1.904022
+                "title": "[Multiple Documents]"
             }
         },
         {
@@ -1145,15 +995,12 @@
                 ]
             },
             "properties": {
-                "cartodb_id": 54,
-                "doclink1": "https://centerfordigitalhumanities.github.io/Newberry-French-paleography/www/manuscripts.html?q=*%3A*?f[0]=mods_subject_cartographics_coordinates_ms%3A%2248%C2%B0%C2%A051%E2%80%B2%C2%A024%E2%80%B3%C2%A0N%2C%202%C2%B0%C2%A021%E2%80%B2%C2%A003%E2%80%B3%C2%A0E%22",
+                "doclink1": "https://centerfordigitalhumanities.github.io/Newberry-French-paleography/www/manuscripts.html?region=France--Ile-de-France",
                 "imageright": "The Newberry Library",
                 "city": "Paris",
                 "region": "France--Ile-de-France",
                 "identifier": "FP_001-003, FP_005-006, FP_015, FP_038, FP_053, FP_056, FP_061, FP_201, FP_210-211, FP_251-252, FP_254-255, FP_309, FP_311, FP_322-324",
-                "title": "[Multiple Documents]",
-                "y_lat": 48.856378,
-                "x_long": 2.352462
+                "title": "[Multiple Documents]"
             }
         },
         {
@@ -1166,15 +1013,12 @@
                 ]
             },
             "properties": {
-                "cartodb_id": 55,
-                "doclink1": "https://centerfordigitalhumanities.github.io/Newberry-French-paleography/www/record.html?id=465#d03c6dee-70b7-4030-b53f-f79288de9533",
+                "doclink1": "https://centerfordigitalhumanities.github.io/Newberry-French-paleography/www/record.html?id=465",
                 "imageright": "The Newberry Library",
                 "city": "Payns",
                 "region": "France--Northern France",
                 "identifier": "FP_029",
-                "title": "Censier du seizième siècle pour la paroisse de Payns, bailliage de Troyes",
-                "y_lat": 48.3825,
-                "x_long": 3.9781
+                "title": "Censier du seizième siècle pour la paroisse de Payns, bailliage de Troyes"
             }
         },
         {
@@ -1187,15 +1031,12 @@
                 ]
             },
             "properties": {
-                "cartodb_id": 56,
-                "doclink1": "https://centerfordigitalhumanities.github.io/Newberry-French-paleography/www/record.html?id=466#e7a3bff6-c699-4d9e-9cf2-8c93781b840d",
+                "doclink1": "https://centerfordigitalhumanities.github.io/Newberry-French-paleography/www/record.html?id=466",
                 "imageright": "The Newberry Library",
                 "city": "Perthes-en-Gâtinais",
                 "region": "France--Ile-de-France",
                 "identifier": "FP_030",
-                "title": "Papier terrier de la seignerie de Perthes, renouvelé en l’an 1578. Pour les Celestins de Paris",
-                "y_lat": 48.475668,
-                "x_long": 2.555439
+                "title": "Papier terrier de la seignerie de Perthes, renouvelé en l’an 1578. Pour les Celestins de Paris"
             }
         },
         {
@@ -1208,15 +1049,12 @@
                 ]
             },
             "properties": {
-                "cartodb_id": 57,
-                "doclink1": "https://centerfordigitalhumanities.github.io/Newberry-French-paleography/www/record.html?id=429#584c2f8a-16c3-47ce-b854-a95f34ffaa96",
+                "doclink1": "https://centerfordigitalhumanities.github.io/Newberry-French-paleography/www/record.html?id=429",
                 "imageright": "The Folger Shakespeare Library",
                 "city": "Poitiers",
                 "region": "France –-Central France",
                 "identifier": "FP_303",
-                "title": "Harangue faicte à la Royne mere du Roy à Poictiers par le seigneur de Salvert presidial de ladicte ville le lendemain de son arrivée qui fut le vingt huictiesme novembre 1575; Aultre harengue faicte le mesme lieu par Salvert à la Royne mere au nom de",
-                "y_lat": 46.580319,
-                "x_long": 0.339984
+                "title": "Harangue faicte à la Royne mere du Roy à Poictiers par le seigneur de Salvert presidial de ladicte ville le lendemain de son arrivée qui fut le vingt huictiesme novembre 1575; Aultre harengue faicte le mesme lieu par Salvert à la Royne mere au nom de"
             }
         },
         {
@@ -1229,15 +1067,16 @@
                 ]
             },
             "properties": {
-                "cartodb_id": 58,
-                "doclink1": "https://centerfordigitalhumanities.github.io/Newberry-French-paleography/www/manuscripts.html?q=*%3A*?f[0]=mods_subject_cartographics_coordinates_ms%3A%2245%C2%B0%C2%A049%E2%80%B2%C2%A059%E2%80%B3%C2%A0N%2C%202%C2%B0%C2%A051%E2%80%B2%C2%A004%E2%80%B3%C2%A0E%22",
+                "doclink1": [
+                    "https://centerfordigitalhumanities.github.io/Newberry-French-paleography/www/record.html?id=493",
+                    "https://centerfordigitalhumanities.github.io/Newberry-French-paleography/www/record.html?id=494",
+                    "https://centerfordigitalhumanities.github.io/Newberry-French-paleography/www/record.html?id=495"
+                ],
                 "imageright": "The Newberry Library",
                 "city": "Pontgibaud",
                 "region": "France--Central France",
                 "identifier": "FP_057, FP_058, FP_059",
-                "title": "[Multiple Documents]",
-                "y_lat": 45.833,
-                "x_long": 2.851
+                "title": "[Multiple Documents]"
             }
         },
         {
@@ -1250,15 +1089,12 @@
                 ]
             },
             "properties": {
-                "cartodb_id": 59,
-                "doclink1": "https://centerfordigitalhumanities.github.io/Newberry-French-paleography/www/record.html?id=431#ca938657-1956-4e5a-957d-b89604dc087b",
+                "doclink1": "https://centerfordigitalhumanities.github.io/Newberry-French-paleography/www/record.html?id=431",
                 "imageright": "The Folger Shakespeare Library",
                 "city": "Prague",
                 "region": "Bohemia",
                 "identifier": "FP_305",
-                "title": "Letter signed from Philip II, King of Spain, to his nephew Rudolf II, Holy Roman Emperor",
-                "y_lat": 50.087656,
-                "x_long": 14.421213
+                "title": "Letter signed from Philip II, King of Spain, to his nephew Rudolf II, Holy Roman Emperor"
             }
         },
         {
@@ -1271,15 +1107,12 @@
                 ]
             },
             "properties": {
-                "cartodb_id": 60,
-                "doclink1": "https://centerfordigitalhumanities.github.io/Newberry-French-paleography/www/record.html?id=473#7e5b8add-8fd8-4145-a097-47eaa3a318cb",
+                "doclink1": "https://centerfordigitalhumanities.github.io/Newberry-French-paleography/www/record.html?id=473",
                 "imageright": "The Newberry Library",
                 "city": "Québec",
                 "region": "New France",
                 "identifier": "FP_037",
-                "title": "Charitable donation of land to benefit the poor of Québec city",
-                "y_lat": 46.816667,
-                "x_long": -71.216667
+                "title": "Charitable donation of land to benefit the poor of Québec city"
             }
         },
         {
@@ -1292,15 +1125,17 @@
                 ]
             },
             "properties": {
-                "cartodb_id": 61,
-                "doclink1": "https://centerfordigitalhumanities.github.io/Newberry-French-paleography/www/manuscripts.html?q=*%3A*?f[0]=mods_subject_cartographics_coordinates_ms%3A%2245%C2%B0%C2%A053%E2%80%B2%C2%A040%E2%80%B3%C2%A0N%2C%203%C2%B0%C2%A006%E2%80%B2%C2%A048%E2%80%B3%C2%A0E%22",
+                "doclink1": [
+                    "https://centerfordigitalhumanities.github.io/Newberry-French-paleography/www/record.html?id=486",
+                    "https://centerfordigitalhumanities.github.io/Newberry-French-paleography/www/record.html?id=490",
+                    "https://centerfordigitalhumanities.github.io/Newberry-French-paleography/www/record.html?id=491",
+                    "https://centerfordigitalhumanities.github.io/Newberry-French-paleography/www/record.html?id=482"
+                ],
                 "imageright": "The Newberry Library",
                 "city": "Riom",
                 "region": "France--Central France",
                 "identifier": "FP_046, FP_50, FP_055, FP_063",
-                "title": "[Multiple Documents]",
-                "y_lat": 45.893121,
-                "x_long": 3.110887
+                "title": "[Multiple Documents]"
             }
         },
         {
@@ -1313,15 +1148,12 @@
                 ]
             },
             "properties": {
-                "cartodb_id": 62,
-                "doclink1": "https://centerfordigitalhumanities.github.io/Newberry-French-paleography/www/record.html?id=2076#5aa51292-793e-4478-9dd2-5b6ba815210f",
+                "doclink1": "https://centerfordigitalhumanities.github.io/Newberry-French-paleography/www/record.html?id=2076",
                 "imageright": null,
                 "city": "Rochefort-sur-Loire",
                 "region": "France--Central France",
                 "identifier": "FP_336",
-                "title": "Receipt for repairs made to the castle of Rochefort",
-                "y_lat": 47.3578,
-                "x_long": -0.6547
+                "title": "Receipt for repairs made to the castle of Rochefort"
             }
         },
         {
@@ -1334,15 +1166,15 @@
                 ]
             },
             "properties": {
-                "cartodb_id": 63,
-                "doclink1": "https://centerfordigitalhumanities.github.io/Newberry-French-paleography/www/manuscripts.html?q=*%3A*?f[0]=mods_subject_cartographics_coordinates_ms%3A%2249%C2%B0%C2%A026%E2%80%B2%C2%A0N%2C%201%C2%B0%C2%A006%E2%80%B2%C2%A0E%22",
+                "doclink1": [
+                    "https://centerfordigitalhumanities.github.io/Newberry-French-paleography/www/record.html?id=432",
+                    "https://centerfordigitalhumanities.github.io/Newberry-French-paleography/www/record.html?id=440"
+                ],
                 "imageright": "The Newberry Library",
                 "city": "Rouen",
                 "region": "France--Northern France; England",
                 "identifier": "FP_004, FP_306, FP_320",
-                "title": "[Multiple Documents]",
-                "y_lat": 49.440903,
-                "x_long": 1.095115
+                "title": "[Multiple Documents]"
             }
         },
         {
@@ -1355,15 +1187,12 @@
                 ]
             },
             "properties": {
-                "cartodb_id": 64,
-                "doclink1": "https://centerfordigitalhumanities.github.io/Newberry-French-paleography/www/record.html?id=490#9e16d210-41ff-4c20-8af4-5b5749fd552c",
+                "doclink1": "https://centerfordigitalhumanities.github.io/Newberry-French-paleography/www/record.html?id=490",
                 "imageright": "The Newberry Library",
                 "city": "Saint-Bonnet-le-Bourg",
                 "region": "France--Central France",
                 "identifier": "FP_054",
-                "title": "Inquest regarding land disputes",
-                "y_lat": 45.43333,
-                "x_long": 3.6
+                "title": "Inquest regarding land disputes"
             }
         },
         {
@@ -1376,15 +1205,12 @@
                 ]
             },
             "properties": {
-                "cartodb_id": 65,
-                "doclink1": "https://centerfordigitalhumanities.github.io/Newberry-French-paleography/www/record.html?id=464#db535fb0-1f67-4ab3-9eb9-ad28fedd6c06",
+                "doclink1": "https://centerfordigitalhumanities.github.io/Newberry-French-paleography/www/record.html?id=464",
                 "imageright": "The Newberry Library",
                 "city": "Saint-Paul-de-Vence",
                 "region": "France--Southern France",
                 "identifier": "FP_028",
-                "title": "Marriage contract of Sauveur de Lombard and Antoinette de Geoffroy",
-                "y_lat": 43.69722,
-                "x_long": 7.123056
+                "title": "Marriage contract of Sauveur de Lombard and Antoinette de Geoffroy"
             }
         },
         {
@@ -1397,15 +1223,15 @@
                 ]
             },
             "properties": {
-                "cartodb_id": 66,
-                "doclink1": "https://centerfordigitalhumanities.github.io/Newberry-French-paleography/www/manuscripts.html?q=Saint-Pierre-le-Chastel",
+                "doclink1": [
+                    "https://centerfordigitalhumanities.github.io/Newberry-French-paleography/www/record.html?id=482",
+                    "https://centerfordigitalhumanities.github.io/Newberry-French-paleography/www/record.html?id=491"
+                ],
                 "imageright": "The Newberry Library",
                 "city": "Saint-Pierre-le-Chastel",
                 "region": "France--Central France",
                 "identifier": "FP_046, FP_055",
-                "title": "[Multiple Documents]",
-                "y_lat": 45.7992,
-                "x_long": 2.8439
+                "title": "[Multiple Documents]"
             }
         },
         {
@@ -1418,15 +1244,12 @@
                 ]
             },
             "properties": {
-                "cartodb_id": 67,
-                "doclink1": "https://centerfordigitalhumanities.github.io/Newberry-French-paleography/www/record.html?id=444#f82ddd16-45f1-430b-8481-edb4989e00d1",
+                "doclink1": "https://centerfordigitalhumanities.github.io/Newberry-French-paleography/www/record.html?id=444",
                 "imageright": "The Newberry Library",
                 "city": "Sainte-Marie-among-the-Hurons",
                 "region": "New France",
                 "identifier": "FP_008",
-                "title": "Letter from Father Simon Le Moyne to his cousin, priest at the church of St. Martin in Beauvais",
-                "y_lat": 44.73556,
-                "x_long": -79.85917
+                "title": "Letter from Father Simon Le Moyne to his cousin, priest at the church of St. Martin in Beauvais"
             }
         },
         {
@@ -1439,15 +1262,12 @@
                 ]
             },
             "properties": {
-                "cartodb_id": 68,
-                "doclink1": "https://centerfordigitalhumanities.github.io/Newberry-French-paleography/www/record.html?id=448#c8d5b01b-c3fb-4ac9-95b9-46db59590526",
+                "doclink1": "https://centerfordigitalhumanities.github.io/Newberry-French-paleography/www/record.html?id=448",
                 "imageright": "The Newberry Library",
                 "city": "Sancheville",
                 "region": "France --Northern France",
                 "identifier": "FP_012",
-                "title": "Adveu d'Alainville et de la seigneurie de Taillepied",
-                "y_lat": 48.194544,
-                "x_long": 1.574413
+                "title": "Adveu d'Alainville et de la seigneurie de Taillepied"
             }
         },
         {
@@ -1460,15 +1280,16 @@
                 ]
             },
             "properties": {
-                "cartodb_id": 69,
-                "doclink1": "https://centerfordigitalhumanities.github.io/Newberry-French-paleography/www/manuscripts.html?q=*%3A*?f[0]=mods_subject_cartographics_coordinates_ms%3A%2244%C2%B0%C2%A057%E2%80%B2%C2%A039%E2%80%B3%C2%A0N%2C%203%C2%B0%C2%A032%E2%80%B2%C2%A053%E2%80%B3%C2%A0E%22",
+                "doclink1": [
+                    "https://centerfordigitalhumanities.github.io/Newberry-French-paleography/www/record.html?id=476",
+                    "https://centerfordigitalhumanities.github.io/Newberry-French-paleography/www/record.html?id=499",
+                    "https://centerfordigitalhumanities.github.io/Newberry-French-paleography/www/record.html?id=483"
+                ],
                 "imageright": "The Newberry Library",
                 "city": "Saugues",
                 "region": "France--Southern France",
                 "identifier": "FP_040, FP_047, FP_064",
-                "title": "[Multiple Documents]",
-                "y_lat": 44.959244,
-                "x_long": 3.544611
+                "title": "[Multiple Documents]"
             }
         },
         {
@@ -1481,15 +1302,12 @@
                 ]
             },
             "properties": {
-                "cartodb_id": 70,
-                "doclink1": "https://centerfordigitalhumanities.github.io/Newberry-French-paleography/www/record.html?id=433#a60c0eb0-a2a6-4def-855c-3aa27b16fa70",
+                "doclink1": "https://centerfordigitalhumanities.github.io/Newberry-French-paleography/www/record.html?id=433",
                 "imageright": "The Folger Shakespeare Library",
                 "city": "Selles-sur-Cher",
                 "region": "France-–Central France",
                 "identifier": "FP_307",
-                "title": "Memoranda about Charles d'Orléans's rights as Count of Blois",
-                "y_lat": 47.2769,
-                "x_long": 1.56301
+                "title": "Memoranda about Charles d'Orléans's rights as Count of Blois"
             }
         },
         {
@@ -1502,15 +1320,12 @@
                 ]
             },
             "properties": {
-                "cartodb_id": 71,
-                "doclink1": "https://centerfordigitalhumanities.github.io/Newberry-French-paleography/www/record.html?id=500#3ee837d3-7528-4cc8-aaab-beed1c71916c",
+                "doclink1": "https://centerfordigitalhumanities.github.io/Newberry-French-paleography/www/record.html?id=500",
                 "imageright": "The Newberry Library",
                 "city": "Sens",
                 "region": "France--Central France",
                 "identifier": "FP_065",
-                "title": "Prussurot-Raveneau printing partnership agreement",
-                "y_lat": 48.196415,
-                "x_long": 3.284284
+                "title": "Prussurot-Raveneau printing partnership agreement"
             }
         },
         {
@@ -1523,15 +1338,12 @@
                 ]
             },
             "properties": {
-                "cartodb_id": 72,
-                "doclink1": "https://centerfordigitalhumanities.github.io/Newberry-French-paleography/www/manuscripts.html?q=*%3A*?f[0]=mods_subject_cartographics_coordinates_ms%3A%2244%C2%B0%C2%A021%E2%80%B2%C2%A005%E2%80%B3%C2%A0N%2C%206%C2%B0%C2%A021%E2%80%B2%C2%A025%E2%80%B3%C2%A0E%22",
+                "doclink1": "https://centerfordigitalhumanities.github.io/Newberry-French-paleography/www/manuscripts.html?q=notarial%20registers",
                 "imageright": "The Newberry Library",
                 "city": "Seyne",
                 "region": "France--Southern France",
                 "identifier": "FP_020, FP_043, FP_044",
-                "title": "[Multiple Documents]",
-                "y_lat": 44.116001,
-                "x_long": 4.284924
+                "title": "[Multiple Documents]"
             }
         },
         {
@@ -1544,15 +1356,15 @@
                 ]
             },
             "properties": {
-                "cartodb_id": 73,
-                "doclink1": "https://centerfordigitalhumanities.github.io/Newberry-French-paleography/www/manuscripts.html?q=*%3A*?f[0]=mods_subject_cartographics_coordinates_ms%3A%2243%C2%B0%C2%A036%E2%80%B2%C2%A016%E2%80%B3%C2%A0N%2C%201%C2%B0%C2%A026%E2%80%B2%C2%A038%E2%80%B3%C2%A0E%22",
+                "doclink1": [
+                    "https://centerfordigitalhumanities.github.io/Newberry-French-paleography/www/record.html?id=436",
+                    "https://centerfordigitalhumanities.github.io/Newberry-French-paleography/www/record.html?id=463"
+                ],
                 "imageright": "The Newberry Library",
                 "city": "Toulouse",
                 "region": "France--Southern France",
                 "identifier": "FP_027, FP_310",
-                "title": "[Multiple Documents]",
-                "y_lat": 43.604462,
-                "x_long": 1.444247
+                "title": "[Multiple Documents]"
             }
         },
         {
@@ -1565,15 +1377,12 @@
                 ]
             },
             "properties": {
-                "cartodb_id": 74,
-                "doclink1": "https://centerfordigitalhumanities.github.io/Newberry-French-paleography/www/record.html?id=449#57c2f6db-6e61-41cd-9b2e-eea5f0d1c202",
+                "doclink1": "https://centerfordigitalhumanities.github.io/Newberry-French-paleography/www/record.html?id=449",
                 "imageright": "The Newberry Library",
                 "city": "Troyes",
                 "region": "France--Ile-de-France",
                 "identifier": "FP_013",
-                "title": "Proclamation dated January 1420 by which King Charles VI of France disinherits his son the dauphin (future King Charles VII)",
-                "y_lat": 48.288,
-                "x_long": 4.0809
+                "title": "Proclamation dated January 1420 by which King Charles VI of France disinherits his son the dauphin (future King Charles VII)"
             }
         },
         {
@@ -1586,15 +1395,12 @@
                 ]
             },
             "properties": {
-                "cartodb_id": 76,
-                "doclink1": "https://centerfordigitalhumanities.github.io/Newberry-French-paleography/www/record.html?id=484#5d5b9acf-914f-406e-a7b4-c06be175cc10",
+                "doclink1": "https://centerfordigitalhumanities.github.io/Newberry-French-paleography/www/record.html?id=484",
                 "imageright": "The Newberry Library",
                 "city": "Ussel",
                 "region": "France--Central France",
                 "identifier": "FP_048",
-                "title": "Mariage de Jean de Jardon et Françoise de Rochefort",
-                "y_lat": 45.546379,
-                "x_long": 2.311227
+                "title": "Mariage de Jean de Jardon et Françoise de Rochefort"
             }
         },
         {
@@ -1607,15 +1413,12 @@
                 ]
             },
             "properties": {
-                "cartodb_id": 77,
-                "doclink1": "https://centerfordigitalhumanities.github.io/Newberry-French-paleography/www/record.html?id=2066#6a8cdfd5-7e49-4125-a874-62c0a2493558",
+                "doclink1": "https://centerfordigitalhumanities.github.io/Newberry-French-paleography/www/record.html?id=2066",
                 "imageright": "Digital Scriptorium?",
                 "city": "Valognes",
                 "region": "France--Northern France",
                 "identifier": "FP_326",
-                "title": "Acknowledgement of patronage",
-                "y_lat": 49.511,
-                "x_long": -1.47206
+                "title": "Acknowledgement of patronage"
             }
         },
         {
@@ -1628,15 +1431,12 @@
                 ]
             },
             "properties": {
-                "cartodb_id": 78,
-                "doclink1": "https://centerfordigitalhumanities.github.io/Newberry-French-paleography/www/record.html?id=447#77279b18-799a-4ce4-9ccf-1d010ac53cda",
+                "doclink1": "https://centerfordigitalhumanities.github.io/Newberry-French-paleography/www/record.html?id=447",
                 "imageright": "The Newberry Library",
                 "city": "Ville-Marie",
                 "region": "New France",
                 "identifier": "FP_011",
-                "title": "Fur trade contract between François Francoeur and four voyageurs for transport of goods and purchase of beaver pelts in Michilimackinac and Chicago",
-                "y_lat": 45.503407,
-                "x_long": -73.553974
+                "title": "Fur trade contract between François Francoeur and four voyageurs for transport of goods and purchase of beaver pelts in Michilimackinac and Chicago"
             }
         }
     ]
