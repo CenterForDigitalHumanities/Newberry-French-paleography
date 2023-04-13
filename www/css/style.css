@@ -1,3 +1,4 @@
+@import url('https://unpkg.com/chota@latest');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,700;1,300;1,700&display=swap');
 
 :root {
@@ -9,7 +10,7 @@
     --color-darkGrey    : #3f4144;
     --color-error       : #d43939;
     --color-success     : #28bd14;
-    --grid-maxWidth     : 60rem;
+    --grid-maxWidth     : 80rem;
     --grid-gutter       : 2rem;
     --font-size         : 1.6rem;
     --font-color        : #333333;
