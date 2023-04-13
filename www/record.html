@@ -1,3 +1,6 @@
+---
+---
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -7,7 +10,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title>Manuscript Record | French Paleography</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href='{{ "/www/css/style.css" | relative_url }}'>
 </head>
 
 <body>
@@ -18,7 +21,7 @@
 
     <div role="main" class="container">
         <h1 id="pageHeader">Title</h1>
-        <a href="http://newberry.rerum.io/paleography/transcribe/" id="transcribeLink">Transcribe with TPEN</a>
+        <a href="http://newberry.t-pen.org/paleography/transcribe/" id="transcribeLink">Transcribe with TPEN</a>
         <div id="view">
             <div id="book-viewer" class="container">
                 <div id="mirador-bookreader" class="islandora-mirador-bookreader mirador-reader"></div>
@@ -71,7 +74,7 @@
                 })
                 metadata.innerHTML = `<dl>${dl}</dl>`
                 pageHeader.textContent = manifest.label
-                transcribeLink.setAttribute("href", `http://newberry.rerum.io/paleography/transcribe/${manifest.label}`)
+                transcribeLink.setAttribute("href", `http://newberry.t-pen.org/paleography/transcribe/${manifest.label}`)
             })
             .catch(err => { throw Error(err) })
 

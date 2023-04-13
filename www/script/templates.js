@@ -1,7 +1,7 @@
 var NL = new Map()
 
-NL.set("USER", "http://newberry.rerum.io/paleography/geti")
-NL.set("AUTH", "http://newberry.rerum.io/paleography/login")
+NL.set("USER", "http://newberry.t-pen.org/paleography/geti")
+NL.set("AUTH", "http://newberry.t-pen.org/paleography/login")
 
 let header = document.createElement('template')
 let footer = document.createElement('template')
@@ -24,8 +24,6 @@ header.innerHTML = `
           </div>
 
       </div>
-      <div class="search-icon" id="search-btn"><button title="Search" aria-label="Search" class="icon icon-search"></button></div>
-      <div class="hamburger-icon"><div class="icon icon-menu">&nbsp;</div></div>
 </header>
 <link rel="stylesheet" href="https://centerfordigitalhumanities.github.io/Newberry-French-paleography/www/css/style.css">
 <slot></slot>
@@ -66,18 +64,17 @@ header.innerHTML = `
         </li>
         <li class="expanded dropdown"><a title="" data-target="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">My Transcriptions <span class="caret"></span></a>
             <ul class="dropdown-menu">
-                <li class="first leaf"><a href="http://newberry.rerum.io/paleography/my-transcriptions.html?language=French" title="">My Transcriptions</a></li>
+                <li class="first leaf"><a href="http://newberry.t-pen.org/paleography/my-transcriptions.html?language=French" title="">My Transcriptions</a></li>
                 <li class="last leaf"><a href="https://centerfordigitalhumanities.github.io/Newberry-French-paleography/transcriptions" title="">Master Transcriptions</a></li>
             </ul>
         </li>
-        <li class="last leaf"><a href="http://newberry.rerum.io/paleography/logout.html?language=French" title="">Logout</a></li>
     </ul>
 </nav>
 `
 
 footer.innerHTML = `
 <link rel="stylesheet" href="https://centerfordigitalhumanities.github.io/Newberry-French-paleography/www/css/style.css">
-<div class="row container">
+<div class="row container no-embed">
     <div class="col" style="flex-grow:2;">
         <h2> Partners </h2>
             <div class="row">
@@ -85,7 +82,7 @@ footer.innerHTML = `
                 <a class="col" href="http://onesearch.library.utoronto.ca" target="_blank"><img alt="University of Toronto Libraries" src="https://centerfordigitalhumanities.github.io/Newberry-French-paleography/www/images/UTL-logo.png"></a>
             </div>
             <div class="row">
-                <a class="col" href="http://lib.slu.edu/" style="line-height: 23.1111px;" target="_blank"><img alt="St. Louis University" src="https://centerfordigitalhumanities.github.io/Newberry-French-paleography/www/images/slu.gif" style="width: 346px;"></a>
+                <a class="col" href="http://lib.slu.edu/" style="line-height: 23.1111px;" target="_blank"><img alt="St. Louis University" src="https://centerfordigitalhumanities.github.io/Newberry-paleography/images/slu_ovpr.png" style="width: 470px;"></a>
                 <a class="col" href="http://www.itergateway.org/" target="_blank"><img alt="Iter" src="https://centerfordigitalhumanities.github.io/Newberry-French-paleography/www/images/iter-logo-new.png"></a>
             </div>
     </div>
@@ -94,7 +91,7 @@ footer.innerHTML = `
         <h2 class="pane-title"> Contact </h2>
         <p><a href="https://centerfordigitalhumanities.github.io/Newberry-French-paleography/contact">Contact</a><br><a href="https://centerfordigitalhumanities.github.io/Newberry-French-paleography/about-team">About the Team</a><br><a href="https://centerfordigitalhumanities.github.io/Newberry-French-paleography/contact">Terms of Use</a></p>
         <p>Supported by a grant from The Andrew W. Mellon Foundation</p>
-        <p><a href="http://creativecommons.org/licenses/by-nc-nd/4.0/" rel="license"><img alt="Creative Commons Licence" src="https://i.creativecommons.org/l/by-nc-nd/4.0/88x31.png" style="border-width:0"></a><br><a href="https://www.newberry.org/paleography">French Renaissance Paleography</a> is licensed under a <a href="http://creativecommons.org/licenses/by-nc-nd/4.0/" rel="license">Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License</a>.</p>
+        <p><a href="http://creativecommons.org/licenses/by-nc-nd/4.0/" rel="license"><img alt="Creative Commons Licence" src="https://i.creativecommons.org/l/by-nc-nd/4.0/88x31.png" style="width:88px"></a><br><a href="https://www.newberry.org/paleography">French Renaissance Paleography</a> is licensed under a <a href="http://creativecommons.org/licenses/by-nc-nd/4.0/" rel="license">Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License</a>.</p>
     </div>
 </div> `
 
