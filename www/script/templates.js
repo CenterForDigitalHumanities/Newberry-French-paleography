@@ -11,13 +11,13 @@ header.innerHTML = `
           <div style="margin: 0px auto;">
           <div class="newberry-header hiddem-sm hidden-xs">
               <a href="http://www.newberry.org/">
-                <img alt="Newberry" src="https://centerfordigitalhumanities.github.io/Newberry-French-paleography/www/images/NewberryLogo_with_tag.png">
+                <img alt="Newberry" src="https://french.newberry.t-pen.org/www/images/NewberryLogo_with_tag.png">
               </a>
           </div>
           
-          <h1 id="site-name"><a href="https://centerfordigitalhumanities.github.io/Newberry-French-paleography/">French Renaissance 
+          <h1 id="site-name"><a href="https://french.newberry.t-pen.org/">French Renaissance 
           <div id="logo" style="display: inline;">
-              <img aria-hidden="true" role="presentation" alt="" src="https://centerfordigitalhumanities.github.io/Newberry-French-paleography/www/images/rp-logo.png">
+              <img aria-hidden="true" role="presentation" alt="" src="https://french.newberry.t-pen.org/www/images/rp-logo.png">
           </div>
           <span class="red">Paleography</span></a>
           </h1>
@@ -25,47 +25,47 @@ header.innerHTML = `
 
       </div>
 </header>
-<link rel="stylesheet" href="https://centerfordigitalhumanities.github.io/Newberry-French-paleography/www/css/style.css">
+<link rel="stylesheet" href="https://french.newberry.t-pen.org/www/css/style.css">
 <slot></slot>
 
 <nav class="container">
-    <ul class="nav nav-bar"><li class="first leaf"><a href="https://centerfordigitalhumanities.github.io/Newberry-French-paleography/">Home</a></li>
-        <li class="leaf active-trail active"><a href="https://centerfordigitalhumanities.github.io/Newberry-French-paleography/www/manuscripts.html" title="" class="active-trail active">Manuscripts</a></li>
-        <li class="expanded dropdown"><a href="https://centerfordigitalhumanities.github.io/Newberry-French-paleography/resources" title="" data-target="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Resources <span class="caret"></span></a>
+    <ul class="nav nav-bar"><li class="first leaf"><a href="https://french.newberry.t-pen.org/">Home</a></li>
+        <li class="leaf active-trail active"><a href="https://french.newberry.t-pen.org/www/manuscripts.html" title="" class="active-trail active">Manuscripts</a></li>
+        <li class="expanded dropdown"><a href="https://french.newberry.t-pen.org/resources" title="" data-target="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Resources <span class="caret"></span></a>
             <ul class="dropdown-menu">
-                <li class="first leaf"><a href="https://centerfordigitalhumanities.github.io/Newberry-French-paleography/essays" title="">Background Essays</a></li>
-                <li class="leaf"><a href="https://centerfordigitalhumanities.github.io/Newberry-French-paleography/transcriptions" title="">Partial Transcriptions</a></li>
-                <li class="leaf"><a href="https://centerfordigitalhumanities.github.io/Newberry-French-paleography/www/calligraphy.html" title="">Calligraphy Books</a></li>
-                <li class="leaf"><a href="https://centerfordigitalhumanities.github.io/Newberry-French-paleography/www/maps.html" title="">Historical Maps</a></li>
-                <li class="leaf"><a href="https://centerfordigitalhumanities.github.io/Newberry-French-paleography/map">Interactive Map</a></li>
-                <li class="leaf"><a href="https://centerfordigitalhumanities.github.io/Newberry-French-paleography/scripts">French Scripts and Hands</a></li>
-                <li class="leaf"><a href="https://centerfordigitalhumanities.github.io/Newberry-French-paleography/about-french-documents">About French Documents</a></li>
-                <li class="leaf"><a href="https://centerfordigitalhumanities.github.io/Newberry-French-paleography/manuscript-preservation">Manuscript Preservation</a></li>
-                <li class="leaf"><a href="https://centerfordigitalhumanities.github.io/Newberry-French-paleography/conventions">Transcribing &amp; Editing Conventions</a></li>
-                <li class="leaf"><a href="https://centerfordigitalhumanities.github.io/Newberry-French-paleography/teaching">Teaching</a></li>
-                <li class="leaf"><a href="https://centerfordigitalhumanities.github.io/Newberry-French-paleography/group-work">Group Work</a></li>
-                <li class="last leaf"><a href="https://centerfordigitalhumanities.github.io/Newberry-French-paleography/get-started">Get Started</a></li>
+                <li class="first leaf"><a href="https://french.newberry.t-pen.org/essays" title="">Background Essays</a></li>
+                <li class="leaf"><a href="https://french.newberry.t-pen.org/transcriptions" title="">Partial Transcriptions</a></li>
+                <li class="leaf"><a href="https://french.newberry.t-pen.org/www/calligraphy.html" title="">Calligraphy Books</a></li>
+                <li class="leaf"><a href="https://french.newberry.t-pen.org/www/maps.html" title="">Historical Maps</a></li>
+                <li class="leaf"><a href="https://french.newberry.t-pen.org/map">Interactive Map</a></li>
+                <li class="leaf"><a href="https://french.newberry.t-pen.org/scripts">French Scripts and Hands</a></li>
+                <li class="leaf"><a href="https://french.newberry.t-pen.org/about-french-documents">About French Documents</a></li>
+                <li class="leaf"><a href="https://french.newberry.t-pen.org/manuscript-preservation">Manuscript Preservation</a></li>
+                <li class="leaf"><a href="https://french.newberry.t-pen.org/conventions">Transcribing &amp; Editing Conventions</a></li>
+                <li class="leaf"><a href="https://french.newberry.t-pen.org/teaching">Teaching</a></li>
+                <li class="leaf"><a href="https://french.newberry.t-pen.org/group-work">Group Work</a></li>
+                <li class="last leaf"><a href="https://french.newberry.t-pen.org/get-started">Get Started</a></li>
             </ul>
         </li>
-        <li class="expanded dropdown"><a href="https://centerfordigitalhumanities.github.io/Newberry-French-paleography/reference" data-target="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Reference <span class="caret"></span></a>
+        <li class="expanded dropdown"><a href="https://french.newberry.t-pen.org/reference" data-target="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Reference <span class="caret"></span></a>
             <ul class="dropdown-menu">
-                <li class="first leaf"><a href="https://centerfordigitalhumanities.github.io/Newberry-French-paleography/abbreviations">Abbreviations</a></li>
-                <li class="leaf"><a href="https://centerfordigitalhumanities.github.io/Newberry-French-paleography/dictionaries">Dictionaries</a></li>
-                <li class="leaf"><a href="https://centerfordigitalhumanities.github.io/Newberry-French-paleography/glossary">Glossary</a></li>
-                <li class="leaf"><a href="https://centerfordigitalhumanities.github.io/Newberry-French-paleography/institutions">French Institutions</a></li>
-                <li class="last leaf"><a href="https://centerfordigitalhumanities.github.io/Newberry-French-paleography/reference-resources">Other Reference Resources</a></li>
+                <li class="first leaf"><a href="https://french.newberry.t-pen.org/abbreviations">Abbreviations</a></li>
+                <li class="leaf"><a href="https://french.newberry.t-pen.org/dictionaries">Dictionaries</a></li>
+                <li class="leaf"><a href="https://french.newberry.t-pen.org/glossary">Glossary</a></li>
+                <li class="leaf"><a href="https://french.newberry.t-pen.org/institutions">French Institutions</a></li>
+                <li class="last leaf"><a href="https://french.newberry.t-pen.org/reference-resources">Other Reference Resources</a></li>
             </ul>
         </li>
-        <li class="expanded dropdown"><a href="https://centerfordigitalhumanities.github.io/Newberry-French-paleography/contact" title="" data-target="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Contact <span class="caret"></span></a>
+        <li class="expanded dropdown"><a href="https://french.newberry.t-pen.org/contact" title="" data-target="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Contact <span class="caret"></span></a>
             <ul class="dropdown-menu">
-                <li class="first leaf"><a href="https://centerfordigitalhumanities.github.io/Newberry-French-paleography/about-team" title="">About the Team</a></li>
-                <li class="last leaf"><a href="https://centerfordigitalhumanities.github.io/Newberry-French-paleography/contributing-institutions" title="">Contributing Institutions</a></li>
+                <li class="first leaf"><a href="https://french.newberry.t-pen.org/about-team" title="">About the Team</a></li>
+                <li class="last leaf"><a href="https://french.newberry.t-pen.org/contributing-institutions" title="">Contributing Institutions</a></li>
             </ul>
         </li>
         <li class="expanded dropdown"><a title="" data-target="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">My Transcriptions <span class="caret"></span></a>
             <ul class="dropdown-menu">
                 <li class="first leaf"><a href="http://newberry.t-pen.org/paleography/my-transcriptions.html?language=French" title="">My Transcriptions</a></li>
-                <li class="last leaf"><a href="https://centerfordigitalhumanities.github.io/Newberry-French-paleography/transcriptions" title="">Master Transcriptions</a></li>
+                <li class="last leaf"><a href="https://french.newberry.t-pen.org/transcriptions" title="">Master Transcriptions</a></li>
             </ul>
         </li>
     </ul>
@@ -73,23 +73,23 @@ header.innerHTML = `
 `
 
 footer.innerHTML = `
-<link rel="stylesheet" href="https://centerfordigitalhumanities.github.io/Newberry-French-paleography/www/css/style.css">
+<link rel="stylesheet" href="https://french.newberry.t-pen.org/www/css/style.css">
 <div class="row container no-embed">
     <div class="col" style="flex-grow:2;">
         <h2> Partners </h2>
             <div class="row">
-                <a class="col" href="http://www.newberry.org/" target="_blank"><img alt="Newberry" src="https://centerfordigitalhumanities.github.io/Newberry-French-paleography/www/images/NewberryLogo_with_tag.png"></a>
-                <a class="col" href="http://onesearch.library.utoronto.ca" target="_blank"><img alt="University of Toronto Libraries" src="https://centerfordigitalhumanities.github.io/Newberry-French-paleography/www/images/UTL-logo.png"></a>
+                <a class="col" href="http://www.newberry.org/" target="_blank"><img alt="Newberry" src="https://french.newberry.t-pen.org/www/images/NewberryLogo_with_tag.png"></a>
+                <a class="col" href="http://onesearch.library.utoronto.ca" target="_blank"><img alt="University of Toronto Libraries" src="https://french.newberry.t-pen.org/www/images/UTL-logo.png"></a>
             </div>
             <div class="row">
                 <a class="col" href="http://lib.slu.edu/" style="line-height: 23.1111px;" target="_blank"><img alt="St. Louis University" src="https://centerfordigitalhumanities.github.io/Newberry-paleography/images/slu_ovpr.png" style="width: 470px;"></a>
-                <a class="col" href="http://www.itergateway.org/" target="_blank"><img alt="Iter" src="https://centerfordigitalhumanities.github.io/Newberry-French-paleography/www/images/iter-logo-new.png"></a>
+                <a class="col" href="http://www.itergateway.org/" target="_blank"><img alt="Iter" src="https://french.newberry.t-pen.org/www/images/iter-logo-new.png"></a>
             </div>
     </div>
     <div class="col">
         <slot></slot>
         <h2 class="pane-title"> Contact </h2>
-        <p><a href="https://centerfordigitalhumanities.github.io/Newberry-French-paleography/contact">Contact</a><br><a href="https://centerfordigitalhumanities.github.io/Newberry-French-paleography/about-team">About the Team</a><br><a href="https://centerfordigitalhumanities.github.io/Newberry-French-paleography/contact">Terms of Use</a></p>
+        <p><a href="https://french.newberry.t-pen.org/contact">Contact</a><br><a href="https://french.newberry.t-pen.org/about-team">About the Team</a><br><a href="https://french.newberry.t-pen.org/contact">Terms of Use</a></p>
         <p>Supported by a grant from The Andrew W. Mellon Foundation</p>
         <p><a href="http://creativecommons.org/licenses/by-nc-nd/4.0/" rel="license"><img alt="Creative Commons Licence" src="https://i.creativecommons.org/l/by-nc-nd/4.0/88x31.png" style="width:88px"></a><br><a href="https://www.newberry.org/paleography">French Renaissance Paleography</a> is licensed under a <a href="http://creativecommons.org/licenses/by-nc-nd/4.0/" rel="license">Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License</a>.</p>
     </div>
