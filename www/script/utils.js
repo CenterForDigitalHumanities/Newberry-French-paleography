@@ -44,9 +44,10 @@ function renderManuscripts(elem, manuscripts, noTranscribe) {
             .then(manifest => {
                 let metadataMap = new Map()
                 manifest.metadata?.forEach(dat => {
-                    metadataMap.set(dat.label, Array.isArray(dat.value) ? dat.value.join(", ") : dat.value)
+                    const LOCALIZED_VAL = localizedValue(dat.value)
+                    metadataMap.set(dat.label, Array.isArray(LOCALIZED_VAL) ? LOCALIZED_VAL.join(", ") : LOCALIZED_VAL)
                     if (FIELDS.includes(dat.label)) {
-                        dl += `<dt>${dat.label}</dt><dd>${localizedValue(metadataMap.get(dat.label))}</dd>`
+                        dl += `<dt>${dat.label}</dt><dd>${metadataMap.get(dat.label)}</dd>`
                     }
                     if (FILTERS[dat.label]) {
                         r.setAttribute("data-" + FILTERS[dat.label], metadataMap.get(dat.label))
@@ -55,7 +56,7 @@ function renderManuscripts(elem, manuscripts, noTranscribe) {
                             facets[FILTERS[dat.label]] = new Set()
                         }
                         for (let v of values) {
-                            facets[FILTERS[dat.label]] = facets[FILTERS[dat.label]].add(localizedValue(v).replace(/\?/g, ""))
+                            facets[FILTERS[dat.label]] = facets[FILTERS[dat.label]].add(v.replace(/\?/g, ""))
                         }
                     }
                 })
