@@ -44,13 +44,14 @@ function renderManuscripts(elem, manuscripts, noTranscribe) {
             .then(manifest => {
                 let metadataMap = new Map()
                 manifest.metadata?.forEach(dat => {
-                    metadataMap.set(dat.label, localizedValue(dat.value))
+                    const LOCALIZED_VALUE = localizedValue(dat.value)
+                    metadataMap.set(dat.label, LOCALIZED_VALUE)
                     if (FIELDS.includes(dat.label)) {
                         dl += `<dt>${dat.label}</dt><dd>${metadataMap.get(dat.label)}</dd>`
                     }
                     if (FILTERS[dat.label]) {
                         r.setAttribute("data-" + FILTERS[dat.label], metadataMap.get(dat.label))
-                        let values = (Array.isArray(dat.value)) ? dat.value : [dat.value]
+                        let values = (Array.isArray(LOCALIZED_VALUE)) ? LOCALIZED_VALUE : [LOCALIZED_VALUE]
                         if (!facets[FILTERS[dat.label]]) {
                             facets[FILTERS[dat.label]] = new Set()
                         }
@@ -187,10 +188,10 @@ const loadQuery = () => {
  * Return the localized value for the entry in the language map or the raw value.
  * 
  */
-const localizedValue = val => {
-    const lang = navigator.language?.split("-")[0] ?? "none"
+const localizedValue = (val, lang = navigator.language?.split("-")[0]) => {
     if (Array.isArray(val)) {
-        return val.find(v => v.lang === lang)?.['@value'] ?? val[0]['@value'] ?? val[0]
+        let matches = val.filter(v => v['@language'] === lang).forEach(localizedValue,lang)
+        return matches.length > 0 ? matches.join(", ") : localizedValue(val, "none")
     }
     return val['@value'] ?? val
 }
