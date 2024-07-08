@@ -190,9 +190,9 @@ const loadQuery = () => {
 const localizedValue = val => {
     const lang = navigator.language?.split("-")[0] ?? "none"
     if (Array.isArray(val)) {
-        return val.find(v => v.lang === lang) ?? val[0]
+        return val.find(v => v.lang === lang)?.['@value'] ?? val[0]['@value'] ?? val[0]
     }
-    return val
+    return val['@value'] ?? val
 }
 
 let templates = document.createElement("script")
