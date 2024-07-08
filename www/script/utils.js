@@ -190,7 +190,7 @@ const loadQuery = () => {
  */
 const localizedValue = (val, lang = navigator.language?.split("-")[0]) => {
     if (Array.isArray(val)) {
-        let matches = val.filter(v => v['@language'] === lang).forEach(localizedValue,lang)
+        let matches = val.filter(v => v['@language'] === lang).forEach(localizedValue)
         return matches.length > 0 ? matches.join(", ") : localizedValue(val, "none")
     }
     return val['@value'] ?? val
