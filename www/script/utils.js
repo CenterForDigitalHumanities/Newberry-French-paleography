@@ -44,8 +44,7 @@ function renderManuscripts(elem, manuscripts, noTranscribe) {
             .then(manifest => {
                 let metadataMap = new Map()
                 manifest.metadata?.forEach(dat => {
-                    const LOCALIZED_VAL = localizedValue(dat.value)
-                    metadataMap.set(dat.label, Array.isArray(LOCALIZED_VAL) ? LOCALIZED_VAL.join(", ") : LOCALIZED_VAL)
+                    metadataMap.set(dat.label, localizedValue(Array.isArray(dat.value) ? dat.value.join(", ") : dat.value))
                     if (FIELDS.includes(dat.label)) {
                         dl += `<dt>${dat.label}</dt><dd>${metadataMap.get(dat.label)}</dd>`
                     }
