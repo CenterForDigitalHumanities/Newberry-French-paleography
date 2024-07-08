@@ -54,8 +54,8 @@ function renderManuscripts(elem, manuscripts, noTranscribe) {
                         if (!facets[FILTERS[dat.label]]) {
                             facets[FILTERS[dat.label]] = new Set()
                         }
-                        for (const v of values) {
-                            facets[FILTERS[dat.label]] = facets[FILTERS[dat.label]].add(v.replace(/\?/g, ""))
+                        for (let v of values) {
+                            facets[FILTERS[dat.label]] = facets[FILTERS[dat.label]].add(localizedValue(v).replace(/\?/g, ""))
                         }
                     }
                 })
@@ -181,6 +181,18 @@ const loadQuery = () => {
         query.value = queryString
         query.dispatchEvent(new Event('input'))
     }
+}
+
+/**
+ * Return the localized value for the entry in the language map or the raw value.
+ * 
+ */
+const localizedValue = val => {
+    const lang = navigator.language?.split("-")[0] ?? "none"
+    if (Array.isArray(val)) {
+        return val.find(v => v.lang === lang) ?? val[0]
+    }
+    return val
 }
 
 let templates = document.createElement("script")
