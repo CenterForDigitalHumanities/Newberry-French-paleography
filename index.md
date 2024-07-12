@@ -1,9 +1,3 @@
----
-layout: default
-title: French Renaissance Paleography
-slug: home
----
-
 <style>
     h1, h2 {color: #b43d2e;}
     p a:not(footer a) {
