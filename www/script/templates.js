@@ -75,7 +75,7 @@ header.innerHTML = `
 footer.innerHTML = `
 <link rel="stylesheet" href="https://french.newberry.t-pen.org/www/css/style.css">
 <div class="row no-embed">
-    <div class="col" style="flex-grow:2;">
+    <div class="col">
         <h2> Partners </h2>
             <div class="row">
                 <a class="col" href="http://www.newberry.org/" target="_blank"><img alt="Newberry" src="https://french.newberry.t-pen.org/www/images/NewberryLogo_with_tag.png"></a>
