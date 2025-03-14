@@ -69,10 +69,10 @@ header.innerHTML = `
             </ul>
         </li>
         <li>
-        <a class="loginToTpen" href="https://newberry.t-pen.org/paleography/login.jsp">
-          Login
-        </a>
-      </li>
+            <a class="loginToTpen" href="https://newberry.t-pen.org/paleography/login.jsp">
+              Login
+            </a>
+        </li>
     </ul>
 </nav>
 `
