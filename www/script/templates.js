@@ -68,6 +68,11 @@ header.innerHTML = `
                 <li class="last leaf"><a href="https://french.newberry.t-pen.org/transcriptions" title="">Master Transcriptions</a></li>
             </ul>
         </li>
+        <li>
+        <a class="loginToTpen" href="https://newberry.t-pen.org/paleography/login.jsp">
+          Login
+        </a>
+      </li>
     </ul>
 </nav>
 `
